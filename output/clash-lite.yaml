@@ -1,5 +1,5 @@
 # 手机精简版（由 scripts/local_healthcheck.py 生成）：按出口国家分组，每组只留最快几条
-# 组成: 未知×3、SG×1、US×1 | 共 5 个节点
+# 组成: DE×3、未知×3、FR×2、JP×1、NL×1 | 共 10 个节点
 mixed-port: 7890
 allow-lan: false
 mode: rule
@@ -18,27 +18,34 @@ dns:
   - time.*.com
   - time.*.apple.com
 proxies:
-- name: '[504 ms] 🇩🇪_DE_德国'
-  type: vless
-  server: 2.59.134.226
-  port: 443
-  uuid: 88281d02-b387-4fe3-918e-26ed331e6d08
-  servername: rich-falcon.cdn.cachefleet.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  reality-opts:
-    public-key: 1sSmdw90uTiGuitDvp_q8zcXTcHXKQS3IVjA7T1UNiY
-  skip-cert-verify: true
-  udp: true
 - cipher: 2022-blake3-chacha20-poly1305
-  name: '[625 ms] shadowsocks-1365418326'
+  name: '[478 ms DE] shadowsocks-1365418326'
   password: QXDAqNvQJDUMd7I6mdmSnWxJHM09yjBC6Gf5xGFDkFg=
   port: 59924
   server: 130.61.119.117
   type: ss
   udp: true
-- name: '[851 ms] 🇺🇸_US_美国_2'
+- type: trojan
+  server: 167.82.76.7
+  port: 443
+  password: MiTiVPN
+  udp: true
+  name: '[992 ms DE] 美国+V2CROSS.COM'
+  sni: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: mitivpn---ss--s---mitivpn-33e.global.ssl.fastly.net
+- name: '[3234 ms DE] 🇩🇪_DE_德国_1'
+  type: ss
+  server: 18.194.210.177
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  skip-cert-verify: true
+  udp: true
+- name: '[714 ms] 🇺🇸_US_美国_2'
   type: vmess
   server: www.shopify.com
   port: 443
@@ -54,32 +61,88 @@ proxies:
     headers:
       Host: guanwang.awsno.com
   udp: true
-- name: '[934 ms SG] 🇨🇳_CN_中国->🇸🇬_SG_新加坡'
-  type: vmess
-  server: 124.151.45.60
-  port: 38320
-  uuid: d643d6ea-2e48-4ad5-b96e-d11b889cc6a6
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '[4690 ms US] 🇨🇳_CN_中国->🇺🇸_US_美国'
+- name: '[831 ms] 🇩🇪_DE_德国'
   type: vless
-  server: jp.sofast.live
-  port: 52683
-  uuid: 399b6b23-cc40-4831-a494-61948e2df133
-  tls: false
+  server: 2.59.134.226
+  port: 443
+  uuid: 88281d02-b387-4fe3-918e-26ed331e6d08
+  servername: rich-falcon.cdn.cachefleet.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: qq
+  reality-opts:
+    public-key: 1sSmdw90uTiGuitDvp_q8zcXTcHXKQS3IVjA7T1UNiY
   skip-cert-verify: true
   udp: true
+- name: '[2217 ms] 美国 004'
+  type: vless
+  network: ws
+  server: 23.249.18.144
+  port: 8581
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  tls: true
+  client-fingerprint: chrome
+  ech-opts:
+    enable: true
+    query-server-name: cloudflare-ech.com
+  ws-opts:
+    headers:
+      Host: cdn8848.776676.xyz
+    path: /channels/act?ed=2560
+- client-fingerprint: chrome
+  name: '[1155 ms FR] 🇫🇷FR_1|2.9MB/s'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.21.8.107
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: '[1856 ms FR] 🇫🇷FR_3|1.8MB/s'
+  network: ws
+  password: humanity
+  port: 443
+  server: join-telegram-channel.tirexnet.kdns.fr
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.162 Safari/537.36
+    path: /assignment
+- name: '[1469 ms JP] hysteria2-1361249047'
+  password: b8949dae-cb53-4b5a-ad9c-50f58c4656fb
+  port: 27102
+  server: jp1.xiaoliyu.us
+  skip-cert-verify: false
+  sni: jp1.xiaoliyu.us
+  type: hysteria2
+- name: '[2722 ms NL] hysteria2-1364059068'
+  password: f89c89df-905c-4df3-ab07-4f1a37a81005
+  port: 443
+  server: files.fastline-labs.com
+  skip-cert-verify: false
+  sni: files.fastline-labs.com
+  type: hysteria2
 proxy-groups:
 - name: PROXY
   type: select
   proxies:
   - AUTO
+  - DE 节点
   - 未知出口 节点
-  - SG 节点
-  - US 节点
+  - FR 节点
+  - JP 节点
+  - NL 节点
   - DIRECT
 - name: AUTO
   type: url-test
@@ -88,25 +151,41 @@ proxy-groups:
   tolerance: 50
   lazy: true
   proxies:
-  - '[504 ms] 🇩🇪_DE_德国'
-  - '[625 ms] shadowsocks-1365418326'
-  - '[851 ms] 🇺🇸_US_美国_2'
-  - '[934 ms SG] 🇨🇳_CN_中国->🇸🇬_SG_新加坡'
-  - '[4690 ms US] 🇨🇳_CN_中国->🇺🇸_US_美国'
+  - '[478 ms DE] shadowsocks-1365418326'
+  - '[992 ms DE] 美国+V2CROSS.COM'
+  - '[3234 ms DE] 🇩🇪_DE_德国_1'
+  - '[714 ms] 🇺🇸_US_美国_2'
+  - '[831 ms] 🇩🇪_DE_德国'
+  - '[2217 ms] 美国 004'
+  - '[1155 ms FR] 🇫🇷FR_1|2.9MB/s'
+  - '[1856 ms FR] 🇫🇷FR_3|1.8MB/s'
+  - '[1469 ms JP] hysteria2-1361249047'
+  - '[2722 ms NL] hysteria2-1364059068'
+- name: DE 节点
+  type: select
+  proxies:
+  - '[478 ms DE] shadowsocks-1365418326'
+  - '[992 ms DE] 美国+V2CROSS.COM'
+  - '[3234 ms DE] 🇩🇪_DE_德国_1'
 - name: 未知出口 节点
   type: select
   proxies:
-  - '[504 ms] 🇩🇪_DE_德国'
-  - '[625 ms] shadowsocks-1365418326'
-  - '[851 ms] 🇺🇸_US_美国_2'
-- name: SG 节点
+  - '[714 ms] 🇺🇸_US_美国_2'
+  - '[831 ms] 🇩🇪_DE_德国'
+  - '[2217 ms] 美国 004'
+- name: FR 节点
   type: select
   proxies:
-  - '[934 ms SG] 🇨🇳_CN_中国->🇸🇬_SG_新加坡'
-- name: US 节点
+  - '[1155 ms FR] 🇫🇷FR_1|2.9MB/s'
+  - '[1856 ms FR] 🇫🇷FR_3|1.8MB/s'
+- name: JP 节点
   type: select
   proxies:
-  - '[4690 ms US] 🇨🇳_CN_中国->🇺🇸_US_美国'
+  - '[1469 ms JP] hysteria2-1361249047'
+- name: NL 节点
+  type: select
+  proxies:
+  - '[2722 ms NL] hysteria2-1364059068'
 rules:
 - DOMAIN-SUFFIX,local,DIRECT
 - DOMAIN-SUFFIX,github.com,DIRECT
