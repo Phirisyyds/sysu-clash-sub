@@ -1,5 +1,5 @@
 # 手机精简版（由 scripts/local_healthcheck.py 生成）：按出口国家分组，每组只留最快几条
-# 组成: 未知×3、SG×1 | 共 4 个节点
+# 组成: 未知×3、SG×1、US×1 | 共 5 个节点
 mixed-port: 7890
 allow-lan: false
 mode: rule
@@ -18,14 +18,7 @@ dns:
   - time.*.com
   - time.*.apple.com
 proxies:
-- cipher: 2022-blake3-chacha20-poly1305
-  name: '[465 ms] shadowsocks-1365418326'
-  password: QXDAqNvQJDUMd7I6mdmSnWxJHM09yjBC6Gf5xGFDkFg=
-  port: 59924
-  server: 130.61.119.117
-  type: ss
-  udp: true
-- name: '[645 ms] 🇩🇪_DE_德国'
+- name: '[504 ms] 🇩🇪_DE_德国'
   type: vless
   server: 2.59.134.226
   port: 443
@@ -38,7 +31,14 @@ proxies:
     public-key: 1sSmdw90uTiGuitDvp_q8zcXTcHXKQS3IVjA7T1UNiY
   skip-cert-verify: true
   udp: true
-- name: '[942 ms] 🇺🇸_US_美国_2'
+- cipher: 2022-blake3-chacha20-poly1305
+  name: '[625 ms] shadowsocks-1365418326'
+  password: QXDAqNvQJDUMd7I6mdmSnWxJHM09yjBC6Gf5xGFDkFg=
+  port: 59924
+  server: 130.61.119.117
+  type: ss
+  udp: true
+- name: '[851 ms] 🇺🇸_US_美国_2'
   type: vmess
   server: www.shopify.com
   port: 443
@@ -54,13 +54,21 @@ proxies:
     headers:
       Host: guanwang.awsno.com
   udp: true
-- name: '[2865 ms SG] 🇨🇳_CN_中国->🇸🇬_SG_新加坡'
+- name: '[934 ms SG] 🇨🇳_CN_中国->🇸🇬_SG_新加坡'
   type: vmess
   server: 124.151.45.60
   port: 38320
   uuid: d643d6ea-2e48-4ad5-b96e-d11b889cc6a6
   alterId: 0
   cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: '[4690 ms US] 🇨🇳_CN_中国->🇺🇸_US_美国'
+  type: vless
+  server: jp.sofast.live
+  port: 52683
+  uuid: 399b6b23-cc40-4831-a494-61948e2df133
   tls: false
   skip-cert-verify: true
   udp: true
@@ -71,6 +79,7 @@ proxy-groups:
   - AUTO
   - 未知出口 节点
   - SG 节点
+  - US 节点
   - DIRECT
 - name: AUTO
   type: url-test
@@ -79,20 +88,25 @@ proxy-groups:
   tolerance: 50
   lazy: true
   proxies:
-  - '[465 ms] shadowsocks-1365418326'
-  - '[645 ms] 🇩🇪_DE_德国'
-  - '[942 ms] 🇺🇸_US_美国_2'
-  - '[2865 ms SG] 🇨🇳_CN_中国->🇸🇬_SG_新加坡'
+  - '[504 ms] 🇩🇪_DE_德国'
+  - '[625 ms] shadowsocks-1365418326'
+  - '[851 ms] 🇺🇸_US_美国_2'
+  - '[934 ms SG] 🇨🇳_CN_中国->🇸🇬_SG_新加坡'
+  - '[4690 ms US] 🇨🇳_CN_中国->🇺🇸_US_美国'
 - name: 未知出口 节点
   type: select
   proxies:
-  - '[465 ms] shadowsocks-1365418326'
-  - '[645 ms] 🇩🇪_DE_德国'
-  - '[942 ms] 🇺🇸_US_美国_2'
+  - '[504 ms] 🇩🇪_DE_德国'
+  - '[625 ms] shadowsocks-1365418326'
+  - '[851 ms] 🇺🇸_US_美国_2'
 - name: SG 节点
   type: select
   proxies:
-  - '[2865 ms SG] 🇨🇳_CN_中国->🇸🇬_SG_新加坡'
+  - '[934 ms SG] 🇨🇳_CN_中国->🇸🇬_SG_新加坡'
+- name: US 节点
+  type: select
+  proxies:
+  - '[4690 ms US] 🇨🇳_CN_中国->🇺🇸_US_美国'
 rules:
 - DOMAIN-SUFFIX,local,DIRECT
 - DOMAIN-SUFFIX,github.com,DIRECT
