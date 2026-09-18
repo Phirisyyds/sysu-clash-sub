@@ -119,17 +119,16 @@ proxies:
   tls: true
   servername: irsoft.sytes.net
 - type: vless
-  server: 172.64.88.251
+  server: 176.124.223.30
   port: 8880
-  uuid: 87a5d3eb-afd4-4193-9787-c54ef7c26c8c
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
-  name: 美国+CloudFlare节点
-  servername: patient-cake-39c7.44-e7a.workers.dev
+  name: 俄罗斯+V2CROSS.COM
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: patient-cake-39c7.44-e7a.workers.dev
+      Host: vms.lifetime38.workers.dev
 - type: trojan
   server: 54.76.45.13
   port: 22222
@@ -252,19 +251,16 @@ proxies:
       Host: sahand.serveminecraft.net
   tls: true
   servername: sahand.serveminecraft.net
-- type: vless
-  server: de1-web.mysoyka.online
+- type: trojan
+  server: 104.16.174.101
   port: 443
-  uuid: 2ac46dc3-0593-4898-bd52-42a7d5a8f2e2
+  password: humanity
   udp: true
-  name: 巴西+V2CROSS.COM
-  tls: true
-  servername: de1-web.mysoyka.online
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 5USjl6vRG3X4bxVWL9oZ7eUpyr-N3kezxnUi14WOrlY
-    short-id: 3d475d331e49eee8
-  client-fingerprint: chrome
+  name: 美国+CloudFlare节点
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
 - type: ss
   server: service.ouluyun9803.com
   port: 20003
@@ -392,20 +388,16 @@ proxies:
       Host: pendar.onthewifi.com
   tls: true
   servername: pendar.onthewifi.com
-- type: vless
-  server: 104.21.5.156
+- type: trojan
+  server: 104.17.111.1
   port: 443
-  uuid: 1aa96574-c28b-4ee9-855d-ebdbbf1f7e90
+  password: humanity
   udp: true
   name: '美国+CloudFlare节点 #2'
-  tls: true
-  servername: 2-m13.1332afdc-0737-4bb1-8ca8-EE4f0Cd20BC6.kdNs.FR
-  client-fingerprint: chrome
+  sni: www.ignitelimit.com
   network: ws
   ws-opts:
-    path: /ED3ZQPu7lqyeDGD58KabZ
-    headers:
-      Host: 2-m13.1332aFDC-0737-4Bb1-8cA8-Ee4f0CD20Bc6.kDNS.FR
+    path: /assignment
 - type: ss
   server: 38.68.135.112
   port: 9101
@@ -520,16 +512,19 @@ proxies:
       Host: zheshiscp.com
   tls: true
   servername: zheshiscp.com
-- type: trojan
-  server: 104.16.174.37
+- type: vless
+  server: de1-web.mysoyka.online
   port: 443
-  password: humanity
+  uuid: 2ac46dc3-0593-4898-bd52-42a7d5a8f2e2
   udp: true
-  name: '美国+CloudFlare节点 #3'
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
+  name: 巴西+V2CROSS.COM
+  tls: true
+  servername: de1-web.mysoyka.online
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 5USjl6vRG3X4bxVWL9oZ7eUpyr-N3kezxnUi14WOrlY
+    short-id: 3d475d331e49eee8
+  client-fingerprint: chrome
 - type: ss
   server: service.ouluyun9803.com
   port: 20009
@@ -632,11 +627,11 @@ proxies:
     headers:
       Host: server32.beheshtbaneh.com
 - type: trojan
-  server: 188.114.97.7
+  server: 104.16.174.36
   port: 443
   password: humanity
   udp: true
-  name: 巴西圣保罗+CloudFlare节点
+  name: '美国+CloudFlare节点 #3'
   sni: www.ignitelimit.com
   network: ws
   ws-opts:
@@ -738,7 +733,7 @@ proxies:
   password: f8f7aCzcPKbsF8p3
   udp: true
 - type: trojan
-  server: 104.18.152.159
+  server: 104.17.111.4
   port: 443
   password: humanity
   udp: true
@@ -817,7 +812,7 @@ proxies:
   password: f8f7aCzcPKbsF8p3
   udp: true
 - type: trojan
-  server: 104.18.152.161
+  server: 104.18.152.144
   port: 443
   password: humanity
   udp: true
@@ -826,6 +821,8 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
+    headers:
+      Host: www.ignitelimit.com
 - type: ss
   server: 38.54.108.222
   port: 8119
@@ -901,12 +898,16 @@ proxies:
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
   udp: true
-- type: vless
-  server: us22.sofast.live
-  port: 58011
-  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
+- type: trojan
+  server: 104.18.152.159
+  port: 443
+  password: humanity
   udp: true
-  name: 中国+阿里云
+  name: '美国+CloudFlare节点 #6'
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
 - type: ss
   server: service.ouluyun9803.com
   port: 20007
@@ -985,16 +986,19 @@ proxies:
   password: f8f7aCzcPKbsF8p3
   udp: true
 - type: vless
-  server: 172.66.170.53
-  port: 8880
-  uuid: 38ede46b-d237-4c76-9de1-a10738642adc
+  server: 104.16.10.2
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
-  name: '美国+CloudFlare节点 #6'
+  name: '美国+CloudFlare节点 #7'
+  tls: true
+  servername: xi.tbv.ccwu.cc
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
+    path: /proxyip=us.xiabibi.cf
     headers:
-      Host: summer-hat-ba5c.430.workers.dev
+      Host: xi.tbv.ccwu.cc
 - type: ss
   server: 193.0.61.96
   port: 51348
@@ -1081,20 +1085,18 @@ proxies:
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
   udp: true
-- type: vless
-  server: 151.101.56.6
+- type: trojan
+  server: 104.16.174.14
   port: 443
-  uuid: cc3ec459-8d76-4066-ab4b-2614608f1afb
+  password: humanity
   udp: true
-  name: 美国+乔治亚洲亚特兰大Fastly节点
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: chrome
+  name: '美国+CloudFlare节点 #8'
+  sni: www.ignitelimit.com
   network: ws
   ws-opts:
-    path: /?RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS
+    path: /assignment
     headers:
-      Host: c12.com
+      Host: www.ignitelimit.com
 - type: ss
   server: 51.158.150.168
   port: 4444
@@ -1170,19 +1172,16 @@ proxies:
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
   udp: true
-- type: vless
-  server: 47.80.62.71
+- type: trojan
+  server: 104.18.152.229
   port: 443
-  uuid: 0d4cb711-c030-4f13-adf5-6a72dab4121c
+  password: humanity
   udp: true
-  name: 香港+阿里云
-  tls: true
-  servername: www.nvidia.com
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: AT4sr3XkuNa7QewDoScx7NnPTCa-Z6o_7ccPgivVDSQ
-    short-id: 0b674631d5fc6b93
-  client-fingerprint: chrome
+  name: '美国+CloudFlare节点 #9'
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
 - type: ss
   server: 45.87.153.246
   port: 6199
@@ -1255,11 +1254,11 @@ proxies:
   password: f8f7aCzcPKbsF8p3
   udp: true
 - type: trojan
-  server: 176.97.66.175
+  server: 104.16.73.213
   port: 443
   password: humanity
   udp: true
-  name: 英国+V2CROSS.COM
+  name: '美国+CloudFlare节点 #10'
   sni: www.ignitelimit.com
   network: ws
   ws-opts:
@@ -1347,17 +1346,17 @@ proxies:
   password: f8f7aCzcPKbsF8p3
   udp: true
 - type: vless
-  server: 195.123.212.60
-  port: 15392
-  uuid: de78ba38-5600-47d1-b93b-b45bdf280ac0
+  server: jap2.mguard-pro.com
+  port: 443
+  uuid: ef805ed2-2a94-4a8c-878c-18fb8a51f4ed
   udp: true
-  name: 拉脱维亚+V2CROSS.COM
+  name: 美国+V2CROSS.COM
   tls: true
-  servername: intel.com
+  servername: addons.mozilla.org
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: TgaE-83sqLrJ6auwPP2Nq7vDO_xuFqa6uMnG4Au18jg
-    short-id: '82'
+    public-key: T3ItyMkA3K8pkYegV0pEmWDzlHP-4ZcPgjJZLZPJeXk
+    short-id: 4a6d79daaf614335
   client-fingerprint: chrome
 - type: vmess
   server: 37.110.209.228
@@ -1444,11 +1443,11 @@ proxies:
   password: f8f7aCzcPKbsF8p3
   udp: true
 - type: trojan
-  server: www.ignitelimit.com
+  server: 104.18.152.246
   port: 443
   password: humanity
   udp: true
-  name: '美国+CloudFlare节点 #7'
+  name: '美国+CloudFlare节点 #11'
   sni: www.ignitelimit.com
   network: ws
   ws-opts:
@@ -1536,11 +1535,11 @@ proxies:
   password: f8f7aCzcPKbsF8p3
   udp: true
 - type: trojan
-  server: 172.67.149.60
+  server: 104.16.174.34
   port: 443
   password: humanity
   udp: true
-  name: '美国+CloudFlare节点 #8'
+  name: '美国+CloudFlare节点 #12'
   sni: www.ignitelimit.com
   network: ws
   ws-opts:
@@ -1632,18 +1631,16 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- type: vless
-  server: 188.137.251.183
-  port: 51053
-  uuid: 25fbd2b5-3263-4bae-a7e5-a2bd4b679424
+- type: trojan
+  server: 104.18.152.155
+  port: 443
+  password: humanity
   udp: true
-  name: 巴林+V2CROSS.COM
-  tls: true
-  servername: play-apps-features.googleusercontent.com
-  reality-opts:
-    public-key: uRsgB9Pp5QwwMS7cmv6KSUVSS0Iz0QAXrI6qQaZUTAI
-    short-id: 4feec2
-  client-fingerprint: chrome
+  name: '美国+CloudFlare节点 #13'
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
 - type: vmess
   server: a3.bcbot.in
   port: 8880
@@ -1715,11 +1712,11 @@ proxies:
   password: amazonskr05
   udp: true
 - type: trojan
-  server: 104.18.152.187
+  server: www.speedtest.org
   port: 443
   password: humanity
   udp: true
-  name: '美国+CloudFlare节点 #9'
+  name: '美国+CloudFlare节点 #14'
   sni: www.ignitelimit.com
   network: ws
   ws-opts:
@@ -1800,16 +1797,6 @@ proxies:
   sni: appsvs.shop
   skip-cert-verify: true
   udp: true
-- type: trojan
-  server: 104.16.174.101
-  port: 443
-  password: humanity
-  udp: true
-  name: '美国+CloudFlare节点 #10'
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
 - type: vmess
   server: 109.123.230.157
   port: 80
@@ -1882,16 +1869,6 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- type: trojan
-  server: 172.67.188.109
-  port: 443
-  password: humanity
-  udp: true
-  name: '美国+CloudFlare节点 #11'
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
 - type: vmess
   server: 217.76.64.195
   port: 443
@@ -4327,6 +4304,26 @@ proxies:
   sni: nl1.sferavpn.pro
   tls: false
   type: hysteria2
+- name: 美国 039
+  type: vmess
+  network: ws
+  server: 104.21.234.52
+  port: 80
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /
+- name: IE 5 → tg@nicevpn123
+  server: 52.169.202.174
+  port: 28612
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: R5vcCFayGJ8ZwKMSUfdyfF
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -4345,7 +4342,7 @@ proxy-groups:
   - AF 1 → tg@nicevpn123
   - 🇭🇰 香港4|@ripaojiedian
   - github.com/freefq - 印度  2
-  - 美国+CloudFlare节点
+  - 俄罗斯+V2CROSS.COM
   - YD|tg频道:@Zyw_Channel
   - kr|1325|puddincat07@Telegram
   - hysteria2-591454513
@@ -4357,7 +4354,7 @@ proxy-groups:
   - AL 1 → tg@nicevpn123
   - 🇭🇰 香港5|@ripaojiedian
   - github.com/freefq - 印度  3
-  - 巴西+V2CROSS.COM
+  - 美国+CloudFlare节点
   - YD|TG频道内随机时间更新订阅地址
   - us|c540|puddincat07@Telegram
   - hysteria2-1255010039
@@ -4381,7 +4378,7 @@ proxy-groups:
   - AO 1 → tg@nicevpn123
   - 🇸🇬 新加坡3|@ripaojiedian
   - github.com/freefq - 美国Fastly全球Anycast节点 13
-  - '美国+CloudFlare节点 #3'
+  - 巴西+V2CROSS.COM
   - 'YD|TG频道内随机时间更新订阅地址 #2'
   - us|e0a4|puddincat07@Telegram
   - hysteria2-1334814470
@@ -4393,7 +4390,7 @@ proxy-groups:
   - AO 2 → tg@nicevpn123
   - 🇺🇸 美国3|@ripaojiedian
   - github.com/freefq - 美国CloudFlare节点 14
-  - 巴西圣保罗+CloudFlare节点
+  - '美国+CloudFlare节点 #3'
   - 'YD|TG频道内随机时间更新订阅地址 #3'
   - xx|82a1|puddincat07@Telegram
   - hysteria2-137781265
@@ -4421,7 +4418,7 @@ proxy-groups:
   - 🇫🇷_FR_法国
   - 中国 003
   - AR 3 → tg@nicevpn123
-  - 中国+阿里云
+  - '美国+CloudFlare节点 #6'
   - YD|@Zyw_Channel
   - sg|0ed4|puddincat07@Telegram
   - hysteria2-1353801407
@@ -4430,7 +4427,7 @@ proxy-groups:
   - 🇺🇸_US_美国
   - 美国 007
   - AR 4 → tg@nicevpn123
-  - '美国+CloudFlare节点 #6'
+  - '美国+CloudFlare节点 #7'
   - 'YD|TG频道内随机时间更新订阅地址 #5'
   - us|c3d4|puddincat07@Telegram
   - hysteria2-1343064829
@@ -4439,7 +4436,7 @@ proxy-groups:
   - 🇺🇸_US_美国_1
   - 美国 008
   - AR 5 → tg@nicevpn123
-  - 美国+乔治亚洲亚特兰大Fastly节点
+  - '美国+CloudFlare节点 #8'
   - 'YD|@Zyw_Channel #2'
   - xx|1d4e|puddincat07@Telegram
   - shadowsocks-468218514
@@ -4448,7 +4445,7 @@ proxy-groups:
   - 🇹🇼_TW_中国台湾
   - 法国 001
   - AT 1 → tg@nicevpn123
-  - 香港+阿里云
+  - '美国+CloudFlare节点 #9'
   - 'YD|TG频道内随机时间更新订阅地址 #6'
   - us|9589|puddincat07@Telegram
   - shadowsocks-1340850602
@@ -4457,7 +4454,7 @@ proxy-groups:
   - 🇨🇳_CN_中国
   - 美国 009
   - AT 2 → tg@nicevpn123
-  - 英国+V2CROSS.COM
+  - '美国+CloudFlare节点 #10'
   - 'YD|tg频道:@Zyw_Channel #4'
   - nl|ed15|puddincat07@Telegram
   - shadowsocks-213
@@ -4466,7 +4463,7 @@ proxy-groups:
   - 🇷🇺_RU_俄罗斯->🇫🇷_FR_法国
   - 美国 010
   - AT 3 → tg@nicevpn123
-  - 拉脱维亚+V2CROSS.COM
+  - 美国+V2CROSS.COM
   - 'YD|@Zyw_Channel #3'
   - hk|0cf4|puddincat07@Telegram
   - shadowsocks-1365418326
@@ -4475,7 +4472,7 @@ proxy-groups:
   - 🇺🇸_US_美国_2
   - 中国 004
   - AT 4 → tg@nicevpn123
-  - '美国+CloudFlare节点 #7'
+  - '美国+CloudFlare节点 #11'
   - 'YD|TG频道内随机时间更新订阅地址 #7'
   - nl|4369|puddincat07@Telegram
   - shadowsocks-10899
@@ -4484,7 +4481,7 @@ proxy-groups:
   - 🇺🇸_US_美国_3
   - 日本 001
   - BA 1 → tg@nicevpn123
-  - '美国+CloudFlare节点 #8'
+  - '美国+CloudFlare节点 #12'
   - 'YD|TG频道内随机时间更新订阅地址 #8'
   - nl|f97e|puddincat07@Telegram
   - shadowsocks-1364514012
@@ -4493,7 +4490,7 @@ proxy-groups:
   - 🇩🇪_DE_德国_2
   - 美国 011
   - BE 1 → tg@nicevpn123
-  - 巴林+V2CROSS.COM
+  - '美国+CloudFlare节点 #13'
   - 'YD|TG频道内随机时间更新订阅地址 #9'
   - shadowsocks-169
   - '🇺🇸 United States/San Francisco [TG] #8'
@@ -4501,7 +4498,7 @@ proxy-groups:
   - 日本
   - 美国 012
   - BE 2 → tg@nicevpn123
-  - '美国+CloudFlare节点 #9'
+  - '美国+CloudFlare节点 #14'
   - 'YD|TG频道内随机时间更新订阅地址 #10'
   - shadowsocks-1342808895
   - '🇺🇸 United States/San Francisco [TG] #9'
@@ -4509,7 +4506,6 @@ proxy-groups:
   - 咕
   - 美国 013
   - BE 3 → tg@nicevpn123
-  - '美国+CloudFlare节点 #10'
   - YD|www.zyw.asia ZYW免费节点
   - shadowsocks-1356758536
   - '🇺🇸 United States/San Francisco [TG] #10'
@@ -4517,7 +4513,6 @@ proxy-groups:
   - '咕咕 #1'
   - 巴西 001
   - BE 4 → tg@nicevpn123
-  - '美国+CloudFlare节点 #11'
   - 'YD|TG频道内随机时间更新订阅地址 #11'
   - trojan-2525865
   - '🇺🇸 United States/San Francisco [TG] #11'
@@ -4735,6 +4730,8 @@ proxy-groups:
   - 'YD|tg频道:@Zyw_Channel #15'
   - hysteria2-659125577
   - '♾️Join->🆔️@ATLAS_V2VPN🆓️📶🛰️55... #1'
+  - 美国 039
+  - IE 5 → tg@nicevpn123
 - name: PROXY
   type: select
   proxies:
@@ -4750,7 +4747,7 @@ proxy-groups:
   - AF 1 → tg@nicevpn123
   - 🇭🇰 香港4|@ripaojiedian
   - github.com/freefq - 印度  2
-  - 美国+CloudFlare节点
+  - 俄罗斯+V2CROSS.COM
   - YD|tg频道:@Zyw_Channel
   - kr|1325|puddincat07@Telegram
   - hysteria2-591454513
@@ -4762,7 +4759,7 @@ proxy-groups:
   - AL 1 → tg@nicevpn123
   - 🇭🇰 香港5|@ripaojiedian
   - github.com/freefq - 印度  3
-  - 巴西+V2CROSS.COM
+  - 美国+CloudFlare节点
   - YD|TG频道内随机时间更新订阅地址
   - us|c540|puddincat07@Telegram
   - hysteria2-1255010039
@@ -4786,7 +4783,7 @@ proxy-groups:
   - AO 1 → tg@nicevpn123
   - 🇸🇬 新加坡3|@ripaojiedian
   - github.com/freefq - 美国Fastly全球Anycast节点 13
-  - '美国+CloudFlare节点 #3'
+  - 巴西+V2CROSS.COM
   - 'YD|TG频道内随机时间更新订阅地址 #2'
   - us|e0a4|puddincat07@Telegram
   - hysteria2-1334814470
@@ -4798,7 +4795,7 @@ proxy-groups:
   - AO 2 → tg@nicevpn123
   - 🇺🇸 美国3|@ripaojiedian
   - github.com/freefq - 美国CloudFlare节点 14
-  - 巴西圣保罗+CloudFlare节点
+  - '美国+CloudFlare节点 #3'
   - 'YD|TG频道内随机时间更新订阅地址 #3'
   - xx|82a1|puddincat07@Telegram
   - hysteria2-137781265
@@ -4826,7 +4823,7 @@ proxy-groups:
   - 🇫🇷_FR_法国
   - 中国 003
   - AR 3 → tg@nicevpn123
-  - 中国+阿里云
+  - '美国+CloudFlare节点 #6'
   - YD|@Zyw_Channel
   - sg|0ed4|puddincat07@Telegram
   - hysteria2-1353801407
@@ -4835,7 +4832,7 @@ proxy-groups:
   - 🇺🇸_US_美国
   - 美国 007
   - AR 4 → tg@nicevpn123
-  - '美国+CloudFlare节点 #6'
+  - '美国+CloudFlare节点 #7'
   - 'YD|TG频道内随机时间更新订阅地址 #5'
   - us|c3d4|puddincat07@Telegram
   - hysteria2-1343064829
@@ -4844,7 +4841,7 @@ proxy-groups:
   - 🇺🇸_US_美国_1
   - 美国 008
   - AR 5 → tg@nicevpn123
-  - 美国+乔治亚洲亚特兰大Fastly节点
+  - '美国+CloudFlare节点 #8'
   - 'YD|@Zyw_Channel #2'
   - xx|1d4e|puddincat07@Telegram
   - shadowsocks-468218514
@@ -4853,7 +4850,7 @@ proxy-groups:
   - 🇹🇼_TW_中国台湾
   - 法国 001
   - AT 1 → tg@nicevpn123
-  - 香港+阿里云
+  - '美国+CloudFlare节点 #9'
   - 'YD|TG频道内随机时间更新订阅地址 #6'
   - us|9589|puddincat07@Telegram
   - shadowsocks-1340850602
@@ -4862,7 +4859,7 @@ proxy-groups:
   - 🇨🇳_CN_中国
   - 美国 009
   - AT 2 → tg@nicevpn123
-  - 英国+V2CROSS.COM
+  - '美国+CloudFlare节点 #10'
   - 'YD|tg频道:@Zyw_Channel #4'
   - nl|ed15|puddincat07@Telegram
   - shadowsocks-213
@@ -4871,7 +4868,7 @@ proxy-groups:
   - 🇷🇺_RU_俄罗斯->🇫🇷_FR_法国
   - 美国 010
   - AT 3 → tg@nicevpn123
-  - 拉脱维亚+V2CROSS.COM
+  - 美国+V2CROSS.COM
   - 'YD|@Zyw_Channel #3'
   - hk|0cf4|puddincat07@Telegram
   - shadowsocks-1365418326
@@ -4880,7 +4877,7 @@ proxy-groups:
   - 🇺🇸_US_美国_2
   - 中国 004
   - AT 4 → tg@nicevpn123
-  - '美国+CloudFlare节点 #7'
+  - '美国+CloudFlare节点 #11'
   - 'YD|TG频道内随机时间更新订阅地址 #7'
   - nl|4369|puddincat07@Telegram
   - shadowsocks-10899
@@ -4889,7 +4886,7 @@ proxy-groups:
   - 🇺🇸_US_美国_3
   - 日本 001
   - BA 1 → tg@nicevpn123
-  - '美国+CloudFlare节点 #8'
+  - '美国+CloudFlare节点 #12'
   - 'YD|TG频道内随机时间更新订阅地址 #8'
   - nl|f97e|puddincat07@Telegram
   - shadowsocks-1364514012
@@ -4898,7 +4895,7 @@ proxy-groups:
   - 🇩🇪_DE_德国_2
   - 美国 011
   - BE 1 → tg@nicevpn123
-  - 巴林+V2CROSS.COM
+  - '美国+CloudFlare节点 #13'
   - 'YD|TG频道内随机时间更新订阅地址 #9'
   - shadowsocks-169
   - '🇺🇸 United States/San Francisco [TG] #8'
@@ -4906,7 +4903,7 @@ proxy-groups:
   - 日本
   - 美国 012
   - BE 2 → tg@nicevpn123
-  - '美国+CloudFlare节点 #9'
+  - '美国+CloudFlare节点 #14'
   - 'YD|TG频道内随机时间更新订阅地址 #10'
   - shadowsocks-1342808895
   - '🇺🇸 United States/San Francisco [TG] #9'
@@ -4914,7 +4911,6 @@ proxy-groups:
   - 咕
   - 美国 013
   - BE 3 → tg@nicevpn123
-  - '美国+CloudFlare节点 #10'
   - YD|www.zyw.asia ZYW免费节点
   - shadowsocks-1356758536
   - '🇺🇸 United States/San Francisco [TG] #10'
@@ -4922,7 +4918,6 @@ proxy-groups:
   - '咕咕 #1'
   - 巴西 001
   - BE 4 → tg@nicevpn123
-  - '美国+CloudFlare节点 #11'
   - 'YD|TG频道内随机时间更新订阅地址 #11'
   - trojan-2525865
   - '🇺🇸 United States/San Francisco [TG] #11'
@@ -5140,6 +5135,8 @@ proxy-groups:
   - 'YD|tg频道:@Zyw_Channel #15'
   - hysteria2-659125577
   - '♾️Join->🆔️@ATLAS_V2VPN🆓️📶🛰️55... #1'
+  - 美国 039
+  - IE 5 → tg@nicevpn123
 rules:
 - DOMAIN-SUFFIX,local,DIRECT
 - DOMAIN-SUFFIX,github.com,DIRECT
