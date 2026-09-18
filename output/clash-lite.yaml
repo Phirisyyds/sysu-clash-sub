@@ -1,5 +1,5 @@
 # 手机精简版（由 scripts/local_healthcheck.py 生成）：按出口国家分组，每组只留最快几条
-# 组成: 未知×2、DE×2、SG×2、NL×1、JP×1 | 共 8 个节点
+# 组成: 未知×3、SG×1 | 共 4 个节点
 mixed-port: 7890
 allow-lan: false
 mode: rule
@@ -18,15 +18,14 @@ dns:
   - time.*.com
   - time.*.apple.com
 proxies:
-- name: '[321 ms] 🇩🇪_DE_德国_1'
+- cipher: 2022-blake3-chacha20-poly1305
+  name: '[465 ms] shadowsocks-1365418326'
+  password: QXDAqNvQJDUMd7I6mdmSnWxJHM09yjBC6Gf5xGFDkFg=
+  port: 59924
+  server: 130.61.119.117
   type: ss
-  server: 18.194.210.177
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  skip-cert-verify: true
   udp: true
-- name: '[690 ms] 🇩🇪_DE_德国'
+- name: '[645 ms] 🇩🇪_DE_德国'
   type: vless
   server: 2.59.134.226
   port: 443
@@ -39,39 +38,23 @@ proxies:
     public-key: 1sSmdw90uTiGuitDvp_q8zcXTcHXKQS3IVjA7T1UNiY
   skip-cert-verify: true
   udp: true
-- cipher: 2022-blake3-chacha20-poly1305
-  name: '[585 ms DE] shadowsocks-1365418326'
-  password: QXDAqNvQJDUMd7I6mdmSnWxJHM09yjBC6Gf5xGFDkFg=
-  port: 59924
-  server: 130.61.119.117
-  type: ss
-  udp: true
-- name: '[4415 ms DE] 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国'
-  type: hysteria2
-  server: gta.internet-card.sbs
+- name: '[942 ms] 🇺🇸_US_美国_2'
+  type: vmess
+  server: www.shopify.com
   port: 443
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  sni: gta.internet-card.sbs
-  skip-cert-verify: true
-  udp: true
-- name: '[927 ms SG] 美国 004'
-  type: vless
-  network: ws
-  server: 23.249.18.144
-  port: 8581
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
   tls: true
-  client-fingerprint: chrome
-  ech-opts:
-    enable: true
-    query-server-name: cloudflare-ech.com
+  skip-cert-verify: true
+  servername: guanwang.awsno.com
+  network: ws
   ws-opts:
+    path: /hls/cctv5phd.m3u8
     headers:
-      Host: cdn8848.776676.xyz
-    path: /channels/act?ed=2560
-- name: '[2682 ms SG] 🇨🇳_CN_中国->🇸🇬_SG_新加坡'
+      Host: guanwang.awsno.com
+  udp: true
+- name: '[2865 ms SG] 🇨🇳_CN_中国->🇸🇬_SG_新加坡'
   type: vmess
   server: 124.151.45.60
   port: 38320
@@ -81,30 +64,13 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: '[973 ms NL] hysteria2-1364059068'
-  password: f89c89df-905c-4df3-ab07-4f1a37a81005
-  port: 443
-  server: files.fastline-labs.com
-  skip-cert-verify: false
-  sni: files.fastline-labs.com
-  type: hysteria2
-- name: '[1168 ms JP] hysteria2-1361978176'
-  password: b8949dae-cb53-4b5a-ad9c-50f58c4656fb
-  port: 27102
-  server: jp3.xiaoliyu.us
-  skip-cert-verify: true
-  sni: jp3.xiaoliyu.us
-  type: hysteria2
 proxy-groups:
 - name: PROXY
   type: select
   proxies:
   - AUTO
   - 未知出口 节点
-  - DE 节点
   - SG 节点
-  - NL 节点
-  - JP 节点
   - DIRECT
 - name: AUTO
   type: url-test
@@ -113,37 +79,20 @@ proxy-groups:
   tolerance: 50
   lazy: true
   proxies:
-  - '[321 ms] 🇩🇪_DE_德国_1'
-  - '[690 ms] 🇩🇪_DE_德国'
-  - '[585 ms DE] shadowsocks-1365418326'
-  - '[4415 ms DE] 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国'
-  - '[927 ms SG] 美国 004'
-  - '[2682 ms SG] 🇨🇳_CN_中国->🇸🇬_SG_新加坡'
-  - '[973 ms NL] hysteria2-1364059068'
-  - '[1168 ms JP] hysteria2-1361978176'
+  - '[465 ms] shadowsocks-1365418326'
+  - '[645 ms] 🇩🇪_DE_德国'
+  - '[942 ms] 🇺🇸_US_美国_2'
+  - '[2865 ms SG] 🇨🇳_CN_中国->🇸🇬_SG_新加坡'
 - name: 未知出口 节点
   type: select
   proxies:
-  - '[321 ms] 🇩🇪_DE_德国_1'
-  - '[690 ms] 🇩🇪_DE_德国'
-- name: DE 节点
-  type: select
-  proxies:
-  - '[585 ms DE] shadowsocks-1365418326'
-  - '[4415 ms DE] 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国'
+  - '[465 ms] shadowsocks-1365418326'
+  - '[645 ms] 🇩🇪_DE_德国'
+  - '[942 ms] 🇺🇸_US_美国_2'
 - name: SG 节点
   type: select
   proxies:
-  - '[927 ms SG] 美国 004'
-  - '[2682 ms SG] 🇨🇳_CN_中国->🇸🇬_SG_新加坡'
-- name: NL 节点
-  type: select
-  proxies:
-  - '[973 ms NL] hysteria2-1364059068'
-- name: JP 节点
-  type: select
-  proxies:
-  - '[1168 ms JP] hysteria2-1361978176'
+  - '[2865 ms SG] 🇨🇳_CN_中国->🇸🇬_SG_新加坡'
 rules:
 - DOMAIN-SUFFIX,local,DIRECT
 - DOMAIN-SUFFIX,github.com,DIRECT
