@@ -19,7 +19,9 @@ import base64
 import json
 import os
 import socket
+import ssl
 import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -87,6 +89,29 @@ def patch_dns_for_github():
         return None
     if not resolved:
         return None
+    # 核心里查到的地址未必能连（校园网 DNS 会给被封的 GitHub IP）：
+    # 逐个 TCP 443 探活，全都连不上就别接管 —— 让系统解析走 Clash 的 hosts 钉好的可用 IP。
+    reachable = []
+    probe_ctx = ssl.create_default_context()
+    probe_ctx.check_hostname = False
+    probe_ctx.verify_mode = ssl.CERT_NONE
+    for ip in resolved:
+        sock = None
+        try:
+            sock = socket.create_connection((ip, 443), timeout=4)
+            probe_ctx.wrap_socket(sock, server_hostname=API_HOST).close()   # TLS 握手才算通
+            reachable.append(ip)
+        except Exception:
+            pass
+        finally:
+            if sock is not None:
+                try:
+                    sock.close()
+                except Exception:
+                    pass
+    if not reachable:
+        return None
+    resolved = reachable
     original = socket.getaddrinfo
 
     def patched(name, port, family=0, kind=0, proto=0, flags=0):
@@ -105,12 +130,19 @@ def github(path, method="GET", payload=None, token=""):
         headers["Authorization"] = "Bearer " + token
     request = urllib.request.Request(API_BASE + path, method=method,
         data=json.dumps(payload).encode() if payload is not None else None, headers=headers)
-    try:
-        with urllib.request.urlopen(request, timeout=60) as response:
-            return json.loads(response.read() or b"{}")
-    except urllib.error.HTTPError as exc:
-        raise RuntimeError("API %s %s -> %s %s" % (method, path, exc.code,
-                                                   exc.read().decode("utf-8", "replace")[:200]))
+    last = None
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(request, timeout=60) as response:
+                return json.loads(response.read() or b"{}")
+        except urllib.error.HTTPError as exc:
+            raise RuntimeError("API %s %s -> %s %s" % (method, path, exc.code,
+                                                       exc.read().decode("utf-8", "replace")[:200]))
+        except Exception as exc:   # TLS 被掐断/瞬时超时：退避重试，别让整轮测速白跑
+            last = exc
+            print("  推送通道抖动（%s），%.0fs 后重试 %d/3" % (type(exc).__name__, 2 * (attempt + 1), attempt + 1))
+            time.sleep(2 * (attempt + 1))
+    raise last
 
 
 def fetch_remote_config(repo, branch, token):
