@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-18T08:24:07.420743+00:00",
+  "generated_at": "2026-09-18T09:26:20.110100+00:00",
   "proxy_count": 400,
   "max_nodes": 400,
   "per_source_limit": 150,
-  "sources_ok": 13,
-  "sources_failed": 1,
+  "sources_ok": 14,
+  "sources_failed": 0,
   "dropped_invalid": 47,
-  "dropped_duplicate": 987,
-  "dropped_limit": 5672,
+  "dropped_duplicate": 998,
+  "dropped_limit": 5662,
   "rules_count": 16,
   "health_check": null,
   "exit_check": null,
@@ -15,14 +15,13 @@
     {
       "name": "PuddinCat/BestClash",
       "url": "https://raw.githubusercontent.com/PuddinCat/BestClash/main/proxies.yaml",
-      "ok": false,
-      "received": 0,
-      "added": 0,
+      "ok": true,
+      "received": 16,
+      "added": 16,
       "dropped_invalid": 0,
       "dropped_duplicate": 0,
       "dropped_limit": 0,
-      "format": "clash",
-      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>"
+      "format": "clash"
     },
     {
       "name": "Au1rxx/free-vpn-subscriptions",
@@ -31,8 +30,8 @@
       "received": 1561,
       "added": 150,
       "dropped_invalid": 0,
-      "dropped_duplicate": 774,
-      "dropped_limit": 637,
+      "dropped_duplicate": 783,
+      "dropped_limit": 628,
       "format": "clash"
     },
     {
@@ -40,9 +39,9 @@
       "url": "https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/clash.yaml",
       "ok": true,
       "received": 47,
-      "added": 45,
+      "added": 44,
       "dropped_invalid": 0,
-      "dropped_duplicate": 2,
+      "dropped_duplicate": 3,
       "dropped_limit": 0,
       "format": "clash"
     },
@@ -64,8 +63,8 @@
       "received": 402,
       "added": 150,
       "dropped_invalid": 10,
-      "dropped_duplicate": 17,
-      "dropped_limit": 225,
+      "dropped_duplicate": 18,
+      "dropped_limit": 224,
       "format": "clash"
     },
     {
