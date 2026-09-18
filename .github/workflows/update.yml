@@ -1,0 +1,63 @@
+name: Update Clash subscription
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *"   # 每小时（与本地 timer 对齐）
+
+permissions:
+  contents: write
+
+# 同一时刻只跑一个，避免两次运行互相覆盖
+concurrency:
+  group: update-subscription
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      MAX_NODES: "400"
+      PER_SOURCE_LIMIT: "150"
+      FETCH_TIMEOUT: "20"
+      FETCH_RETRIES: "3"
+      # 可用性实测：跑在境外机房，只能剔除死节点；国内真实视角请在本机跑 local_healthcheck.py
+      HEALTH_CHECK: "1"
+      HEALTH_CONCURRENCY: "24"
+      HEALTH_TIMEOUT_MS: "5000"
+      HEALTH_MAX_TEST: "1200"
+      HEALTH_MIN_ALIVE: "60"
+      # 出口检测：淘汰出口在国内的节点，并按出口 IP 去重（出口在哪是节点属性，境外 runner 也能测准）
+      EXIT_CHECK: "1"
+      EXIT_TIMEOUT_MS: "8000"
+      EXIT_BLOCK_COUNTRIES: "CN"
+      MIHOMO_BIN: "/usr/local/bin/mihomo"
+      # 本机每小时做聚合+实测并上传主产物；CI 只写备份文件，避免两边同时写 output/clash.yaml
+      OUTPUT_NAME: "clash-ci.yaml"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Install mihomo core
+        run: python scripts/fetch_core.py
+      - name: Generate subscription
+        run: python scripts/update.py
+      - name: Validate generated config
+        run: |
+          python -c "import yaml;d=yaml.safe_load(open('output/clash-ci.yaml'));assert d['proxies'],'no proxies';assert d['rules'][-1]=='MATCH,PROXY','missing MATCH fallback';print('proxies=%d rules=%d' % (len(d['proxies']),len(d['rules'])))"
+      - name: Commit generated subscription
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add output/
+          if git diff --cached --quiet; then
+            echo "output 无变化，跳过提交"
+            exit 0
+          fi
+          git commit -m "chore: update clash subscription"
+          git pull --rebase --quiet || true
+          git push

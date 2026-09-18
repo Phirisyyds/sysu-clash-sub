@@ -1,0 +1,11 @@
+[Unit]
+Description=每 6 小时跑一次节点可用性实测
+
+[Timer]
+OnCalendar=*-*-* 01,07,13,19:23:00
+Persistent=true
+AccuracySec=1min
+Unit=clash-cn-healthcheck.service
+
+[Install]
+WantedBy=timers.target

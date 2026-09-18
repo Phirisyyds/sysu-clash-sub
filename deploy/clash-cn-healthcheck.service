@@ -1,0 +1,9 @@
+[Unit]
+Description=本机实测 Clash 节点可用性并推回仓库
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash %h/.local/bin/clash-cn-healthcheck.sh
+Nice=10
+IOSchedulingClass=idle

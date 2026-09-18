@@ -1,0 +1,86 @@
+{
+  "generated_at": "2026-09-18T13:29:24.226341+08:00",
+  "summary": {
+    "tested": 15,
+    "resolved": 5,
+    "failed": 10,
+    "unique_exit_ips": 4,
+    "by_country": {
+      "CN": 2,
+      "US": 2,
+      "SG": 1
+    },
+    "dropped_country": 2,
+    "dropped_duplicate_exit": 0,
+    "blocked_countries": [
+      "CN"
+    ]
+  },
+  "exits": {
+    "🇩🇪_DE_德国": {
+      "ip": null,
+      "country": "",
+      "delay_ms": 496
+    },
+    "美国 004": {
+      "ip": null,
+      "country": "",
+      "delay_ms": 931
+    },
+    "🇨🇳_CN_中国->🇸🇬_SG_新加坡": {
+      "ip": "202.156.27.202",
+      "country": "SG",
+      "delay_ms": 943
+    },
+    "🇺🇸_US_美国_2 #2": {
+      "ip": null,
+      "country": "",
+      "delay_ms": 945
+    },
+    "🇷🇺_RU_俄罗斯->🇪🇪_EE_爱沙尼亚": {
+      "ip": null,
+      "country": "",
+      "delay_ms": 1321
+    },
+    "爱尔兰+V2CROSS.COM": {
+      "ip": null,
+      "country": "",
+      "delay_ms": 1709
+    },
+    "🇺🇸_US_美国_3": {
+      "ip": null,
+      "country": "",
+      "delay_ms": 2458
+    },
+    "🇷🇺_RU_俄罗斯->🇩🇪_DE_德国": {
+      "ip": null,
+      "country": "",
+      "delay_ms": 2641
+    },
+    "美国+V2CROSS.COM": {
+      "ip": null,
+      "country": "",
+      "delay_ms": 2940
+    },
+    "🇺🇸_US_美国": {
+      "ip": null,
+      "country": "",
+      "delay_ms": 2987
+    },
+    "浙江省杭州市+移动": {
+      "ip": "154.51.76.228",
+      "country": "US",
+      "delay_ms": 3833
+    },
+    "🇷🇺_RU_俄罗斯->🇹🇷_TR_土耳其": {
+      "ip": null,
+      "country": "",
+      "delay_ms": 4075
+    },
+    "🇨🇳_CN_中国->🇺🇸_US_美国": {
+      "ip": "154.51.76.248",
+      "country": "US",
+      "delay_ms": 4939
+    }
+  }
+}
