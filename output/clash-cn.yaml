@@ -1,6 +1,6 @@
 # 由 scripts/local_healthcheck.py 在本机实测生成：真能连上 + 出口不在封锁区 + 按出口去重，按延迟升序。
-# 原始可用 14/400 | 中位延迟 2134 ms | 内核 1.19.30
-# 出口国家分布: {"CN": 2, "SG": 1} | 唯一出口 IP 2 个 | 淘汰国内出口 2 个 | 出口重复 0 个
+# 原始可用 15/400 | 中位延迟 1536 ms | 内核 1.19.30
+# 出口国家分布: {"CN": 2, "SG": 1, "US": 1} | 唯一出口 IP 3 个 | 淘汰国内出口 2 个 | 出口重复 0 个
 mixed-port: 7890
 allow-lan: false
 mode: rule
@@ -19,14 +19,7 @@ dns:
   - time.*.com
   - time.*.apple.com
 proxies:
-- cipher: 2022-blake3-chacha20-poly1305
-  name: '[465 ms] shadowsocks-1365418326'
-  password: QXDAqNvQJDUMd7I6mdmSnWxJHM09yjBC6Gf5xGFDkFg=
-  port: 59924
-  server: 130.61.119.117
-  type: ss
-  udp: true
-- name: '[645 ms] 🇩🇪_DE_德国'
+- name: '[504 ms] 🇩🇪_DE_德国'
   type: vless
   server: 2.59.134.226
   port: 443
@@ -39,7 +32,14 @@ proxies:
     public-key: 1sSmdw90uTiGuitDvp_q8zcXTcHXKQS3IVjA7T1UNiY
   skip-cert-verify: true
   udp: true
-- name: '[942 ms] 🇺🇸_US_美国_2'
+- cipher: 2022-blake3-chacha20-poly1305
+  name: '[625 ms] shadowsocks-1365418326'
+  password: QXDAqNvQJDUMd7I6mdmSnWxJHM09yjBC6Gf5xGFDkFg=
+  port: 59924
+  server: 130.61.119.117
+  type: ss
+  udp: true
+- name: '[851 ms] 🇺🇸_US_美国_2'
   type: vmess
   server: www.shopify.com
   port: 443
@@ -55,7 +55,7 @@ proxies:
     headers:
       Host: guanwang.awsno.com
   udp: true
-- name: '[946 ms] 美国 004'
+- name: '[887 ms] 美国 004'
   type: vless
   network: ws
   server: 23.249.18.144
@@ -72,7 +72,32 @@ proxies:
     headers:
       Host: cdn8848.776676.xyz
     path: /channels/act?ed=2560
-- name: '[1009 ms] 🇺🇸_US_美国_3'
+- name: '[934 ms SG] 🇨🇳_CN_中国->🇸🇬_SG_新加坡'
+  type: vmess
+  server: 124.151.45.60
+  port: 38320
+  uuid: d643d6ea-2e48-4ad5-b96e-d11b889cc6a6
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: '[991 ms] 🇷🇺_RU_俄罗斯->🇫🇷_FR_法国'
+  type: vless
+  server: 62.109.5.156
+  port: 443
+  uuid: b1b3e430-ff52-44b8-b95d-27fa580fbc4f
+  network: grpc
+  servername: id.vk.com
+  tls: true
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: vless-grpc-reality
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  skip-cert-verify: true
+  udp: true
+- name: '[1057 ms] 🇺🇸_US_美国_3'
   type: vless
   server: 72.56.41.33
   port: 40443
@@ -86,55 +111,16 @@ proxies:
     short-id: ee33
   skip-cert-verify: true
   udp: true
-- client-fingerprint: chrome
-  name: '[1016 ms] 🇫🇷FR_1|2.9MB/s'
-  network: ws
-  password: humanity
+- name: '[1536 ms] 🇷🇺_RU_俄罗斯->🇪🇪_EE_爱沙尼亚'
+  type: hysteria2
+  server: news.gazette.help
   port: 443
-  server: 104.21.8.107
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36
-    path: /assignment
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: '[1613 ms] 🇫🇷FR_2|1.0MB/s'
-  network: ws
-  password: humanity
-  port: 443
-  server: join-telegram-channel-tirexnet.trex.kdns.fr
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
-    path: /assignment
-- name: '[2192 ms] 🇩🇪_DE_德国_1'
-  type: ss
-  server: 18.194.210.177
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+  sni: news.gazette.help
   skip-cert-verify: true
   udp: true
-- name: '[2494 ms] hysteria2-1364059068'
-  password: f89c89df-905c-4df3-ab07-4f1a37a81005
-  port: 443
-  server: files.fastline-labs.com
-  skip-cert-verify: false
-  sni: files.fastline-labs.com
-  type: hysteria2
 - client-fingerprint: chrome
-  name: '[2527 ms] 🇫🇷FR_3|1.8MB/s'
+  name: '[2103 ms] 🇫🇷FR_3|1.8MB/s'
   network: ws
   password: humanity
   port: 443
@@ -147,28 +133,51 @@ proxies:
     headers:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.162 Safari/537.36
     path: /assignment
-- name: '[2865 ms SG] 🇨🇳_CN_中国->🇸🇬_SG_新加坡'
-  type: vmess
-  server: 124.151.45.60
-  port: 38320
-  uuid: d643d6ea-2e48-4ad5-b96e-d11b889cc6a6
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
+- name: '[2693 ms] hysteria2-1364059068'
+  password: f89c89df-905c-4df3-ab07-4f1a37a81005
+  port: 443
+  server: files.fastline-labs.com
+  skip-cert-verify: false
+  sni: files.fastline-labs.com
+  type: hysteria2
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '[3456 ms] 🇫🇷FR_2|1.0MB/s'
+  network: ws
+  password: humanity
+  port: 443
+  server: join-telegram-channel-tirexnet.trex.kdns.fr
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
   udp: true
-- name: '[4097 ms] 🇺🇸_US_美国'
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: '[4570 ms] 🇫🇷FR_1|2.9MB/s'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.21.8.107
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36
+    path: /assignment
+- name: '[4690 ms US] 🇨🇳_CN_中国->🇺🇸_US_美国'
   type: vless
-  server: lyra.yokkastars.com
-  port: 40443
-  uuid: 5be7fb02-b6a5-450f-b041-3243b98e8420
-  servername: deepl.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: edge
-  reality-opts:
-    public-key: Uvj5H9pDJP0HX2bN7NN7sCQwVCrC5N2NbKf-yuy1ikE
-    short-id: ee33
+  server: jp.sofast.live
+  port: 52683
+  uuid: 399b6b23-cc40-4831-a494-61948e2df133
+  tls: false
   skip-cert-verify: true
   udp: true
 proxy-groups:
@@ -179,35 +188,37 @@ proxy-groups:
   tolerance: 50
   lazy: true
   proxies:
-  - '[465 ms] shadowsocks-1365418326'
-  - '[645 ms] 🇩🇪_DE_德国'
-  - '[942 ms] 🇺🇸_US_美国_2'
-  - '[946 ms] 美国 004'
-  - '[1009 ms] 🇺🇸_US_美国_3'
-  - '[1016 ms] 🇫🇷FR_1|2.9MB/s'
-  - '[1613 ms] 🇫🇷FR_2|1.0MB/s'
-  - '[2192 ms] 🇩🇪_DE_德国_1'
-  - '[2494 ms] hysteria2-1364059068'
-  - '[2527 ms] 🇫🇷FR_3|1.8MB/s'
-  - '[2865 ms SG] 🇨🇳_CN_中国->🇸🇬_SG_新加坡'
-  - '[4097 ms] 🇺🇸_US_美国'
+  - '[504 ms] 🇩🇪_DE_德国'
+  - '[625 ms] shadowsocks-1365418326'
+  - '[851 ms] 🇺🇸_US_美国_2'
+  - '[887 ms] 美国 004'
+  - '[934 ms SG] 🇨🇳_CN_中国->🇸🇬_SG_新加坡'
+  - '[991 ms] 🇷🇺_RU_俄罗斯->🇫🇷_FR_法国'
+  - '[1057 ms] 🇺🇸_US_美国_3'
+  - '[1536 ms] 🇷🇺_RU_俄罗斯->🇪🇪_EE_爱沙尼亚'
+  - '[2103 ms] 🇫🇷FR_3|1.8MB/s'
+  - '[2693 ms] hysteria2-1364059068'
+  - '[3456 ms] 🇫🇷FR_2|1.0MB/s'
+  - '[4570 ms] 🇫🇷FR_1|2.9MB/s'
+  - '[4690 ms US] 🇨🇳_CN_中国->🇺🇸_US_美国'
 - name: PROXY
   type: select
   proxies:
   - AUTO
   - DIRECT
-  - '[465 ms] shadowsocks-1365418326'
-  - '[645 ms] 🇩🇪_DE_德国'
-  - '[942 ms] 🇺🇸_US_美国_2'
-  - '[946 ms] 美国 004'
-  - '[1009 ms] 🇺🇸_US_美国_3'
-  - '[1016 ms] 🇫🇷FR_1|2.9MB/s'
-  - '[1613 ms] 🇫🇷FR_2|1.0MB/s'
-  - '[2192 ms] 🇩🇪_DE_德国_1'
-  - '[2494 ms] hysteria2-1364059068'
-  - '[2527 ms] 🇫🇷FR_3|1.8MB/s'
-  - '[2865 ms SG] 🇨🇳_CN_中国->🇸🇬_SG_新加坡'
-  - '[4097 ms] 🇺🇸_US_美国'
+  - '[504 ms] 🇩🇪_DE_德国'
+  - '[625 ms] shadowsocks-1365418326'
+  - '[851 ms] 🇺🇸_US_美国_2'
+  - '[887 ms] 美国 004'
+  - '[934 ms SG] 🇨🇳_CN_中国->🇸🇬_SG_新加坡'
+  - '[991 ms] 🇷🇺_RU_俄罗斯->🇫🇷_FR_法国'
+  - '[1057 ms] 🇺🇸_US_美国_3'
+  - '[1536 ms] 🇷🇺_RU_俄罗斯->🇪🇪_EE_爱沙尼亚'
+  - '[2103 ms] 🇫🇷FR_3|1.8MB/s'
+  - '[2693 ms] hysteria2-1364059068'
+  - '[3456 ms] 🇫🇷FR_2|1.0MB/s'
+  - '[4570 ms] 🇫🇷FR_1|2.9MB/s'
+  - '[4690 ms US] 🇨🇳_CN_中国->🇺🇸_US_美国'
 rules:
 - DOMAIN-SUFFIX,local,DIRECT
 - DOMAIN-SUFFIX,github.com,DIRECT
