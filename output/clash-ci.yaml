@@ -17,6 +17,547 @@ dns:
   - time.*.com
   - time.*.apple.com
 proxies:
+- name: 🇺🇸 United States [TG]
+  type: vless
+  server: 47.253.226.114
+  port: 443
+  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.cloudflare.com
+  reality-opts:
+    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
+  client-fingerprint: chrome
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-11012
+  password: eDfN7SODQceIOmIAbtJJtK
+  port: 443
+  server: 198.98.53.130
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: shadowsocks-193
+  password: shadowsocks
+  port: 443
+  server: 37.19.198.160
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: shadowsocks-1211880885
+  password: pKEW8JPByTVTLtM
+  port: 4444
+  server: 15.204.247.206
+  type: ss
+  udp: true
+- name: '🇺🇸 United States/San Francisco [TG] #15'
+  type: vless
+  server: 172.64.158.146
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- alterId: 0
+  cipher: auto
+  name: vmess-1440773910
+  network: tcp
+  port: 22324
+  server: 167.88.63.59
+  type: vmess
+  udp: true
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- name: '🇺🇸 United States/San Francisco [TG] #14'
+  type: vless
+  server: 172.64.42.85
+  port: 2095
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇫🇮 Finland [TG]
+  type: vless
+  server: 212.104.128.206
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: '🇺🇸 United States/San Francisco [TG] #3'
+  type: vless
+  server: 104.18.42.163
+  port: 443
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
+- name: us|c3d4|puddincat07@Telegram
+  password: suAmQS9LlInNq4Wumh-FUF4GGlpgmG_g
+  port: 8443
+  server: 159.223.157.129
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  tls: false
+  type: hysteria2
+- name: 🌍 Kazakhstan [TG]
+  type: vless
+  server: 31.43.179.200
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-415243972
+  password: YHtesZ0qvgtg
+  port: 8388
+  server: 38.180.135.156
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1058822113
+  network: tcp
+  port: 36925
+  reality-opts:
+    public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
+    short-id: ''
+  server: ww9.levikogjgfdd.ir
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
+- client-fingerprint: chrome
+  name: 🇩🇪DE_5|3.0MB/s
+  network: ws
+  port: 443
+  server: 172.67.68.168
+  servername: shuma.ccwu.cc
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  ws-opts:
+    headers:
+      Host: shuma.ccwu.cc
+    path: /
+- alterId: 1
+  cipher: auto
+  name: vmess-650451255
+  network: tcp
+  port: 22324
+  server: 216.106.183.35
+  type: vmess
+  udp: true
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- name: '🇺🇸 United States/San Francisco [TG] #16'
+  type: vless
+  server: 162.159.38.127
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: '🇺🇸 United States/San Francisco [TG] #9'
+  type: vless
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- type: vless
+  server: 104.16.10.2
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  name: '美国+CloudFlare节点 #8'
+  tls: true
+  servername: xi.tbv.ccwu.cc
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: '🇺🇸 United States/San Francisco [TG] #6'
+  type: vless
+  server: 172.64.53.215
+  port: 443
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: '🇺🇸 United States/San Francisco [TG] #7'
+  type: vless
+  server: 104.19.214.97
+  port: 2053
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-301213521
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  server: 169.40.42.15
+  servername: yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: vless-228694114
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  server: 169.40.42.182
+  servername: yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+- type: vless
+  server: 172.64.52.30
+  port: 2096
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  name: '美国+CloudFlare节点 #6'
+  tls: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: '🇺🇸_US_美国 #2'
+  type: vless
+  server: 172.64.229.170
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  skip-cert-verify: true
+  udp: true
+- name: '🇺🇸 United States/San Francisco [TG] #11'
+  type: vless
+  server: 162.159.38.127
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- cipher: rc4-md5
+  name: shadowsocks-468218613
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 138.197.141.58
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: shadowsocks-159
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.170
+  type: ss
+  udp: true
+- name: '🇺🇸 United States/San Francisco [TG] #8'
+  type: vless
+  server: 104.25.248.101
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: '🇺🇸 United States/San Francisco [TG] #10'
+  type: vless
+  server: 108.162.198.178
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 United States/Dallas [GH:barry-far/V2r]
+  type: ss
+  server: 156.146.38.167
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-202736774
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
+    short-id: 3d3c1e645f763ee3
+  server: 158.69.112.254
+  servername: www.speedtest.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 661f395d-b153-4199-a04b-693f5fe7f261
+- client-fingerprint: chrome
+  name: vless-1443531684
+  network: tcp
+  port: 2053
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+    short-id: 83f8317a948bb769
+  server: 66.70.179.198
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: vless-1447162432
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: xcTXD3of3Yt5hHdIwYGZ1LjMBgiL6sqj5J33J4U4ozM
+    short-id: a7c31f92
+  server: 23.132.28.51
+  servername: candy.atlasparser.site
+  tls: true
+  type: vless
+  udp: true
+  uuid: dcf8e133-09a2-4884-abf9-80356bb334ac
+- alterId: 0
+  cipher: none
+  name: vmess-656230758
+  network: tcp
+  port: 18000
+  server: 134.195.196.211
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- client-fingerprint: chrome
+  name: 🇩🇪DE_4|1.0MB/s
+  network: ws
+  port: 443
+  server: 172.67.77.58
+  servername: shuma.ccwu.cc
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  ws-opts:
+    headers:
+      Host: shuma.ccwu.cc
+    path: /
+- name: 🇺🇸_US_美国->🇳🇱_NL_荷兰_2
+  type: vless
+  server: shuma.ccwu.cc
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  network: ws
+  servername: shuma.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国->🇳🇱_NL_荷兰_1
+  type: vless
+  server: shuma.ccwu.cc
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  network: ws
+  servername: shuma.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+  skip-cert-verify: true
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: vmess-898042864
+  network: tcp
+  port: 15311
+  server: 107.173.254.27
+  type: vmess
+  udp: true
+  uuid: ad78d02b-873f-4cff-8d4a-673f53d6ce0f
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: vless-757549223
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  server: 169.40.42.223
+  servername: yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+- alterId: 0
+  cipher: auto
+  name: vmess-729232154
+  network: tcp
+  port: 180
+  server: 82.198.246.97
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: vmess-655843196
+  network: tcp
+  port: 180
+  server: 82.198.246.37
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: vmess-1442009674
+  network: tcp
+  port: 22324
+  server: 216.152.152.187
+  type: vmess
+  udp: true
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: vless-1331678635
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  server: 169.40.42.168
+  servername: yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+- alterId: 0
+  cipher: auto
+  name: vmess-777852753
+  network: tcp
+  port: 180
+  server: 82.198.246.250
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- name: 🇺🇸 United States/Secaucus [TG]
+  type: vless
+  server: 195.123.235.177
+  port: 443
+  uuid: 729dd5f2-f5ff-4070-8c10-863eceded0b1
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: gateway.icloud.com
+  reality-opts:
+    public-key: 5B83otQ5ZQwtBFhR7xzsGJRXflkFKRJpQguYbE5JWGI
+    short-id: c85d029f5e8eb393
+  client-fingerprint: chrome
+- alterId: 0
+  cipher: auto
+  name: vmess-1444865487
+  network: tcp
+  port: 22324
+  server: 167.17.68.89
+  type: vmess
+  udp: true
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1109241417
+  network: tcp#1⛑️@oneclickvpnkeys
+  port: 41373
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  server: 130.107.73.148
+  servername: google.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+- cipher: rc4-md5
+  name: shadowsocks-468218487
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 138.199.43.159
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: vmess-1444974377
@@ -28,15 +569,6 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
-  name: vmess-676886736
-  network: tcp
-  port: 18000
-  server: 84.17.41.2
-  type: vmess
-  udp: true
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- alterId: 0
-  cipher: auto
   name: vmess-1440771916
   network: tcp
   port: 22324
@@ -44,6 +576,220 @@ proxies:
   type: vmess
   udp: true
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- name: 🌍 Cyprus [TG]
+  type: vless
+  server: cy2.zuoai.cf
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip
+    headers:
+      Host: xi.tbv.ccwu.cc
+- client-fingerprint: edge
+  name: vless-1286245212
+  network: tcp
+  port: 2053
+  reality-opts:
+    public-key: Uk5b-Wh_uxeCc7R8NS9iWE40xc0h9wWC04rSB9yhgAw
+    short-id: b5d625695ec82c7e
+  server: 198.251.78.29
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: c423cc1b-f88e-421c-9a16-c480d84da20f
+- name: '🇩🇪 Germany [TG] #4'
+  type: vless
+  server: 169.40.42.225
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: ios
+- name: '🇩🇪 Germany [TG] #5'
+  type: vless
+  server: 169.40.42.184
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: chrome
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1139741833
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  server: 169.40.42.224
+  servername: yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+- name: xx|c671|puddincat07@Telegram
+  password: dongtaiwang.com
+  port: 44356
+  server: 142.249.37.90
+  skip-cert-verify: false
+  sni: hy2.561891.xyz
+  tls: false
+  type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-669873690
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  server: 169.40.42.74
+  servername: yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-639924098
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  server: 169.40.42.75
+  servername: yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+- cipher: aes-128-gcm
+  name: shadowsocks-45641610
+  password: shadowsocks
+  port: 443
+  server: 158.173.20.208
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-11033
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.215
+  type: ss
+  udp: true
+- cipher: 2022-blake3-chacha20-poly1305
+  name: shadowsocks-1437805144
+  password: pfXiuLfaGDAlLQRsBXMGn0JepNmrqAMESQDiMP+neyU=
+  port: 61312
+  server: 144.24.229.97
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-181
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.205
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-11027
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.206
+  type: ss
+  udp: true
+- name: '🇫🇮 Finland [TG] #2'
+  type: vless
+  server: fi1.zuoai.cf
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇺🇸_US_美国->🇳🇱_NL_荷兰
+  type: vless
+  server: shuma.ccwu.cc
+  port: 2053
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  network: ws
+  servername: shuma.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+  skip-cert-verify: true
+  udp: true
+- client-fingerprint: chrome
+  name: 🇨🇦CA_1|1.2MB/s
+  network: ws
+  port: 443
+  server: 45.133.16.41
+  servername: shuma.ccwu.cc
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  ws-opts:
+    headers:
+      Host: shuma.ccwu.cc
+    path: /
+- name: 🇺🇸 United States/Los Angeles [TG]
+  type: vless
+  server: 172.235.43.210
+  port: 53957
+  uuid: 7ab29f89-6eef-4171-b232-fc4f580ad31b
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.nvidia.com
+  reality-opts:
+    public-key: XUHlbk5VH5z4E2wxZBhlpLZ33qevyQgqU7dheRDgoGQ
+    short-id: 44e82fd7b97b14
+  client-fingerprint: chrome
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-713934491
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.179
+  type: ss
+  udp: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1419984668
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
+    short-id: ''
+  server: 31.58.50.200
+  servername: tradingview.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: fabd51c7-89f5-4a4b-8af7-09a515b64f2d
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: vless-656232118
@@ -71,6 +817,33 @@ proxies:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
   client-fingerprint: chrome
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-656231728
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 15.204.97.214
+  servername: fuck.rkn
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- client-fingerprint: chrome
+  name: vless-1378473545
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: aGm3egxU7SVqVw-oxqXbJ0u4ctldnmTjwaDh4Mao2EE
+    short-id: bd4aa541e5306ba2
+  server: 34.19.91.203
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9d0395c0-016f-453e-b0be-fc66f1ee1d80
 - name: 🇺🇸 United States/Hillsboro [GH:Mahdi0024/Pro]
   type: vless
   server: 5.78.28.48
@@ -86,373 +859,6 @@ proxies:
   client-fingerprint: chrome
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-656231728
-  network: tcp
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 15.204.97.214
-  servername: fuck.rkn
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- client-fingerprint: ios
-  name: vless-1383599278
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: aGm3egxU7SVqVw-oxqXbJ0u4ctldnmTjwaDh4Mao2EE
-    short-id: bd4aa541e5306ba2
-  server: 34.19.91.203
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9d0395c0-016f-453e-b0be-fc66f1ee1d80
-- alterId: 0
-  cipher: auto
-  name: vmess-465811707
-  network: tcp
-  port: 180
-  server: 82.198.246.37
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: '🇺🇸 United States/San Francisco [TG] #16'
-  type: vless
-  server: 162.159.38.127
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- alterId: 0
-  cipher: auto
-  name: vmess-1444974382
-  network: raw
-  port: 22324
-  server: 167.17.68.89
-  type: vmess
-  udp: true
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- name: '🇺🇸 United States/San Francisco [TG] #15'
-  type: vless
-  server: 172.64.158.146
-  port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- alterId: 0
-  cipher: auto
-  name: vmess-145135
-  network: tcp
-  port: 180
-  server: 82.198.246.250
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: '🇺🇸 United States/San Francisco [TG] #8'
-  type: vless
-  server: 104.25.248.101
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  tls: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: '🇺🇸 United States/San Francisco [TG] #7'
-  type: vless
-  server: 104.19.214.97
-  port: 2053
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  tls: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: '🇺🇸 United States/San Francisco [TG] #11'
-  type: vless
-  server: 162.159.38.127
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌍 Kazakhstan [TG]
-  type: vless
-  server: 31.43.179.200
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: '🇺🇸 United States/San Francisco [TG] #14'
-  type: vless
-  server: 172.64.42.85
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: '🌍 Kazakhstan [TG] #2'
-  type: vless
-  server: 31.43.179.20
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: xi.tbv.ccwu.cc
-- alterId: 0
-  cipher: auto
-  name: vmess-814613053
-  network: tcp
-  port: 180
-  server: 82.198.246.97
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: hysteria2-857369683
-  password: 099830134df5ac3a04a4b21d39b8c395
-  port: 50160
-  server: 163.192.14.135
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- name: '🇺🇸 United States/San Francisco [TG] #6'
-  type: vless
-  server: 172.64.53.215
-  port: 443
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  tls: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: '🇺🇸 United States/San Francisco [TG] #3'
-  type: vless
-  server: 104.18.42.163
-  port: 443
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  tls: true
-  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
-- type: vless
-  server: 104.19.215.97
-  port: 2083
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  name: '美国+CloudFlare节点 #7'
-  tls: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- alterId: 0
-  cipher: auto
-  name: vmess-1444974378
-  network: raw
-  port: 22324
-  server: 216.152.152.187
-  type: vmess
-  udp: true
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- name: '🇺🇸 United States/San Francisco [TG] #10'
-  type: vless
-  server: 108.162.198.178
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: '🇺🇸 United States/San Francisco [TG] #9'
-  type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: vless-1365956373
-  network: tcp
-  port: 53957
-  reality-opts:
-    public-key: XUHlbk5VH5z4E2wxZBhlpLZ33qevyQgqU7dheRDgoGQ
-    short-id: 44e82fd7b97b14
-  server: 172.235.43.210
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7ab29f89-6eef-4171-b232-fc4f580ad31b
-- name: 🇺🇸_US_美国
-  type: vless
-  server: 172.64.229.170
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: '🇺🇸 United States/San Francisco [TG] #13'
-  type: vless
-  server: 104.21.6.82
-  port: 8080
-  uuid: 03a8d415-1d9c-470d-9e2d-ea0fd6aef9c0
-  udp: true
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiSWdvVk5ETHBhRnNQamIiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyYTAyOjg5ODoxNDY6NjQ6Ol0iXX0
-    headers:
-      Host: server7.wimig16819.workers.dev
-- name: xx|c671|puddincat07@Telegram
-  password: dongtaiwang.com
-  port: 44356
-  server: 142.249.37.90
-  skip-cert-verify: false
-  sni: hy2.561891.xyz
-  tls: false
-  type: hysteria2
-- name: 美国3|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 100.42.228.109
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- cipher: rc4-md5
-  name: shadowsocks-468218514
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 107.151.182.197
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: shadowsocks-163
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.168
-  type: ss
-  udp: true
-- name: 🇺🇸US_8|3.8MB/s
-  password: 'null'
-  port: 443
-  server: fullmanfirm.icu
-  tls: true
-  type: http
-  username: 'null'
-- cipher: aes-256-gcm
-  name: shadowsocks-1415925706
-  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
-  port: 9443
-  server: 185.156.47.97
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: vmess-1440773910
-  network: tcp
-  port: 22324
-  server: 167.88.63.59
-  type: vmess
-  udp: true
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- name: 🇺🇸US_3|2.9MB/s
-  password: ''
-  port: 9443
-  server: 38.95.111.226
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1429607341
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
-    short-id: ''
-  server: 31.58.50.200
-  servername: tradingview.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 315adcfd-5eab-4041-b876-f9cc8e2aa6c2
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1394190232
-  password: mrs2e9a
-  port: 443
-  server: 142.4.216.225
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: vmess-1445010932
-  network: tcp
-  port: 22324
-  server: 66.163.113.176
-  type: vmess
-  udp: true
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
   name: vless-944037331
   network: tcp
   port: 443
@@ -465,498 +871,25 @@ proxies:
   type: vless
   udp: true
   uuid: cb2dbb6a-a1ea-4023-9ace-6466cee57241
-- name: 美国 090
-  type: vmess
-  network: ws
-  server: www.shopify.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: guanwang.awsno.com
-    path: /hls/cctv5phd.m3u8
-- cipher: aes-256-cfb
-  name: shadowsocks-1445813269
-  password: amazonskr05
-  port: 443
-  server: 18.179.111.96
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇯🇵JP_1|5.5MB/s
-  password: amazonskr05
-  port: 443
-  server: 18.181.165.254
-  type: ss
-  udp: true
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: vless-706369193
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 169.40.42.202
-  servername: yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-312447941
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 169.40.42.179
-  servername: yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: vless-944037363
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 169.40.42.182
-  servername: yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-395940263
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 169.40.42.173
-  servername: yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- name: hysteria2-1122515613
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 15.223.122.197
-  skip-cert-verify: true
-  sni: 15.223.122.197
-  type: hysteria2
-- name: 🇺🇸 United States/Secaucus [TG]
-  type: vless
-  server: 195.123.235.177
-  port: 443
-  uuid: 729dd5f2-f5ff-4070-8c10-863eceded0b1
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: gateway.icloud.com
-  reality-opts:
-    public-key: 5B83otQ5ZQwtBFhR7xzsGJRXflkFKRJpQguYbE5JWGI
-    short-id: c85d029f5e8eb393
-  client-fingerprint: chrome
-- name: hysteria2-474576739
+- name: hysteria2-106798541
   password: bce6c821-200d-421f-bf3d-7159e5246ea0
   port: 33333
-  server: hy2.123266.xyz
+  server: 155.248.209.237
   skip-cert-verify: true
-  sni: hy2.123266.xyz
   type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-103961669
-  network: raw
-  port: 36925
-  reality-opts:
-    public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
-    short-id: ''
-  server: 137.184.218.169
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
-- name: us|c3d4|puddincat07@Telegram
-  password: suAmQS9LlInNq4Wumh-FUF4GGlpgmG_g
-  port: 8443
-  server: 159.223.157.129
-  skip-cert-verify: true
-  sni: www.microsoft.com
-  tls: false
-  type: hysteria2
-- name: 🇺🇸US_6|4.0MB/s
-  password: None
-  port: 443
-  server: goedkoopgeluid.icu
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: US_speednode_0134
-  port: 443
-  server: voteshirleysew.club
-  tls: true
-  type: http
-  udp: true
-- name: '🇫🇮 Finland [TG] #2'
-  type: vless
-  server: fi1.zuoai.cf
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇩🇪 Germany [TG]
-  type: vless
-  server: 169.40.42.212
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: chrome
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: vless-678561097
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 169.40.42.52
-  servername: yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- cipher: 2022-blake3-chacha20-poly1305
-  name: shadowsocks-1438728911
-  password: Pd3wPrQChdIKBVDeZ9In4vIj5Lq1w4lygpl82gPp4po=
-  port: 61312
-  server: 134.65.59.212
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: shadowsocks-45641610
-  password: shadowsocks
-  port: 443
-  server: 158.173.20.208
-  type: ss
-  udp: true
-- name: 🇺🇸US_13|1.7MB/s
-  port: 443
-  server: 52.55.81.168
-  skip-cert-verify: true
-  tls: true
-  type: http
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1444196812
-  network: tcp
-  port: 19011
-  reality-opts:
-    public-key: AgTktefiMM58y7f-KFgEtmVti_YJbd0GPSkxNeJ0RH4
-    short-id: 0e7472e0ef2dc0a2
-  server: 151.242.165.75
-  servername: www.sony.co.nz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 05453546-201f-4e8d-97ae-fd70da0e951f
-- client-fingerprint: firefox
-  name: vless-1262373571
-  network: tcp
-  port: 2053
-  reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-    short-id: 9922313fffed1c63
-  server: 46.250.250.149
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1344232343
-  network: tcp
-  port: 50159
-  reality-opts:
-    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
-    short-id: 091e1c5db8451757
-  server: 154.31.114.248
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
-- cipher: 2022-blake3-chacha20-poly1305
-  name: shadowsocks-1437805144
-  password: pfXiuLfaGDAlLQRsBXMGn0JepNmrqAMESQDiMP+neyU=
-  port: 61312
-  server: 144.24.229.97
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: shadowsocks-130087
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.62
+  name: shadowsocks-16132
+  password: WSyL4XTwNsdv
+  port: 8388
+  server: 108.181.121.226
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-187
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.210
-  type: ss
-  udp: true
-- name: hysteria2-686500209
-  password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
-  port: 4433
-  server: us4.xiaoliyu.cyou
+- name: hysteria2-918220947
+  password: 099830134df5ac3a04a4b21d39b8c395
+  port: 50160
+  server: 163.192.14.135
   skip-cert-verify: true
-  sni: 127.0.0.1
-  type: hysteria2
-- name: 🇺🇸US_9|3.4MB/s
-  password: ''
-  port: 9002
-  server: 138.199.35.217
-  skip-cert-verify: true
-  tls: true
-  type: http
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-183
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.179
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: vmess-1224865296
-  network: tcp
-  port: 18000
-  server: 149.88.23.207
-  type: vmess
-  udp: true
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-175
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.208
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-11032
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.214
-  type: ss
-  udp: true
-- cipher: 2022-blake3-aes-256-gcm
-  name: shadowsocks-1385010732
-  password: 2PIuTAxZjzJxni4kxy/GQ36VWTbRrYzl1fjm0ufTR94=
-  port: 29824
-  server: 167.150.100.93
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇸🇪SE_2|2.2MB/s
-  password: amazonskr05
-  port: 443
-  server: 16.170.163.124
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1407179626
-  network: tcp
-  port: 10583
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.114.220.22
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: vless-599732468
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 169.40.42.231
-  servername: yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- name: 🇺🇸 United States [TG]
-  type: vless
-  server: 47.253.226.114
-  port: 443
-  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
-  client-fingerprint: chrome
-- cipher: aes-256-cfb
-  name: 🇸🇪SE_3|3.1MB/s
-  password: amazonskr05
-  port: 443
-  server: 16.170.214.108
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: vmess-485686543
-  network: raw
-  port: 18000
-  server: 149.88.23.202
-  type: vmess
-  udp: true
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- name: '🇩🇪 Germany [TG] #5'
-  type: vless
-  server: 169.40.42.184
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: chrome
-- name: '🇩🇪 Germany [TG] #4'
-  type: vless
-  server: 169.40.42.225
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: ios
-- alterId: 0
-  cipher: auto
-  name: vmess-1445350520
-  network: raw
-  port: 22324
-  server: 172.233.14.17
-  type: vmess
-  udp: true
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- client-fingerprint: chrome
-  name: vless-1396293493
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: kqIDhDhYFrXD-1GeurwjzFwbB0zWipgWmcbADXwmyy8
-    short-id: 3fd0a8ddef3ae5c6
-  server: 34.64.149.137
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 700a7a0e-3f27-406c-81d1-aa1abe411af8
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-186
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 193.29.139.204
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1395434393
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: Uq9Q8VXK9VkVOJ1M5PfORTqMhjjGoIS40-V0tAG_1FM
-    short-id: 5e13a6d43d0644c9
-  server: 35.201.230.136
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 18eef0d3-35b3-4a5f-97a1-7b5264530dd8
-- cipher: aes-256-gcm
-  name: shadowsocks-696780669
-  password: 3eOFeNssde7PYYMv
-  port: 80
-  server: 84.247.155.196
-  type: ss
-  udp: true
-- name: hysteria2-722298630
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: vpn-tw-002.fastervpn.world
-  skip-cert-verify: true
-  sni: whatsapp.com
-  type: hysteria2
-- name: hysteria2-1003712924
-  password: BWAFlp8g53
-  port: 443
-  server: 72.56.102.31
-  skip-cert-verify: true
-  sni: 72.56.102.31
-  type: hysteria2
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: vless-1215229403
-  network: tcp
-  port: 30837
-  reality-opts:
-    public-key: LXPNhrAGxr_QE4YCdJfKE40ebsPNIHnLbydhl6bipCo
-    short-id: 97101ba788915e5a
-  server: 35.201.163.218
-  servername: www.sony.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 85a6bd94-83a9-4e80-849f-c06d7011d1a4
-- name: hysteria2-655837404
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 103.115.109.49
-  skip-cert-verify: true
-  sni: https://t.me/wangcai2🇨🇳
+  sni: css.rbxcdn.com
   type: hysteria2
 - name: 🇳🇱 The Netherlands/Haarlem [TG]
   type: vless
@@ -971,43 +904,125 @@ proxies:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
   client-fingerprint: chrome
-- name: hysteria2-984679232
-  password: wrSuBorIlf
-  port: 443
-  server: 72.56.116.57
-  skip-cert-verify: true
-  sni: hys9.wba-pn.ru
-  type: hysteria2
-- name: 中国 001
-  type: vless
+- client-fingerprint: chrome
+  name: 🇺🇸US_2|1.5MB/s
   network: ws
-  server: 45.202.254.133
   port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  server: 113.20.15.175
   servername: shuma.ccwu.cc
   skip-cert-verify: true
   tls: true
+  type: vless
   udp: true
-  client-fingerprint: chrome
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   ws-opts:
     headers:
       Host: shuma.ccwu.cc
     path: /
-- auth: maintell
-  name: kr|1325|puddincat07@Telegram
-  password: maintell
-  port: 2053
-  server: 152.70.237.123
+- name: hysteria2-1030509349
+  password: CnVfXXvMzh
+  port: 443
+  server: 72.56.92.120
   skip-cert-verify: true
-  sni: bing.com
+  sni: 72.56.92.120
   type: hysteria2
-- cipher: 2022-blake3-aes-128-gcm
-  name: shadowsocks-1443611418
-  password: EIIwJPg8YqgnjLLd58zoTg==:21BUzSjKTJPkPdIhxHlXdg==
-  port: 8388
-  server: 85.209.157.184
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: vmess-23957915
+  network: raw
+  port: 22324
+  server: 216.106.185.141
+  type: vmess
   udp: true
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- name: '🇳🇱 The Netherlands/Haarlem [TG] #3'
+  type: vless
+  server: 163.172.213.174
+  port: 80
+  uuid: e73df646-1f62-41bf-8c50-653497d603d0
+  udp: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: SC-TheNetherlands2.09vpn.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1109241416
+  network: tcp#⛑️97@oneclickvpnkeys
+  port: 443
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  server: 169.40.42.232
+  servername: yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+- name: hysteria2-1003712924
+  password: BWAFlp8g53
+  port: 443
+  server: 72.56.102.31
+  skip-cert-verify: true
+  sni: 72.56.102.31
+  type: hysteria2
+- client-fingerprint: chrome
+  name: 🇺🇸US_1|1.6MB/s
+  network: ws
+  port: 443
+  server: 179.255.144.153
+  servername: shuma.ccwu.cc
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  ws-opts:
+    headers:
+      Host: shuma.ccwu.cc
+    path: /
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇩🇪DE_2|1.1MB/s
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs
+    short-id: 4fa44664f6a566d3
+  server: 45.95.96.236
+  servername: gesmankos.sadiepinki.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  xudp: true
+- name: hysteria2-1001848840
+  password: wrSuBorIlf
+  port: 443
+  server: 72.56.116.57
+  skip-cert-verify: true
+  sni: 72.56.116.57
+  type: hysteria2
+- name: trojan-1445365775
+  password: d5bee0afdbc500b8cda02d80
+  port: 2053
+  server: 130.78.191.108
+  skip-cert-verify: true
+  sni: 130.78.191.108
+  type: trojan
+  udp: true
+- name: us|d4f7|puddincat07@Telegram
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  port: 443
+  server: 130.49.161.70
+  skip-cert-verify: false
+  sni: hy2.aspidnet.xyz
+  tls: false
+  type: hysteria2
 - name: '🇳🇱 The Netherlands/Haarlem [TG] #2'
   type: vless
   server: 51.158.206.20
@@ -1021,106 +1036,12 @@ proxies:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
   client-fingerprint: chrome
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: vless-1028233115
-  network: tcp
-  port: 32981
-  reality-opts:
-    public-key: JSn0GPz1WOSTUDBxN_XYnhgb2Jpjc2LpfBTzX1j3V2E
-    short-id: 70f4b7a4c40636
-  server: 35.221.158.209
-  servername: www.sony.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 41b96ee9-ee5e-455f-9753-187a9dead97a
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-59621877
-  network: raw
-  port: 18967
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.39.4.109
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- name: '🇳🇱 The Netherlands/Haarlem [TG] #3'
-  type: vless
-  server: 163.172.213.174
-  port: 80
-  uuid: e73df646-1f62-41bf-8c50-653497d603d0
-  udp: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: SC-TheNetherlands2.09vpn.com
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇩🇪DE_1|3.5MB/s
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs
-    short-id: 4fa44664f6a566d3
-  server: 45.95.96.236
-  servername: gesmankos.sadiepinki.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
-  xudp: true
-- name: trojan-856679830
-  password: BxceQaOe
-  port: 443
-  server: 119.246.1.143
+- name: ae|7312|puddincat07@Telegram
+  password: Krab9Hyst2_Rk7pQ2xL
+  port: 36723
+  server: 151.247.197.253
   skip-cert-verify: true
-  sni: t.me%252fripaojiedian
-  type: trojan
-  udp: true
-- name: hysteria2-722298531
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 3.36.93.74
-  skip-cert-verify: true
-  sni: google.com
-  type: hysteria2
-- name: 🇯🇵_JP_日本
-  type: vless
-  server: 161.33.29.51
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  network: ws
-  servername: shuma.ccwu.cc
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-  skip-cert-verify: true
-  udp: true
-- name: hysteria2-1007781453
-  password: EkF2Yw0Lc7
-  port: 443
-  server: hys34.wba-pn.ru
-  skip-cert-verify: true
-  sni: hys34.wba-pn.ru
-  type: hysteria2
-- name: nl|a4cd|puddincat07@Telegram
-  obfs: salamander
-  obfs-password: HysteriaHowdy
-  password: HowdyHysteria2023w0W
-  port: 8443
-  server: 51.15.19.206
-  skip-cert-verify: true
-  sni: sni-here.com
+  sni: 151.247.197.253
   tls: false
   type: hysteria2
 - name: 🇫🇷 France/Paris [GH:barry-far/V2r]
@@ -1131,103 +1052,45 @@ proxies:
   udp: true
   sni: bing.com
   skip-cert-verify: true
-- name: 乌克兰 001
-  type: vless
-  network: ws
-  server: 92.113.124.228
+- cipher: aes-128-gcm
+  name: shadowsocks-211
+  password: shadowsocks
   port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  servername: shuma.ccwu.cc
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: shuma.ccwu.cc
-    path: /
-- name: 🇩🇪_DE_德国_1
-  type: vless
-  server: 2.59.134.226
-  port: 443
-  uuid: 88281d02-b387-4fe3-918e-26ed331e6d08
-  servername: rich-falcon.cdn.cachefleet.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  reality-opts:
-    public-key: 1sSmdw90uTiGuitDvp_q8zcXTcHXKQS3IVjA7T1UNiY
-  skip-cert-verify: true
-  udp: true
-- name: hysteria2-1162353391
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  port: 50160
-  server: 152.67.200.82
-  skip-cert-verify: true
-  type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1340850602
-  password: XV4bvaJIWoxl3IYEC1e6W7
-  port: 2342
-  server: 194.233.74.160
+  server: 149.22.87.241
   type: ss
   udp: true
-- name: hysteria2-213095942
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+- cipher: aes-128-gcm
+  name: shadowsocks-218
+  password: shadowsocks
   port: 443
-  server: 91.196.32.163
-  skip-cert-verify: true
-  sni: 91.196.32.163
-  type: hysteria2
-- name: hysteria2-648949653
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  port: 443
-  server: 45.192.12.93
-  skip-cert-verify: true
-  sni: admin.wwwinternetvideo.click
-  type: hysteria2
-- name: hysteria2-985518742
-  password: CnVfXXvMzh
-  port: 443
-  server: hys13.wba-pn.ru
-  skip-cert-verify: true
-  type: hysteria2
-- name: hysteria2-107825281
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.29
-  skip-cert-verify: true
-  type: hysteria2
-- name: ae|7312|puddincat07@Telegram
-  password: Krab9Hyst2_Rk7pQ2xL
-  port: 36723
-  server: 151.247.197.253
-  skip-cert-verify: true
-  sni: 151.247.197.253
-  tls: false
-  type: hysteria2
-- name: hysteria2-1058426437
-  password: f87376e17da040ed04c9665ce8972930
-  port: 50160
-  server: 138.2.73.238
-  skip-cert-verify: true
-  type: hysteria2
-- name: hysteria2-827675485
-  password: 1beb216e3f60aea9555dae60d219a5ca
-  port: 50160
-  server: 152-69-231-175.liao.kdns.fr
-  skip-cert-verify: false
-  type: hysteria2
-- name: us|d4f7|puddincat07@Telegram
+  server: 149.22.87.204
+  type: ss
+  udp: true
+- name: de|2b7b|puddincat07@Telegram
   obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  port: 443
-  server: 130.49.161.70
-  skip-cert-verify: false
-  sni: hy2.aspidnet.xyz
+  obfs-password: Telegram@vpnjey
+  password: Telegram@vpnjey
+  port: 54759
+  server: 179.61.138.145
+  skip-cert-verify: true
   tls: false
   type: hysteria2
+- alterId: 0
+  cipher: auto
+  name: vmess-1121649203
+  network: tcp
+  port: 4433
+  server: 45.32.57.118
+  type: vmess
+  udp: true
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+- cipher: aes-256-cfb
+  name: shadowsocks-1445813269
+  password: amazonskr05
+  port: 443
+  server: 18.179.111.96
+  type: ss
+  udp: true
 - name: '🇺🇸 United States [TG] #2'
   type: vless
   server: 136.148.71.4
@@ -1256,6 +1119,20 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc_common3
+- name: 🇬🇧GB_1|1.7MB/s
+  password: None
+  port: 443
+  server: 37.120.233.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+- cipher: aes-256-cfb
+  name: shadowsocks-743178503
+  password: HAVAdE3nXhqA5nHp
+  port: 9017
+  server: 185.135.86.175
+  type: ss
+  udp: true
 - name: gb|5e7a|puddincat07@Telegram
   password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
   port: 8443
@@ -1272,13 +1149,13 @@ proxies:
   sni: cabinet.wwwinternetvideo.click
   tls: false
   type: hysteria2
-- name: 🇬🇧GB_6|2.9MB/s
-  password: None
-  port: 443
-  server: 185.235.0.34
+- name: NL_speednode_0006
+  port: 9002
+  server: 84.17.47.150
   skip-cert-verify: true
   tls: true
   type: http
+  udp: true
 - name: 🇫🇮 Finland/Helsinki [TG]
   type: vless
   server: 95.217.24.119
@@ -1292,82 +1169,33 @@ proxies:
     public-key: tADYkZWWksM_mCqqwlRHCciSCXnP3JMYrPi5eoRHh2s
     short-id: d059fb98048c5318
   client-fingerprint: chrome
-- name: 🇬🇧GB_7|2.8MB/s
-  port: 443
-  server: 185.235.0.66
+- name: hysteria2-686500209
+  password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
+  port: 4433
+  server: us4.xiaoliyu.cyou
   skip-cert-verify: true
-  tls: true
-  type: http
-- client-fingerprint: chrome
-  name: vless-1397144294
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
-    short-id: d725f0dd8cce210f
-  server: 34.87.244.111
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
-- name: 🇳🇱NL_6|4.4MB/s
-  port: 23856
-  server: 51.159.225.196
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: ro|e039|puddincat07@Telegram
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  port: 8443
-  server: 85.204.107.185
-  skip-cert-verify: true
-  sni: hopp-romania-new.roxa.org
-  tls: false
+  sni: 127.0.0.1
   type: hysteria2
-- name: 🇬🇧GB_3|1.4MB/s
-  password: ''
-  port: 443
-  server: 212.102.63.61
+- name: NL_speednode_0004
+  port: 9002
+  server: 84.17.47.125
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_5|3.2MB/s
-  password: None
-  port: 443
-  server: 185.235.0.2
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: trojan-84489892
-  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
-  port: 56127
-  server: 154.90.62.70
-  skip-cert-verify: true
-  sni: 154.90.62.70
-  type: trojan
   udp: true
-- name: 🇳🇱NL_8|3.2MB/s
-  password: None
+- name: 🇩🇪_DE_德国_1
+  type: vless
+  server: 2.59.134.226
   port: 443
-  server: 149.36.51.129
-  skip-cert-verify: true
+  uuid: 88281d02-b387-4fe3-918e-26ed331e6d08
+  servername: rich-falcon.cdn.cachefleet.com
   tls: true
-  type: http
-- name: 🇳🇱NL_1|2.0MB/s
-  port: 443
-  server: 103.97.88.154
+  flow: xtls-rprx-vision
+  client-fingerprint: qq
+  reality-opts:
+    public-key: 1sSmdw90uTiGuitDvp_q8zcXTcHXKQS3IVjA7T1UNiY
   skip-cert-verify: true
-  sni: 4a8c2906c96058315dffbc2b0e7ff19b-98005bea43f9ac33.apache-iv.com
-  tls: true
-  type: http
-- name: 🇬🇧GB_2|3.1MB/s
-  password: None
-  port: 443
-  server: 37.120.233.18
-  skip-cert-verify: true
-  tls: true
-  type: http
+  udp: true
 - name: NL_speednode_0007
   port: 9002
   server: 84.17.47.148
@@ -1375,31 +1203,74 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: hysteria2-813990707
-  password: 8fb328f0-d8e0-4b11-a6db-3dadfc4f02a3
+- name: 🇧🇪BE_1|1.1MB/s
   port: 443
-  server: nl01ntrhy01.tcp-reset-club.net
-  skip-cert-verify: false
-  sni: nl01ntrhy01.tcp-reset-club.net
-  type: hysteria2
-- name: hysteria2-1281959383
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  port: 22443
-  server: 91.240.86.70
-  skip-cert-verify: true
-  sni: hy.quattro-tech.ru
-  type: hysteria2
-- name: 🇬🇧GB_1|3.0MB/s
-  password: None
-  port: 443
-  server: 37.120.233.50
+  server: 146.70.176.242
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_4|2.3MB/s
+- name: 🇬🇧GB_3|1.0MB/s
   password: None
   port: 443
-  server: 37.120.233.34
+  server: 212.102.63.31
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇳🇱NL_4|1.6MB/s
+  password: None
+  port: 443
+  server: 5.255.118.82
+  skip-cert-verify: true
+  tls: true
+  type: http
+- client-fingerprint: chrome
+  name: 🇳🇱NL_2|2.0MB/s
+  network: ws
+  port: 443
+  server: 185.92.221.157
+  servername: shuma.ccwu.cc
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  ws-opts:
+    headers:
+      Host: shuma.ccwu.cc
+    path: /
+- name: 🇳🇱NL_3|1023KB/s
+  password: None
+  port: 443
+  server: 149.36.51.129
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: NL_speednode_0009
+  port: 9002
+  server: 84.17.47.146
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: ro|70e4|puddincat07@Telegram
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  port: 8443
+  server: 85.204.107.170
+  skip-cert-verify: true
+  sni: hopp-romania-new.roxa.org
+  tls: false
+  type: hysteria2
+- name: 🇮🇹IT_1|2.2MB/s
+  password: None
+  port: 443
+  server: 185.183.105.130
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇰DK_1|1.7MB/s
+  password: None
+  port: 9443
+  server: 185.245.84.50
   skip-cert-verify: true
   tls: true
   type: http
@@ -1410,135 +1281,6 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: NL_speednode_0005
-  password: None
-  port: 9002
-  server: 84.17.47.125
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇩🇪DE_7|2.8MB/s
-  password: None
-  port: 443
-  server: 87.249.132.97
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
-  type: vless
-  server: 103.143.81.178
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  network: ws
-  servername: shuma.ccwu.cc
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-  skip-cert-verify: true
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1413463183
-  password: r6tptrwvddxap6al
-  port: 1081
-  server: sth.free-outline.giize.com
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1440857079
-  network: tcp
-  port: 20270
-  reality-opts:
-    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
-    short-id: d5b538acf8a93540
-  server: hk-1.gsafevpnapi.com
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8f2774ba-73fe-404d-a01b-7c01812ff75b
-- name: 🇩🇪DE_5|2.7MB/s
-  port: 443
-  server: 149.36.50.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇪DE_4|2.1MB/s
-  password: None
-  port: 443
-  server: 149.36.50.157
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇰DK_1|3.1MB/s
-  password: None
-  port: 9443
-  server: 185.245.84.50
-  skip-cert-verify: true
-  tls: true
-  type: http
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇧🇪BE_1|4.5MB/s
-  network: ws
-  port: 2053
-  server: 141.227.137.177
-  servername: shuma.ccwu.cc
-  tls: true
-  type: vless
-  udp: true
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  ws-opts:
-    headers:
-      Host: shuma.ccwu.cc
-      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.3 Safari/534.24
-    path: /
-  xudp: true
-- name: 🇪🇸ES_5|1.7MB/s
-  password: None
-  port: 443
-  server: 130.195.250.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇨🇭CH_1|1.4MB/s
-  password: None
-  port: 443
-  server: 31.7.62.50
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇮🇹IT_1|1.6MB/s
-  password: None
-  port: 443
-  server: 185.183.105.130
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: hysteria2-589844090
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  port: 443
-  server: de.1.23.h2corp.org
-  skip-cert-verify: true
-  sni: germany3.h2corp.local
-  type: hysteria2
-- name: 🇳🇱NL_7|1.2MB/s
-  port: 443
-  server: 185.140.209.235
-  skip-cert-verify: true
-  sni: 482c8436a1f7c908b48a1757abb5dd79-ce85c45206570905.apache-iv.com
-  tls: true
-  type: http
-- name: 🇨🇭CH_2|3.2MB/s
-  port: 9443
-  server: 37.120.213.210
-  skip-cert-verify: true
-  tls: true
-  type: http
 - name: 🇺🇸 United States/Kansas City [TG]
   type: vless
   server: de5.edge-9d7c.com
@@ -1552,302 +1294,48 @@ proxies:
     public-key: qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM
     short-id: 9d84de9d9f7b85e9
   client-fingerprint: chrome
-- name: 🇪🇸ES_4|3.0MB/s
+- name: 🇸🇪SE_2|2.2MB/s
+  password: None
   port: 443
-  server: 82.102.17.178
+  server: 149.50.216.65
   skip-cert-verify: true
   tls: true
   type: http
-- name: hysteria2-1033569060
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  port: 8080
-  server: 85.204.107.181
-  skip-cert-verify: true
-  sni: hopp-romania-new.roxa.org
-  type: hysteria2
-- client-fingerprint: chrome
-  name: 🇫🇷FR_6|2.2MB/s
-  network: ws
-  password: humanity
+- name: 美国3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
   port: 443
-  server: 86.38.214.205
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
+  server: 100.42.228.109
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
   type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36
-    path: /assignment
-- name: 澳大利亚
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+- name: 🇺🇸 美国3|@ripaojiedian
+  server: 100.42.228.109
   port: 443
-  server: vpn-au-002.fastervpn.world
-  skip-cert-verify: true
-  sni: whatsapp.com
-  tls: false
-  type: hysteria2
-- name: 🇦🇹AT_1|3.9MB/s
-  password: None
-  port: 443
-  server: 146.70.244.2
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: trojan-1409686877
-  password: d5bee0afdbc500b8cda02d80
-  port: 2053
-  server: nl2.pleiades.codes
-  skip-cert-verify: false
   type: trojan
-  udp: true
-- name: 🇷🇸RS_1|3.3MB/s
-  port: 443
-  server: 146.70.221.34
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
   skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇨🇿CZ_1|2.2MB/s
-  port: 443
-  server: 185.216.35.130
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇵🇱PL_1|2.6MB/s
+- name: 🇨🇭CH_1|1.6MB/s
   password: None
   port: 443
-  server: 37.120.156.34
+  server: 31.7.62.50
   skip-cert-verify: true
   tls: true
   type: http
-- name: 卢森堡 001
-  type: vless
-  network: ws
-  server: 107.189.2.206
-  port: 8443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  servername: shuma.ccwu.cc
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: shuma.ccwu.cc
-    path: /
-- name: 🇹🇼_TW_中国台湾
-  type: vmess
-  server: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
-  port: 443
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  udp: true
-- name: 🇮🇹IT_2|3.9MB/s
-  port: 443
-  server: 185.183.105.146
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇭🇰_HK_中国香港->🇯🇵_JP_日本
-  type: vmess
-  server: v6.hdacd.com
-  port: 30806
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- client-fingerprint: chrome
-  name: 🇪🇸ES_1|2.0MB/s
-  network: ws
-  port: 8443
-  server: 152.114.195.163
-  servername: shuma.ccwu.cc
-  tls: true
-  type: vless
-  udp: true
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  ws-opts:
-    headers:
-      Host: shuma.ccwu.cc
-    path: /
-- name: 🇸🇪SE_1|3.2MB/s
-  password: None
-  port: 443
-  server: 146.70.242.146
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: hysteria2-1334814474
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 13.207.151.141
-  skip-cert-verify: true
-  sni: vpn-in-001.fastervpn.world
-  type: hysteria2
-- name: hysteria2-1149856388
-  password: 9cfc9458e48c028ec03ff86ebc71c744
-  port: 50160
-  server: 150-230-252-217.liao.kdns.fr
-  skip-cert-verify: true
-  sni: 127.0.0.1
-  type: hysteria2
-- name: 🛖93@oneclickvpnkeys
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  port: 4433
-  server: se.xiaoliyu.cyou
-  skip-cert-verify: true
-  sni: se.xiaoliyu.cyou
-  tls: false
-  type: hysteria2
-- name: hysteria2-862364762
-  password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
-  port: 4433
-  server: de1.xiaoliyu.cyou
-  skip-cert-verify: true
-  sni: 127.0.0.1
-  type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1440857081
-  network: tcp
-  port: 20270
-  reality-opts:
-    public-key: q78tZmuaXQTsrrjZtjjRDtoni6tzN-HhXcAY-iT5zF0
-    short-id: fc13d6208ebbae16
-  server: sg-1.gsafevpnapi.com
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3da32b09-10e5-4ef9-b422-2e476dd72d87
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: vless-1445611659
-  network: tcp
-  port: 2443
-  reality-opts:
-    public-key: c_42sYo1oPuFy6MmGKVkFxnNmDOZ0WoIiFGg8UJ12Aw
-    short-id: b0d8c9a285c70f6f
-  server: bgr.accessgate.link
-  servername: unpkg.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 38eb3e71-4349-4bd6-9baf-9740e1896495
-- name: xx|727a|puddincat07@Telegram
-  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
-  port: 25443
-  server: se-node.rumedia-cdn.com
-  sni: cf2.rumedia-cdn.com
+- name: '40'
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  port: 22443
+  server: 91.240.86.70
+  skip-cert-verify: false
+  sni: hy.quattro-tech.ru
   tls: false
   type: hysteria2
 - client-fingerprint: chrome
-  name: 🇭🇺HU_1|2.8MB/s
+  name: 🇫🇷FR_4|1.1MB/s
   network: ws
-  port: 443
-  server: 38.180.109.174
-  servername: shuma.ccwu.cc
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  ws-opts:
-    headers:
-      Host: shuma.ccwu.cc
-    path: /
-- name: 新加坡 002
-  type: vless
-  network: ws
-  server: 103.195.188.206
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  servername: shuma.ccwu.cc
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: shuma.ccwu.cc
-    path: /
-- name: RO_speednode_0126
-  port: 9002
-  server: 193.176.84.39
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 荷兰 001
-  type: vless
-  network: ws
-  server: 185.105.108.92
   port: 8443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  servername: shuma.ccwu.cc
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: shuma.ccwu.cc
-    path: /
-- name: 罗马尼亚 001
-  type: vless
-  network: ws
-  server: 89.46.42.141
-  port: 2053
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  servername: shuma.ccwu.cc
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: shuma.ccwu.cc
-    path: /
-- client-fingerprint: chrome
-  name: 🇪🇸ES_6|1.6MB/s
-  network: ws
-  port: 443
-  server: 195.133.92.20
-  servername: shuma.ccwu.cc
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  ws-opts:
-    headers:
-      Host: shuma.ccwu.cc
-    path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-12945895
-  network: tcp
-  port: 12972
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.0.111.82
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- client-fingerprint: chrome
-  name: 🇲🇩MD_1|1.8MB/s
-  network: ws
-  port: 443
-  server: 185.153.198.86
+  server: 92.119.126.189
   servername: shuma.ccwu.cc
   skip-cert-verify: true
   tls: true
@@ -1866,141 +1354,248 @@ proxies:
   sni: es1.xiaoliyu.cyou
   tls: false
   type: hysteria2
-- name: vless-663902649
-  network: tcp
+- client-fingerprint: chrome
+  name: 🇫🇷FR_5|1.3MB/s
+  network: ws
   port: 443
-  server: 137.220.221.179
+  server: 45.155.169.170
+  servername: shuma.ccwu.cc
+  skip-cert-verify: true
+  tls: true
   type: vless
   udp: true
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  ws-opts:
+    headers:
+      Host: shuma.ccwu.cc
+    path: /
+- alterId: 0
+  cipher: auto
+  name: vmess-485686544
+  network: raw
+  port: 18000
+  server: 149.88.23.207
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- name: 🇵🇱PL_1|1.1MB/s
+  port: 443
+  server: 37.120.156.18
+  skip-cert-verify: true
+  tls: true
+  type: http
+- alterId: 0
+  cipher: auto
+  name: vmess-1442008668
+  network: tcp
+  port: 22324
+  server: 89.223.95.77
+  type: vmess
+  udp: true
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-299806600
+  name: vless-1344232343
+  network: tcp
+  port: 50159
+  reality-opts:
+    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
+    short-id: 091e1c5db8451757
+  server: 154.31.114.248
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
+- name: 🇵🇱_PL_波兰
+  type: vless
+  server: 103.167.234.26
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  network: ws
+  servername: shuma.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸US_3|2.2MB/s
+  port: 443
+  server: 149.34.248.65
+  skip-cert-verify: true
+  sni: 149.34.248.65
+  tls: true
+  type: http
+- name: 🇭🇺HU_1|1.0MB/s
+  port: 443
+  server: 146.70.203.18
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇸🇪SE_3|1.0MB/s
+  password: None
+  port: 443
+  server: 146.70.242.130
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇷🇸RS_1|1.9MB/s
+  port: 443
+  server: 146.70.221.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: xx|727a|puddincat07@Telegram
+  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
+  port: 25443
+  server: se-node.rumedia-cdn.com
+  sni: cf2.rumedia-cdn.com
+  tls: false
+  type: hysteria2
+- client-fingerprint: chrome
+  name: 🇫🇷FR_3|1.0MB/s
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.149
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/534.3 (KHTML, like Gecko) Chrome/6.0.472.63 Safari/534.3
+    path: /assignment
+- name: 🛖93@oneclickvpnkeys
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  port: 4433
+  server: se.xiaoliyu.cyou
+  skip-cert-verify: true
+  sni: se.xiaoliyu.cyou
+  tls: false
+  type: hysteria2
+- name: hysteria2-1003211447
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  port: 8080
+  server: 85.204.107.177
+  skip-cert-verify: false
+  sni: hopp-romania-new.roxa.org
+  type: hysteria2
+- name: '🇪🇸_ES_西班牙 #2'
+  type: vless
+  server: 152.114.195.163
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  network: ws
+  servername: shuma.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇸🇪SE_1|2.3MB/s
+  password: None
+  port: 443
+  server: 79.142.77.63
+  skip-cert-verify: true
+  tls: true
+  type: http
+- client-fingerprint: chrome
+  name: vless-1425905221
   network: tcp
   port: 443
   reality-opts:
-    public-key: ALT8hIGeZEhi0sQFbXP_ntBg8Xo-v7i0YCLrqTnBxRk
-    short-id: 0990d22f
-  server: 167.17.69.171
+    public-key: kqIDhDhYFrXD-1GeurwjzFwbB0zWipgWmcbADXwmyy8
+    short-id: 3fd0a8ddef3ae5c6
+  server: 34.64.149.137
   servername: www.cloudflare.com
   tls: true
   type: vless
   udp: true
-  uuid: 00144519-7e0d-476b-8d28-435576af9262
-- name: ❓Other_2|4.6MB/s
-  password: 9sK2mP8xQ7vL3nZ6
+  uuid: 700a7a0e-3f27-406c-81d1-aa1abe411af8
+- name: 🇬🇷GR_1|1.6MB/s
   port: 443
-  server: 6ivh.pnuqcnp.cn
-  skip-cert-verify: true
-  sni: images.ctfassets.net
-  type: anytls
-  udp: true
-  username: 9sK2mP8xQ7vL3nZ6
-- name: 🇫🇷 France [TG]
-  type: vless
-  server: 54.37.136.194
-  port: 2053
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
-  udp: true
-  tls: true
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-    short-id: 50ba05992b05c1c3
-  client-fingerprint: chrome
-- name: de|2b7b|puddincat07@Telegram
-  obfs: salamander
-  obfs-password: Telegram@vpnjey
-  password: Telegram@vpnjey
-  port: 54759
-  server: 179.61.138.145
-  skip-cert-verify: true
-  tls: false
-  type: hysteria2
-- name: 乌克兰 002
-  type: vless
-  network: ws
-  server: 213.111.148.137
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  servername: shuma.ccwu.cc
+  server: 149.22.85.65
   skip-cert-verify: true
   tls: true
-  udp: true
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: shuma.ccwu.cc
-    path: /
-- cipher: aes-256-cfb
-  name: 🇸🇪SE_2|4.2MB/s
-  password: amazonskr05
-  port: 443
-  server: 16.171.55.2
+  type: http
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1340850602
+  password: XV4bvaJIWoxl3IYEC1e6W7
+  port: 2342
+  server: 194.233.74.160
   type: ss
   udp: true
-- name: 英国 002
-  type: vless
-  network: xhttp
-  server: 31.76.226.100
-  port: 9443
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
-  servername: hub-ee-01.hanvpn.cc
-  tls: true
-  udp: true
-  client-fingerprint: chrome
-  xudp: true
-  xhttp-opts:
-    host: hub-ee-01.hanvpn.cc
-    mode: auto
-    path: /ee01-xhttp-8e47a/
-- name: 美国 007
-  type: vless
-  network: ws
-  server: 13.200.106.232
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  servername: shuma.ccwu.cc
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: shuma.ccwu.cc
-    path: /
-- name: 🇩🇪178416 | ⚡️Telegram = t.me/S...
-  obfs: salamander
-  obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
-  password: cd74c0a406664a5bc0bac098220a2468
-  port: 443
-  server: 2.27.59.206
-  skip-cert-verify: false
-  sni: de1.sferavpn.pro
-  tls: false
-  type: hysteria2
 - client-fingerprint: chrome
   encryption: none
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-  name: 🇺🇸US_1|3.6MB/s
-  network: grpc
-  port: 9873
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-    short-id: aabb
-  server: 176.109.104.195
-  servername: dl.google.com
+  name: 🇩🇪DE_1|2.2MB/s
+  network: ws
+  port: 2096
+  server: 172.67.130.159
+  servername: cdn-de.skyvora.app
   tls: true
   type: vless
   udp: true
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  uuid: 735b8344-0b95-464c-b687-1c5616138908
+  ws-opts:
+    headers:
+      Host: cdn-de.skyvora.app
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36
+    path: /3cagtz3
   xudp: true
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1445350516
+  password: DfokaAndibyl-wXjoVex_zDT78r-kwmX
+  port: 5059
+  server: jgzt1997.qivfelo.ir
+  type: ss
+  udp: true
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: vless-742657273
+  network: tcp
+  port: 19645
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.114.220.22
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: vless-1028233115
+  network: tcp
+  port: 32981
+  reality-opts:
+    public-key: JSn0GPz1WOSTUDBxN_XYnhgb2Jpjc2LpfBTzX1j3V2E
+    short-id: 70f4b7a4c40636
+  server: 35.221.158.209
+  servername: www.sony.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 41b96ee9-ee5e-455f-9753-187a9dead97a
+- name: RO_speednode_0041
+  port: 9002
+  server: 193.176.84.33
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
 - client-fingerprint: chrome
-  name: 🇦🇲AM_1|2.9MB/s
+  name: 🇬🇧GB_2|2.6MB/s
   network: ws
   port: 443
-  server: 2.56.204.183
+  server: 35.176.75.87
   servername: shuma.ccwu.cc
   skip-cert-verify: true
   tls: true
@@ -2011,15 +1606,168 @@ proxies:
     headers:
       Host: shuma.ccwu.cc
     path: /
-- name: 🇺🇸US_2|2.8MB/s
-  password: 9sK2mP8xQ7vL3nZ6
+- name: 🇫🇷FR_6|1016KB/s
+  password: None
   port: 443
-  server: awefd2313fefarg23fr24.pnuqcnp.cn
+  server: 149.102.245.65
   skip-cert-verify: true
-  sni: images.ctfassets.net
-  type: anytls
+  tls: true
+  type: http
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1395434393
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: Uq9Q8VXK9VkVOJ1M5PfORTqMhjjGoIS40-V0tAG_1FM
+    short-id: 5e13a6d43d0644c9
+  server: 35.201.230.136
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
   udp: true
-  username: 9sK2mP8xQ7vL3nZ6
+  uuid: 18eef0d3-35b3-4a5f-97a1-7b5264530dd8
+- client-fingerprint: chrome
+  name: vless-1398257819
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
+    short-id: 8a7d5e0248cdb1b1
+  server: 34.87.229.148
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4f865f35-cf47-4e7f-a7e6-8882511a1b36
+- name: hysteria2-1334814474
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 13.207.151.141
+  skip-cert-verify: true
+  sni: vpn-in-001.fastervpn.world
+  type: hysteria2
+- alterId: 0
+  cipher: auto
+  name: vmess-1216197041
+  network: raw
+  port: 18000
+  server: ww11.levikogjgfdd.ir
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-48555241
+  network: tcp
+  port: 13672
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.39.4.109
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- client-fingerprint: chrome
+  name: vless-1403449627
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+    short-id: d725f0dd8cce210f
+  server: 34.87.244.111
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
+- name: hysteria2-956723733
+  password: 1671a252e2a97dc2bda4e515475931da
+  port: 50160
+  server: 132.226.226.189
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- name: hysteria2-459503008
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 3.36.93.74
+  skip-cert-verify: true
+  sni: css.rbxcdn.com
+  type: hysteria2
+- name: trojan-1389056011
+  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
+  port: 2052
+  server: 47.240.80.220
+  skip-cert-verify: true
+  sni: vpn.12169.top
+  type: trojan
+  udp: true
+- auth: maintell
+  name: kr|1325|puddincat07@Telegram
+  password: maintell
+  port: 2053
+  server: 152.70.237.123
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
+- name: hysteria2-827675485
+  password: 1beb216e3f60aea9555dae60d219a5ca
+  port: 50160
+  server: 152-69-231-175.liao.kdns.fr
+  skip-cert-verify: false
+  type: hysteria2
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: vless-814836504
+  network: tcp
+  port: 35193
+  reality-opts:
+    public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
+    short-id: e8daed2d
+  server: 156.226.168.221
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 35cbae61-ee10-4cb9-abb8-4950b35e9851
+- name: hysteria2-16610
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 103.115.109.49
+  skip-cert-verify: true
+  sni: https://t.me/oneclickvpnkeys
+  type: hysteria2
+- name: hysteria2-483633864
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: https://t.me/wangcai2рҹүёрҹүі
+  type: hysteria2
+- name: hysteria2-655713431
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: vpn-tw-002.fastervpn.world
+  skip-cert-verify: true
+  sni: vpn-tw-002.fastervpn.world\u0026insecure=1\u0026allowinsecure=1
+  type: hysteria2
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1293946924
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: U3L2Aed8YfC7Aw2sRv_DJDnbOXVP-XUiyxQe3_h7LT8
+    short-id: 626d38f0ea642e3b
+  server: 45.149.172.74
+  servername: www.logitech.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 77dc177b-79d9-49ac-92e1-2f1011faa5e3
 - name: 🌍 Luxembourg [TG]
   type: trojan
   server: 188.42.145.180
@@ -2032,77 +1780,140 @@ proxies:
     path: /assignment
     headers:
       Host: www.volumeroot.com
-- name: 巴西 001
-  type: vmess
+- auth: f87376e17da040ed04c9665ce8972930
+  name: sg|0ed4|puddincat07@Telegram
+  password: f87376e17da040ed04c9665ce8972930
+  port: 50160
+  server: 138.2.73.238
+  skip-cert-verify: true
+  sni: 138.2.73.238
+  type: hysteria2
+- client-fingerprint: chrome
+  name: 🇯🇵JP_2|1.8MB/s
   network: ws
-  server: 188.114.96.19
-  port: 80
-  uuid: 479526cd-5011-43cf-a788-504da95e07c2
-  skip-cert-verify: false
-  tls: false
-  alterId: 0
-  cipher: auto
+  port: 443
+  server: 64.176.34.130
+  servername: shuma.ccwu.cc
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   ws-opts:
     headers:
-      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+      Host: shuma.ccwu.cc
     path: /
-- name: 🇩🇪_DE_德国_2
-  type: hysteria
-  server: 5.83.129.90
-  port: 54177
-  auth_str: dongtaiwang.com
-  up: '500'
-  down: '1000'
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1385958165
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: TqIFzUEEI1pIOR8BEpkNKEXcJ6cPfE5EzHb5joIivig
+    short-id: 9930177816ab09da
+  server: 206.206.76.75
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
   udp: true
-- alterId: 2
-  cipher: auto
-  name: 香港|@ripaojiedian
-  network: tcp
-  port: 30807
-  server: v10.hdacd.com
-  tls: false
+  uuid: 1e3d3634-36ac-43ac-a439-9665d885238f
+- name: hysteria2-1291941742
+  password: 8fb328f0-d8e0-4b11-a6db-3dadfc4f02a3
+  port: 443
+  server: nl01ntrhy01.tcp-reset-club.net
+  skip-cert-verify: true
+  sni: 127.0.0.1
+  type: hysteria2
+- name: 🇲🇩_MD_摩尔多瓦
+  type: vless
+  server: 185.153.198.86
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  network: ws
+  servername: shuma.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alpn:
-  - h3
-  name: 'Telegram@vpnjey #1'
-  obfs: salamander
-  obfs-password: Telegram@vpnjey
-  password: Telegram-vpnjey
-  port: 36264
-  server: 77.110.96.201
-  skip-cert-verify: true
-  sni: se.vpnjey2.dpdns.org
-  tls: false
-  type: hysteria2
-- name: 🇺🇸US_10|3.8MB/s
-  password: 'null'
-  port: 9002
-  server: 138.199.35.209
-  skip-cert-verify: true
+  server: www.shopify.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
   tls: true
-  type: http
-  username: 'null'
-- name: hysteria2-1312988822
-  password: b0917015b656b3dd2286b5633af0c5c1
-  port: 50160
-  server: 31.57.248.176
   skip-cert-verify: true
-  sni: www.bing.com#馃嚟馃嚢|hk|@wxgqlfx|147
-  type: hysteria2
-- name: US_speednode_0131
-  password: 'null'
-  port: 9002
-  server: 138.199.35.216
-  skip-cert-verify: true
-  tls: true
-  type: http
+  servername: guanwang.awsno.com
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
   udp: true
-  username: 'null'
+- name: vless-732726857
+  network: raw
+  port: 443
+  server: 137.220.221.179
+  type: vless
+  udp: true
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+- client-fingerprint: chrome
+  name: 🇯🇵JP_3|1.1MB/s
+  network: ws
+  port: 443
+  server: 140.83.87.85
+  servername: shuma.ccwu.cc
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  ws-opts:
+    headers:
+      Host: shuma.ccwu.cc
+    path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1440857079
+  network: tcp
+  port: 20270
+  reality-opts:
+    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
+    short-id: d5b538acf8a93540
+  server: hk-1.gsafevpnapi.com
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8f2774ba-73fe-404d-a01b-7c01812ff75b
+- name: 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+  type: vmess
+  server: v6.hdacd.com
+  port: 30806
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇩🇪 Germany [TG]
+  type: vless
+  server: 169.40.42.212
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: chrome
 - name: hysteria2-1121839551
   password: HysTeria2026!Proxy
   port: 8443
@@ -2110,34 +1921,101 @@ proxies:
   skip-cert-verify: false
   sni: mz.hkychina.com
   type: hysteria2
-- name: '嘎嘎 #1'
-  password: f317b5d6-d399-4d3d-a051-89d674ae953c
+- client-fingerprint: edge
+  name: vless-1387558978
+  network: tcp
   port: 443
-  server: msk.frkn.org
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+    short-id: ca672c53fbbac555
+  server: 34.15.162.1
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+- name: 🇦🇲_AM_亚美尼亚
+  type: vless
+  server: 2.56.204.183
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  network: ws
+  servername: shuma.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
+  type: vless
+  server: 103.143.81.178
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  network: ws
+  servername: shuma.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+  skip-cert-verify: true
+  udp: true
+- name: trojan-1444683910
+  password: XuMweB2PWs
+  port: 45464
+  server: 2.27.109.179
+  skip-cert-verify: false
+  sni: 2.27.109.179.sslip.io
+  type: trojan
+  udp: true
+- name: 🇫🇷 France [TG]
+  type: vless
+  server: 54.37.136.194
+  port: 2053
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+  udp: true
+  tls: true
+  servername: www.cloudflare.com
+  reality-opts:
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+    short-id: 50ba05992b05c1c3
+  client-fingerprint: chrome
+- name: 'Channel: @Daily_Configs'
+  obfs: salamander
+  obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
+  password: cd74c0a406664a5bc0bac098220a2468
+  port: 443
+  server: 2.27.59.206
+  skip-cert-verify: false
+  sni: de1.sferavpn.pro
   tls: false
   type: hysteria2
-- name: 美国 098
-  type: vmess
-  network: ws
-  server: 38.107.234.57
-  port: 80
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: 3h-kazakhstan1.09vpn.com
-    path: /vmess/
-- client-fingerprint: chrome
+- client-fingerprint: firefox
+  name: vless-1260285702
+  network: tcp
+  port: 2053
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+    short-id: 87829de0e2bb82cb
+  server: 217.217.254.126
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+- client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: vless-400116110
+  name: vless-599732468
   network: tcp
   port: 443
   reality-opts:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
-  server: 169.40.42.133
+  server: 169.40.42.231
   servername: yahoo.com
   tls: true
   type: vless
@@ -2150,16 +2028,104 @@ proxies:
   skip-cert-verify: true
   sni: www.microsoft.com
   type: hysteria2
-- alterId: 0
-  cipher: auto
-  name: vmess-485686936
+- name: hysteria2-589844090
+  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+  port: 443
+  server: de.1.23.h2corp.org
+  skip-cert-verify: true
+  sni: germany3.h2corp.local
+  type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-260719822
   network: tcp
-  port: 18000
-  server: 134.195.196.211
-  type: vmess
+  port: 10574
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.0.111.82
+  servername: www.apple.com
+  tls: true
+  type: vless
   udp: true
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- name: 🇺🇸_US_美国_1
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- name: '嘎嘎 #1'
+  password: f317b5d6-d399-4d3d-a051-89d674ae953c
+  port: 443
+  server: msk.frkn.org
+  tls: false
+  type: hysteria2
+- name: 🇩🇪_DE_德国_2
+  type: hysteria
+  server: 5.83.129.90
+  port: 54177
+  auth_str: dongtaiwang.com
+  up: '500'
+  down: '1000'
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1413463183
+  password: r6tptrwvddxap6al
+  port: 1081
+  server: sth.free-outline.giize.com
+  type: ss
+  udp: true
+- name: hysteria2-1149856388
+  password: 9cfc9458e48c028ec03ff86ebc71c744
+  port: 50160
+  server: 150-230-252-217.liao.kdns.fr
+  skip-cert-verify: true
+  sni: 127.0.0.1
+  type: hysteria2
+- name: 🇭🇰_HK_中国香港_1
+  type: hysteria2
+  server: 24.233.8.109
+  port: 443
+  password: 8294f130408299df8cab08c80bf6f819
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: c8827ab99e316c5bd414e21afa915ddf
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1445874413
+  password: DfokaAndibyl-wXjoVex_zDT78r-kwmX
+  port: 58965
+  server: jgzt1997.qivfelo.ir
+  type: ss
+  udp: true
+- name: 'Tel: @Daily_Configs'
+  obfs: salamander
+  obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
+  password: cd74c0a406664a5bc0bac098220a2468
+  port: 443
+  server: 144.31.49.138
+  skip-cert-verify: false
+  sni: ru1.sferavpn.pro
+  tls: false
+  type: hysteria2
+- name: trojan-133769367
+  password: BxceQaOe
+  port: 443
+  server: 119.246.1.143
+  skip-cert-verify: true
+  sni: t.me%2fripaojiedian
+  type: trojan
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 香港|@ripaojiedian
+  network: tcp
+  port: 30807
+  server: v10.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: '🇺🇸_US_美国_1 #2'
   type: vless
   server: lyra.yokkastars.com
   port: 40443
@@ -2173,15 +2139,48 @@ proxies:
     short-id: ee33
   skip-cert-verify: true
   udp: true
-- name: 🇨🇦 Canada [TG]
-  type: vless
-  server: lizca2.footballfantasyforum.com
+- alterId: 0
+  cipher: auto
+  name: vmess-1449425512
+  network: ws
   port: 443
-  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
-  udp: true
+  server: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
+  servername: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
+  skip-cert-verify: false
   tls: true
-  servername: lizca2.footballfantasyforum.com
+  type: vmess
+  udp: true
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+- name: 🇭🇰HK_1|2.6MB/s
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  port: 4433
+  server: hk2.xiaoliyu.cyou
   skip-cert-verify: true
+  type: hysteria2
+- name: '@proxy_kafee'
+  obfs: salamander
+  obfs-password: c1b4086fea89914496c7e10967a419216566
+  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
+  port: 443
+  server: 162.249.125.133
+  skip-cert-verify: false
+  sni: hy2-new.aspidnet.xyz
+  tls: false
+  type: hysteria2
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: vless-1444935430
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: StPbcmBuzpuYUfa4oZ5SI3Bq1OSF_-oU1vp2AcyvQVE
+    short-id: 19296c9f1bf9c7b1
+  server: 195.123.240.65
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: ce18d0eb-5c71-41f9-96e5-1632e22456e4
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -2190,447 +2189,427 @@ proxy-groups:
   tolerance: 50
   lazy: true
   proxies:
+  - 🇺🇸 United States [TG]
+  - shadowsocks-11012
+  - shadowsocks-193
+  - shadowsocks-1211880885
+  - '🇺🇸 United States/San Francisco [TG] #15'
+  - vmess-1440773910
+  - '🇺🇸 United States/San Francisco [TG] #14'
+  - 🇫🇮 Finland [TG]
+  - '🇺🇸 United States/San Francisco [TG] #3'
+  - us|c3d4|puddincat07@Telegram
+  - 🌍 Kazakhstan [TG]
+  - shadowsocks-415243972
+  - vless-1058822113
+  - 🇩🇪DE_5|3.0MB/s
+  - vmess-650451255
+  - '🇺🇸 United States/San Francisco [TG] #16'
+  - '🇺🇸 United States/San Francisco [TG] #9'
+  - '美国+CloudFlare节点 #8'
+  - '🇺🇸 United States/San Francisco [TG] #6'
+  - '🇺🇸 United States/San Francisco [TG] #7'
+  - vless-301213521
+  - vless-228694114
+  - '美国+CloudFlare节点 #6'
+  - '🇺🇸_US_美国 #2'
+  - '🇺🇸 United States/San Francisco [TG] #11'
+  - shadowsocks-468218613
+  - shadowsocks-159
+  - '🇺🇸 United States/San Francisco [TG] #8'
+  - '🇺🇸 United States/San Francisco [TG] #10'
+  - 🇺🇸 United States/Dallas [GH:barry-far/V2r]
+  - vless-202736774
+  - vless-1443531684
+  - vless-1447162432
+  - vmess-656230758
+  - 🇩🇪DE_4|1.0MB/s
+  - 🇺🇸_US_美国->🇳🇱_NL_荷兰_2
+  - 🇺🇸_US_美国->🇳🇱_NL_荷兰_1
+  - vmess-898042864
+  - vless-757549223
+  - vmess-729232154
+  - vmess-655843196
+  - vmess-1442009674
+  - vless-1331678635
+  - vmess-777852753
+  - 🇺🇸 United States/Secaucus [TG]
+  - vmess-1444865487
+  - vless-1109241417
+  - shadowsocks-468218487
   - vmess-1444974377
-  - vmess-676886736
   - vmess-1440771916
+  - 🌍 Cyprus [TG]
+  - vless-1286245212
+  - '🇩🇪 Germany [TG] #4'
+  - '🇩🇪 Germany [TG] #5'
+  - vless-1139741833
+  - xx|c671|puddincat07@Telegram
+  - vless-669873690
+  - vless-639924098
+  - shadowsocks-45641610
+  - shadowsocks-11033
+  - shadowsocks-1437805144
+  - shadowsocks-181
+  - shadowsocks-11027
+  - '🇫🇮 Finland [TG] #2'
+  - 🇺🇸_US_美国->🇳🇱_NL_荷兰
+  - 🇨🇦CA_1|1.2MB/s
+  - 🇺🇸 United States/Los Angeles [TG]
+  - shadowsocks-713934491
+  - vless-1419984668
   - vless-656232118
   - 🇺🇸 United States/Hillsboro [TG]
-  - 🇺🇸 United States/Hillsboro [GH:Mahdi0024/Pro]
   - vless-656231728
-  - vless-1383599278
-  - vmess-465811707
-  - '🇺🇸 United States/San Francisco [TG] #16'
-  - vmess-1444974382
-  - '🇺🇸 United States/San Francisco [TG] #15'
-  - vmess-145135
-  - '🇺🇸 United States/San Francisco [TG] #8'
-  - '🇺🇸 United States/San Francisco [TG] #7'
-  - '🇺🇸 United States/San Francisco [TG] #11'
-  - 🌍 Kazakhstan [TG]
-  - '🇺🇸 United States/San Francisco [TG] #14'
-  - '🌍 Kazakhstan [TG] #2'
-  - vmess-814613053
-  - hysteria2-857369683
-  - '🇺🇸 United States/San Francisco [TG] #6'
-  - '🇺🇸 United States/San Francisco [TG] #3'
-  - '美国+CloudFlare节点 #7'
-  - vmess-1444974378
-  - '🇺🇸 United States/San Francisco [TG] #10'
-  - '🇺🇸 United States/San Francisco [TG] #9'
-  - vless-1365956373
-  - 🇺🇸_US_美国
-  - '🇺🇸 United States/San Francisco [TG] #13'
-  - xx|c671|puddincat07@Telegram
-  - 美国3|@ripaojiedian
-  - shadowsocks-468218514
-  - shadowsocks-163
-  - 🇺🇸US_8|3.8MB/s
-  - shadowsocks-1415925706
-  - vmess-1440773910
-  - 🇺🇸US_3|2.9MB/s
-  - vless-1429607341
-  - shadowsocks-1394190232
-  - vmess-1445010932
+  - vless-1378473545
+  - 🇺🇸 United States/Hillsboro [GH:Mahdi0024/Pro]
   - vless-944037331
-  - 美国 090
-  - shadowsocks-1445813269
-  - 🇯🇵JP_1|5.5MB/s
-  - vless-706369193
-  - vless-312447941
-  - vless-944037363
-  - vless-395940263
-  - hysteria2-1122515613
-  - 🇺🇸 United States/Secaucus [TG]
-  - hysteria2-474576739
-  - vless-103961669
-  - us|c3d4|puddincat07@Telegram
-  - 🇺🇸US_6|4.0MB/s
-  - US_speednode_0134
-  - '🇫🇮 Finland [TG] #2'
-  - 🇩🇪 Germany [TG]
-  - vless-678561097
-  - shadowsocks-1438728911
-  - shadowsocks-45641610
-  - 🇺🇸US_13|1.7MB/s
-  - vless-1444196812
-  - vless-1262373571
-  - vless-1344232343
-  - shadowsocks-1437805144
-  - shadowsocks-130087
-  - shadowsocks-187
-  - hysteria2-686500209
-  - 🇺🇸US_9|3.4MB/s
-  - shadowsocks-183
-  - vmess-1224865296
-  - shadowsocks-175
-  - shadowsocks-11032
-  - shadowsocks-1385010732
-  - 🇸🇪SE_2|2.2MB/s
-  - vless-1407179626
-  - vless-599732468
-  - 🇺🇸 United States [TG]
-  - 🇸🇪SE_3|3.1MB/s
-  - vmess-485686543
-  - '🇩🇪 Germany [TG] #5'
-  - '🇩🇪 Germany [TG] #4'
-  - vmess-1445350520
-  - vless-1396293493
-  - shadowsocks-186
-  - vless-1395434393
-  - shadowsocks-696780669
-  - hysteria2-722298630
-  - hysteria2-1003712924
-  - vless-1215229403
-  - hysteria2-655837404
+  - hysteria2-106798541
+  - shadowsocks-16132
+  - hysteria2-918220947
   - 🇳🇱 The Netherlands/Haarlem [TG]
-  - hysteria2-984679232
-  - 中国 001
-  - kr|1325|puddincat07@Telegram
-  - shadowsocks-1443611418
-  - '🇳🇱 The Netherlands/Haarlem [TG] #2'
-  - vless-1028233115
-  - vless-59621877
+  - 🇺🇸US_2|1.5MB/s
+  - hysteria2-1030509349
+  - vmess-23957915
   - '🇳🇱 The Netherlands/Haarlem [TG] #3'
-  - 🇩🇪DE_1|3.5MB/s
-  - trojan-856679830
-  - hysteria2-722298531
-  - 🇯🇵_JP_日本
-  - hysteria2-1007781453
-  - nl|a4cd|puddincat07@Telegram
-  - 🇫🇷 France/Paris [GH:barry-far/V2r]
-  - 乌克兰 001
-  - 🇩🇪_DE_德国_1
-  - hysteria2-1162353391
-  - shadowsocks-1340850602
-  - hysteria2-213095942
-  - hysteria2-648949653
-  - hysteria2-985518742
-  - hysteria2-107825281
-  - ae|7312|puddincat07@Telegram
-  - hysteria2-1058426437
-  - hysteria2-827675485
+  - vless-1109241416
+  - hysteria2-1003712924
+  - 🇺🇸US_1|1.6MB/s
+  - 🇩🇪DE_2|1.1MB/s
+  - hysteria2-1001848840
+  - trojan-1445365775
   - us|d4f7|puddincat07@Telegram
+  - '🇳🇱 The Netherlands/Haarlem [TG] #2'
+  - ae|7312|puddincat07@Telegram
+  - 🇫🇷 France/Paris [GH:barry-far/V2r]
+  - shadowsocks-211
+  - shadowsocks-218
+  - de|2b7b|puddincat07@Telegram
+  - vmess-1121649203
+  - shadowsocks-1445813269
   - '🇺🇸 United States [TG] #2'
   - '🇫🇷 France [TG] #2'
+  - 🇬🇧GB_1|1.7MB/s
+  - shadowsocks-743178503
   - gb|5e7a|puddincat07@Telegram
   - 🛖94@oneclickvpnkeys
-  - 🇬🇧GB_6|2.9MB/s
+  - NL_speednode_0006
   - 🇫🇮 Finland/Helsinki [TG]
-  - 🇬🇧GB_7|2.8MB/s
-  - vless-1397144294
-  - 🇳🇱NL_6|4.4MB/s
-  - ro|e039|puddincat07@Telegram
-  - 🇬🇧GB_3|1.4MB/s
-  - 🇬🇧GB_5|3.2MB/s
-  - trojan-84489892
-  - 🇳🇱NL_8|3.2MB/s
-  - 🇳🇱NL_1|2.0MB/s
-  - 🇬🇧GB_2|3.1MB/s
+  - hysteria2-686500209
+  - NL_speednode_0004
+  - 🇩🇪_DE_德国_1
   - NL_speednode_0007
-  - hysteria2-813990707
-  - hysteria2-1281959383
-  - 🇬🇧GB_1|3.0MB/s
-  - 🇬🇧GB_4|2.3MB/s
+  - 🇧🇪BE_1|1.1MB/s
+  - 🇬🇧GB_3|1.0MB/s
+  - 🇳🇱NL_4|1.6MB/s
+  - 🇳🇱NL_2|2.0MB/s
+  - 🇳🇱NL_3|1023KB/s
+  - NL_speednode_0009
+  - ro|70e4|puddincat07@Telegram
+  - 🇮🇹IT_1|2.2MB/s
+  - 🇩🇰DK_1|1.7MB/s
   - NL_speednode_0010
-  - NL_speednode_0005
-  - 🇩🇪DE_7|2.8MB/s
-  - 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
-  - shadowsocks-1413463183
-  - vless-1440857079
-  - 🇩🇪DE_5|2.7MB/s
-  - 🇩🇪DE_4|2.1MB/s
-  - 🇩🇰DK_1|3.1MB/s
-  - 🇧🇪BE_1|4.5MB/s
-  - 🇪🇸ES_5|1.7MB/s
-  - 🇨🇭CH_1|1.4MB/s
-  - 🇮🇹IT_1|1.6MB/s
-  - hysteria2-589844090
-  - 🇳🇱NL_7|1.2MB/s
-  - 🇨🇭CH_2|3.2MB/s
   - 🇺🇸 United States/Kansas City [TG]
-  - 🇪🇸ES_4|3.0MB/s
-  - hysteria2-1033569060
-  - 🇫🇷FR_6|2.2MB/s
-  - 澳大利亚
-  - 🇦🇹AT_1|3.9MB/s
-  - trojan-1409686877
-  - 🇷🇸RS_1|3.3MB/s
-  - 🇨🇿CZ_1|2.2MB/s
-  - 🇵🇱PL_1|2.6MB/s
-  - 卢森堡 001
-  - 🇹🇼_TW_中国台湾
-  - 🇮🇹IT_2|3.9MB/s
-  - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
-  - 🇪🇸ES_1|2.0MB/s
-  - 🇸🇪SE_1|3.2MB/s
-  - hysteria2-1334814474
-  - hysteria2-1149856388
-  - 🛖93@oneclickvpnkeys
-  - hysteria2-862364762
-  - vless-1440857081
-  - vless-1445611659
-  - xx|727a|puddincat07@Telegram
-  - 🇭🇺HU_1|2.8MB/s
-  - 新加坡 002
-  - RO_speednode_0126
-  - 荷兰 001
-  - 罗马尼亚 001
-  - 🇪🇸ES_6|1.6MB/s
-  - vless-12945895
-  - 🇲🇩MD_1|1.8MB/s
+  - 🇸🇪SE_2|2.2MB/s
+  - 美国3|@ripaojiedian
+  - 🇺🇸 美国3|@ripaojiedian
+  - 🇨🇭CH_1|1.6MB/s
+  - '40'
+  - 🇫🇷FR_4|1.1MB/s
   - 咕咕嘎嘎
-  - vless-663902649
-  - vless-299806600
-  - ❓Other_2|4.6MB/s
-  - 🇫🇷 France [TG]
-  - de|2b7b|puddincat07@Telegram
-  - 乌克兰 002
-  - 🇸🇪SE_2|4.2MB/s
-  - 英国 002
-  - 美国 007
-  - 🇩🇪178416 | ⚡️Telegram = t.me/S...
-  - 🇺🇸US_1|3.6MB/s
-  - 🇦🇲AM_1|2.9MB/s
-  - 🇺🇸US_2|2.8MB/s
+  - 🇫🇷FR_5|1.3MB/s
+  - vmess-485686544
+  - 🇵🇱PL_1|1.1MB/s
+  - vmess-1442008668
+  - vless-1344232343
+  - 🇵🇱_PL_波兰
+  - 🇺🇸US_3|2.2MB/s
+  - 🇭🇺HU_1|1.0MB/s
+  - 🇸🇪SE_3|1.0MB/s
+  - 🇷🇸RS_1|1.9MB/s
+  - xx|727a|puddincat07@Telegram
+  - 🇫🇷FR_3|1.0MB/s
+  - 🛖93@oneclickvpnkeys
+  - hysteria2-1003211447
+  - '🇪🇸_ES_西班牙 #2'
+  - 🇸🇪SE_1|2.3MB/s
+  - vless-1425905221
+  - 🇬🇷GR_1|1.6MB/s
+  - shadowsocks-1340850602
+  - 🇩🇪DE_1|2.2MB/s
+  - shadowsocks-1445350516
+  - vless-742657273
+  - vless-1028233115
+  - RO_speednode_0041
+  - 🇬🇧GB_2|2.6MB/s
+  - 🇫🇷FR_6|1016KB/s
+  - vless-1395434393
+  - vless-1398257819
+  - hysteria2-1334814474
+  - vmess-1216197041
+  - vless-48555241
+  - vless-1403449627
+  - hysteria2-956723733
+  - hysteria2-459503008
+  - trojan-1389056011
+  - kr|1325|puddincat07@Telegram
+  - hysteria2-827675485
+  - vless-814836504
+  - hysteria2-16610
+  - hysteria2-483633864
+  - hysteria2-655713431
+  - vless-1293946924
   - 🌍 Luxembourg [TG]
-  - 巴西 001
-  - 🇩🇪_DE_德国_2
-  - 香港|@ripaojiedian
-  - 'Telegram@vpnjey #1'
-  - 🇺🇸US_10|3.8MB/s
-  - hysteria2-1312988822
-  - US_speednode_0131
+  - sg|0ed4|puddincat07@Telegram
+  - 🇯🇵JP_2|1.8MB/s
+  - vless-1385958165
+  - hysteria2-1291941742
+  - 🇲🇩_MD_摩尔多瓦
+  - 🇺🇸_US_美国
+  - vless-732726857
+  - 🇯🇵JP_3|1.1MB/s
+  - vless-1440857079
+  - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+  - 🇩🇪 Germany [TG]
   - hysteria2-1121839551
-  - '嘎嘎 #1'
-  - 美国 098
-  - vless-400116110
+  - vless-1387558978
+  - 🇦🇲_AM_亚美尼亚
+  - 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
+  - trojan-1444683910
+  - 🇫🇷 France [TG]
+  - 'Channel: @Daily_Configs'
+  - vless-1260285702
+  - vless-599732468
   - hysteria2-1438373122
-  - vmess-485686936
-  - 🇺🇸_US_美国_1
-  - 🇨🇦 Canada [TG]
+  - hysteria2-589844090
+  - vless-260719822
+  - '嘎嘎 #1'
+  - 🇩🇪_DE_德国_2
+  - shadowsocks-1413463183
+  - hysteria2-1149856388
+  - 🇭🇰_HK_中国香港_1
+  - shadowsocks-1445874413
+  - 'Tel: @Daily_Configs'
+  - trojan-133769367
+  - 香港|@ripaojiedian
+  - '🇺🇸_US_美国_1 #2'
+  - vmess-1449425512
+  - 🇭🇰HK_1|2.6MB/s
+  - '@proxy_kafee'
+  - vless-1444935430
 - name: PROXY
   type: select
   proxies:
   - AUTO
   - DIRECT
+  - 🇺🇸 United States [TG]
+  - shadowsocks-11012
+  - shadowsocks-193
+  - shadowsocks-1211880885
+  - '🇺🇸 United States/San Francisco [TG] #15'
+  - vmess-1440773910
+  - '🇺🇸 United States/San Francisco [TG] #14'
+  - 🇫🇮 Finland [TG]
+  - '🇺🇸 United States/San Francisco [TG] #3'
+  - us|c3d4|puddincat07@Telegram
+  - 🌍 Kazakhstan [TG]
+  - shadowsocks-415243972
+  - vless-1058822113
+  - 🇩🇪DE_5|3.0MB/s
+  - vmess-650451255
+  - '🇺🇸 United States/San Francisco [TG] #16'
+  - '🇺🇸 United States/San Francisco [TG] #9'
+  - '美国+CloudFlare节点 #8'
+  - '🇺🇸 United States/San Francisco [TG] #6'
+  - '🇺🇸 United States/San Francisco [TG] #7'
+  - vless-301213521
+  - vless-228694114
+  - '美国+CloudFlare节点 #6'
+  - '🇺🇸_US_美国 #2'
+  - '🇺🇸 United States/San Francisco [TG] #11'
+  - shadowsocks-468218613
+  - shadowsocks-159
+  - '🇺🇸 United States/San Francisco [TG] #8'
+  - '🇺🇸 United States/San Francisco [TG] #10'
+  - 🇺🇸 United States/Dallas [GH:barry-far/V2r]
+  - vless-202736774
+  - vless-1443531684
+  - vless-1447162432
+  - vmess-656230758
+  - 🇩🇪DE_4|1.0MB/s
+  - 🇺🇸_US_美国->🇳🇱_NL_荷兰_2
+  - 🇺🇸_US_美国->🇳🇱_NL_荷兰_1
+  - vmess-898042864
+  - vless-757549223
+  - vmess-729232154
+  - vmess-655843196
+  - vmess-1442009674
+  - vless-1331678635
+  - vmess-777852753
+  - 🇺🇸 United States/Secaucus [TG]
+  - vmess-1444865487
+  - vless-1109241417
+  - shadowsocks-468218487
   - vmess-1444974377
-  - vmess-676886736
   - vmess-1440771916
+  - 🌍 Cyprus [TG]
+  - vless-1286245212
+  - '🇩🇪 Germany [TG] #4'
+  - '🇩🇪 Germany [TG] #5'
+  - vless-1139741833
+  - xx|c671|puddincat07@Telegram
+  - vless-669873690
+  - vless-639924098
+  - shadowsocks-45641610
+  - shadowsocks-11033
+  - shadowsocks-1437805144
+  - shadowsocks-181
+  - shadowsocks-11027
+  - '🇫🇮 Finland [TG] #2'
+  - 🇺🇸_US_美国->🇳🇱_NL_荷兰
+  - 🇨🇦CA_1|1.2MB/s
+  - 🇺🇸 United States/Los Angeles [TG]
+  - shadowsocks-713934491
+  - vless-1419984668
   - vless-656232118
   - 🇺🇸 United States/Hillsboro [TG]
-  - 🇺🇸 United States/Hillsboro [GH:Mahdi0024/Pro]
   - vless-656231728
-  - vless-1383599278
-  - vmess-465811707
-  - '🇺🇸 United States/San Francisco [TG] #16'
-  - vmess-1444974382
-  - '🇺🇸 United States/San Francisco [TG] #15'
-  - vmess-145135
-  - '🇺🇸 United States/San Francisco [TG] #8'
-  - '🇺🇸 United States/San Francisco [TG] #7'
-  - '🇺🇸 United States/San Francisco [TG] #11'
-  - 🌍 Kazakhstan [TG]
-  - '🇺🇸 United States/San Francisco [TG] #14'
-  - '🌍 Kazakhstan [TG] #2'
-  - vmess-814613053
-  - hysteria2-857369683
-  - '🇺🇸 United States/San Francisco [TG] #6'
-  - '🇺🇸 United States/San Francisco [TG] #3'
-  - '美国+CloudFlare节点 #7'
-  - vmess-1444974378
-  - '🇺🇸 United States/San Francisco [TG] #10'
-  - '🇺🇸 United States/San Francisco [TG] #9'
-  - vless-1365956373
-  - 🇺🇸_US_美国
-  - '🇺🇸 United States/San Francisco [TG] #13'
-  - xx|c671|puddincat07@Telegram
-  - 美国3|@ripaojiedian
-  - shadowsocks-468218514
-  - shadowsocks-163
-  - 🇺🇸US_8|3.8MB/s
-  - shadowsocks-1415925706
-  - vmess-1440773910
-  - 🇺🇸US_3|2.9MB/s
-  - vless-1429607341
-  - shadowsocks-1394190232
-  - vmess-1445010932
+  - vless-1378473545
+  - 🇺🇸 United States/Hillsboro [GH:Mahdi0024/Pro]
   - vless-944037331
-  - 美国 090
-  - shadowsocks-1445813269
-  - 🇯🇵JP_1|5.5MB/s
-  - vless-706369193
-  - vless-312447941
-  - vless-944037363
-  - vless-395940263
-  - hysteria2-1122515613
-  - 🇺🇸 United States/Secaucus [TG]
-  - hysteria2-474576739
-  - vless-103961669
-  - us|c3d4|puddincat07@Telegram
-  - 🇺🇸US_6|4.0MB/s
-  - US_speednode_0134
-  - '🇫🇮 Finland [TG] #2'
-  - 🇩🇪 Germany [TG]
-  - vless-678561097
-  - shadowsocks-1438728911
-  - shadowsocks-45641610
-  - 🇺🇸US_13|1.7MB/s
-  - vless-1444196812
-  - vless-1262373571
-  - vless-1344232343
-  - shadowsocks-1437805144
-  - shadowsocks-130087
-  - shadowsocks-187
-  - hysteria2-686500209
-  - 🇺🇸US_9|3.4MB/s
-  - shadowsocks-183
-  - vmess-1224865296
-  - shadowsocks-175
-  - shadowsocks-11032
-  - shadowsocks-1385010732
-  - 🇸🇪SE_2|2.2MB/s
-  - vless-1407179626
-  - vless-599732468
-  - 🇺🇸 United States [TG]
-  - 🇸🇪SE_3|3.1MB/s
-  - vmess-485686543
-  - '🇩🇪 Germany [TG] #5'
-  - '🇩🇪 Germany [TG] #4'
-  - vmess-1445350520
-  - vless-1396293493
-  - shadowsocks-186
-  - vless-1395434393
-  - shadowsocks-696780669
-  - hysteria2-722298630
-  - hysteria2-1003712924
-  - vless-1215229403
-  - hysteria2-655837404
+  - hysteria2-106798541
+  - shadowsocks-16132
+  - hysteria2-918220947
   - 🇳🇱 The Netherlands/Haarlem [TG]
-  - hysteria2-984679232
-  - 中国 001
-  - kr|1325|puddincat07@Telegram
-  - shadowsocks-1443611418
-  - '🇳🇱 The Netherlands/Haarlem [TG] #2'
-  - vless-1028233115
-  - vless-59621877
+  - 🇺🇸US_2|1.5MB/s
+  - hysteria2-1030509349
+  - vmess-23957915
   - '🇳🇱 The Netherlands/Haarlem [TG] #3'
-  - 🇩🇪DE_1|3.5MB/s
-  - trojan-856679830
-  - hysteria2-722298531
-  - 🇯🇵_JP_日本
-  - hysteria2-1007781453
-  - nl|a4cd|puddincat07@Telegram
-  - 🇫🇷 France/Paris [GH:barry-far/V2r]
-  - 乌克兰 001
-  - 🇩🇪_DE_德国_1
-  - hysteria2-1162353391
-  - shadowsocks-1340850602
-  - hysteria2-213095942
-  - hysteria2-648949653
-  - hysteria2-985518742
-  - hysteria2-107825281
-  - ae|7312|puddincat07@Telegram
-  - hysteria2-1058426437
-  - hysteria2-827675485
+  - vless-1109241416
+  - hysteria2-1003712924
+  - 🇺🇸US_1|1.6MB/s
+  - 🇩🇪DE_2|1.1MB/s
+  - hysteria2-1001848840
+  - trojan-1445365775
   - us|d4f7|puddincat07@Telegram
+  - '🇳🇱 The Netherlands/Haarlem [TG] #2'
+  - ae|7312|puddincat07@Telegram
+  - 🇫🇷 France/Paris [GH:barry-far/V2r]
+  - shadowsocks-211
+  - shadowsocks-218
+  - de|2b7b|puddincat07@Telegram
+  - vmess-1121649203
+  - shadowsocks-1445813269
   - '🇺🇸 United States [TG] #2'
   - '🇫🇷 France [TG] #2'
+  - 🇬🇧GB_1|1.7MB/s
+  - shadowsocks-743178503
   - gb|5e7a|puddincat07@Telegram
   - 🛖94@oneclickvpnkeys
-  - 🇬🇧GB_6|2.9MB/s
+  - NL_speednode_0006
   - 🇫🇮 Finland/Helsinki [TG]
-  - 🇬🇧GB_7|2.8MB/s
-  - vless-1397144294
-  - 🇳🇱NL_6|4.4MB/s
-  - ro|e039|puddincat07@Telegram
-  - 🇬🇧GB_3|1.4MB/s
-  - 🇬🇧GB_5|3.2MB/s
-  - trojan-84489892
-  - 🇳🇱NL_8|3.2MB/s
-  - 🇳🇱NL_1|2.0MB/s
-  - 🇬🇧GB_2|3.1MB/s
+  - hysteria2-686500209
+  - NL_speednode_0004
+  - 🇩🇪_DE_德国_1
   - NL_speednode_0007
-  - hysteria2-813990707
-  - hysteria2-1281959383
-  - 🇬🇧GB_1|3.0MB/s
-  - 🇬🇧GB_4|2.3MB/s
+  - 🇧🇪BE_1|1.1MB/s
+  - 🇬🇧GB_3|1.0MB/s
+  - 🇳🇱NL_4|1.6MB/s
+  - 🇳🇱NL_2|2.0MB/s
+  - 🇳🇱NL_3|1023KB/s
+  - NL_speednode_0009
+  - ro|70e4|puddincat07@Telegram
+  - 🇮🇹IT_1|2.2MB/s
+  - 🇩🇰DK_1|1.7MB/s
   - NL_speednode_0010
-  - NL_speednode_0005
-  - 🇩🇪DE_7|2.8MB/s
-  - 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
-  - shadowsocks-1413463183
-  - vless-1440857079
-  - 🇩🇪DE_5|2.7MB/s
-  - 🇩🇪DE_4|2.1MB/s
-  - 🇩🇰DK_1|3.1MB/s
-  - 🇧🇪BE_1|4.5MB/s
-  - 🇪🇸ES_5|1.7MB/s
-  - 🇨🇭CH_1|1.4MB/s
-  - 🇮🇹IT_1|1.6MB/s
-  - hysteria2-589844090
-  - 🇳🇱NL_7|1.2MB/s
-  - 🇨🇭CH_2|3.2MB/s
   - 🇺🇸 United States/Kansas City [TG]
-  - 🇪🇸ES_4|3.0MB/s
-  - hysteria2-1033569060
-  - 🇫🇷FR_6|2.2MB/s
-  - 澳大利亚
-  - 🇦🇹AT_1|3.9MB/s
-  - trojan-1409686877
-  - 🇷🇸RS_1|3.3MB/s
-  - 🇨🇿CZ_1|2.2MB/s
-  - 🇵🇱PL_1|2.6MB/s
-  - 卢森堡 001
-  - 🇹🇼_TW_中国台湾
-  - 🇮🇹IT_2|3.9MB/s
-  - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
-  - 🇪🇸ES_1|2.0MB/s
-  - 🇸🇪SE_1|3.2MB/s
-  - hysteria2-1334814474
-  - hysteria2-1149856388
-  - 🛖93@oneclickvpnkeys
-  - hysteria2-862364762
-  - vless-1440857081
-  - vless-1445611659
-  - xx|727a|puddincat07@Telegram
-  - 🇭🇺HU_1|2.8MB/s
-  - 新加坡 002
-  - RO_speednode_0126
-  - 荷兰 001
-  - 罗马尼亚 001
-  - 🇪🇸ES_6|1.6MB/s
-  - vless-12945895
-  - 🇲🇩MD_1|1.8MB/s
+  - 🇸🇪SE_2|2.2MB/s
+  - 美国3|@ripaojiedian
+  - 🇺🇸 美国3|@ripaojiedian
+  - 🇨🇭CH_1|1.6MB/s
+  - '40'
+  - 🇫🇷FR_4|1.1MB/s
   - 咕咕嘎嘎
-  - vless-663902649
-  - vless-299806600
-  - ❓Other_2|4.6MB/s
-  - 🇫🇷 France [TG]
-  - de|2b7b|puddincat07@Telegram
-  - 乌克兰 002
-  - 🇸🇪SE_2|4.2MB/s
-  - 英国 002
-  - 美国 007
-  - 🇩🇪178416 | ⚡️Telegram = t.me/S...
-  - 🇺🇸US_1|3.6MB/s
-  - 🇦🇲AM_1|2.9MB/s
-  - 🇺🇸US_2|2.8MB/s
+  - 🇫🇷FR_5|1.3MB/s
+  - vmess-485686544
+  - 🇵🇱PL_1|1.1MB/s
+  - vmess-1442008668
+  - vless-1344232343
+  - 🇵🇱_PL_波兰
+  - 🇺🇸US_3|2.2MB/s
+  - 🇭🇺HU_1|1.0MB/s
+  - 🇸🇪SE_3|1.0MB/s
+  - 🇷🇸RS_1|1.9MB/s
+  - xx|727a|puddincat07@Telegram
+  - 🇫🇷FR_3|1.0MB/s
+  - 🛖93@oneclickvpnkeys
+  - hysteria2-1003211447
+  - '🇪🇸_ES_西班牙 #2'
+  - 🇸🇪SE_1|2.3MB/s
+  - vless-1425905221
+  - 🇬🇷GR_1|1.6MB/s
+  - shadowsocks-1340850602
+  - 🇩🇪DE_1|2.2MB/s
+  - shadowsocks-1445350516
+  - vless-742657273
+  - vless-1028233115
+  - RO_speednode_0041
+  - 🇬🇧GB_2|2.6MB/s
+  - 🇫🇷FR_6|1016KB/s
+  - vless-1395434393
+  - vless-1398257819
+  - hysteria2-1334814474
+  - vmess-1216197041
+  - vless-48555241
+  - vless-1403449627
+  - hysteria2-956723733
+  - hysteria2-459503008
+  - trojan-1389056011
+  - kr|1325|puddincat07@Telegram
+  - hysteria2-827675485
+  - vless-814836504
+  - hysteria2-16610
+  - hysteria2-483633864
+  - hysteria2-655713431
+  - vless-1293946924
   - 🌍 Luxembourg [TG]
-  - 巴西 001
-  - 🇩🇪_DE_德国_2
-  - 香港|@ripaojiedian
-  - 'Telegram@vpnjey #1'
-  - 🇺🇸US_10|3.8MB/s
-  - hysteria2-1312988822
-  - US_speednode_0131
+  - sg|0ed4|puddincat07@Telegram
+  - 🇯🇵JP_2|1.8MB/s
+  - vless-1385958165
+  - hysteria2-1291941742
+  - 🇲🇩_MD_摩尔多瓦
+  - 🇺🇸_US_美国
+  - vless-732726857
+  - 🇯🇵JP_3|1.1MB/s
+  - vless-1440857079
+  - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+  - 🇩🇪 Germany [TG]
   - hysteria2-1121839551
-  - '嘎嘎 #1'
-  - 美国 098
-  - vless-400116110
+  - vless-1387558978
+  - 🇦🇲_AM_亚美尼亚
+  - 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
+  - trojan-1444683910
+  - 🇫🇷 France [TG]
+  - 'Channel: @Daily_Configs'
+  - vless-1260285702
+  - vless-599732468
   - hysteria2-1438373122
-  - vmess-485686936
-  - 🇺🇸_US_美国_1
-  - 🇨🇦 Canada [TG]
+  - hysteria2-589844090
+  - vless-260719822
+  - '嘎嘎 #1'
+  - 🇩🇪_DE_德国_2
+  - shadowsocks-1413463183
+  - hysteria2-1149856388
+  - 🇭🇰_HK_中国香港_1
+  - shadowsocks-1445874413
+  - 'Tel: @Daily_Configs'
+  - trojan-133769367
+  - 香港|@ripaojiedian
+  - '🇺🇸_US_美国_1 #2'
+  - vmess-1449425512
+  - 🇭🇰HK_1|2.6MB/s
+  - '@proxy_kafee'
+  - vless-1444935430
 rules:
 - DOMAIN-SUFFIX,local,DIRECT
 - DOMAIN-SUFFIX,github.com,DIRECT
