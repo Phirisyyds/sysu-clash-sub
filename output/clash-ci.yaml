@@ -17,29 +17,60 @@ dns:
   - time.*.com
   - time.*.apple.com
 proxies:
-- name: '🇺🇸 United States/San Francisco [TG] #2'
-  type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: '🇸🇬[www.v2nodes.com] vless-SG #5'
-  network: ws
+- cipher: rc4-md5
+  name: shadowsocks-1827147700
+  password: 14fFPrbezE3HDZzsMOr6
   port: 8080
+  server: 138.199.42.68
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: shadowsocks-1827146549
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.170
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: shadowsocks-1827146815
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.168
+  type: ss
+  udp: true
+- name: 美国 027
+  type: vless
+  network: ws
   server: 172.67.71.187
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   servername: hhlfy.twiladaphne.ndjp.net
   tls: false
-  type: vless
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   ws-opts:
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
     path: /sg-melbi
+- cipher: rc4-md5
+  name: shadowsocks-1827147479
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 137.184.174.93
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: shadowsocks-1827146122
+  password: shadowsocks
+  port: 443
+  server: 37.19.198.236
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: shadowsocks-1827146742
+  password: shadowsocks
+  port: 443
+  server: 37.19.198.244
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   name: '🇮🇹[www.v2nodes.com] vless-IT-1... #3'
   network: ws
@@ -53,66 +84,32 @@ proxies:
     headers:
       Host: ccc.010304.xyz
     path: /
-- name: '🇺🇸 United States [TG] #2'
-  type: vless
-  server: 172.66.1.36
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- cipher: rc4-md5
-  name: shadowsocks-1827147479
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 137.184.174.93
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  encryption: none
-  name: '🇸🇬[www.v2nodes.com] vless-SG #1'
-  network: ws
-  port: 443
-  server: 172.64.152.241
-  servername: ccc.010304.xyz
-  tls: true
-  type: vless
-  uuid: d342d11e-d224-4463-b982-532309285094
-  ws-opts:
-    headers:
-      Host: ccc.010304.xyz
-    path: /fp=chrome
-- cipher: aes-128-gcm
-  name: shadowsocks-1827146122
-  password: shadowsocks
-  port: 443
-  server: 37.19.198.236
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: shadowsocks-1827146556
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.167
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: shadowsocks-1827146815
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.168
-  type: ss
-  udp: true
 - cipher: aes-256-gcm
   name: shadowsocks-1875023024
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 193.151.163.18
+  type: ss
+  udp: true
+- name: 美国 010
+  type: vless
+  network: ws
+  server: 172.64.152.241
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  servername: ccc.010304.xyz
+  skip-cert-verify: false
+  tls: true
+  encryption: none
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /
+- cipher: aes-256-gcm
+  name: shadowsocks-1827146718
+  password: FoOiGlkAA9yPEGP
+  port: 7307
+  server: 15.204.246.132
   type: ss
   udp: true
 - name: us|81c2|puddincat07@Telegram
@@ -123,61 +120,139 @@ proxies:
   sni: 129.213.91.185
   tls: false
   type: hysteria2
-- cipher: aes-128-gcm
-  name: shadowsocks-1827146131
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.169
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: shadowsocks-1827146549
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.170
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: 🇯🇵[www.v2nodes.com] vless-JP
+- name: '🇸🇬[www.v2nodes.com] vless-SG #5'
   network: ws
-  port: 443
-  server: 188.114.98.0
-  servername: tn1r.eu.cc
-  tls: true
+  port: 2082
+  server: 104.18.35.86
+  servername: hhlfy.twiladaphne.ndjp.net
+  tls: false
   type: vless
-  uuid: 22424ee2-6fe3-42ca-9749-6d4c5a8acc82
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   ws-opts:
     headers:
-      Host: tn1r.eu.cc
-    path: /id-pusat
+      Host: hhlfy.twiladaphne.ndjp.net
+    path: /fp
+- name: 🇺🇸 United States/Staten Island [GH:barry-far/V2r]
+  type: ss
+  server: 198.98.53.130
+  port: 443
+  password: eDfN7SODQceIOmIAbtJJtK
+  cipher: chacha20-ietf-poly1305
+  udp: true
 - cipher: aes-256-gcm
-  name: shadowsocks-1875023016
+  name: shadowsocks-1875129452
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
-  server: 185.230.230.18
+  server: 95.215.201.18
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: shadowsocks-1827146718
-  password: FoOiGlkAA9yPEGP
-  port: 7307
-  server: 15.204.246.132
+- cipher: rc4-md5
+  name: shadowsocks-1827962976
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 107.151.182.197
   type: ss
   udp: true
+- name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080
+  type: ssr
+  server: 107.151.182.253
+  port: 8080
+  password: 14fFPrbezE3HDZzsMOr6
+  cipher: rc4-md5
+  protocol: origin
+  obfs: plain
 - alterId: 0
   cipher: auto
-  name: vmess-1827161859
-  network: tcp
+  name: vmess-1853332267
+  network: raw
   port: 18000
-  server: 38.91.107.49
+  server: 84.17.41.2
   type: vmess
   udp: true
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- cipher: rc4-md5
+  name: shadowsocks-1870576345
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 79.110.54.250
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: shadowsocks-1827969041
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 23.251.121.242
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: shadowsocks-1827963676
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 107.155.57.51
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: shadowsocks-1827963705
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 107.155.57.11
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: shadowsocks-1828227588
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 79.110.53.169
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: shadowsocks-1870576149
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 98.98.79.198
+  type: ss
+  udp: true
 - cipher: aes-256-gcm
   name: shadowsocks-1875022945
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 45.86.51.18
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: vmess-1828338224
+  network: tcp
+  port: 18000
+  server: 169.197.142.22
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- cipher: aes-128-gcm
+  name: shadowsocks-1827146375
+  password: shadowsocks
+  port: 443
+  server: 173.244.56.6
+  type: ss
+  udp: true
+- name: hysteria2-1832863516
+  password: bce6c821-200d-421f-bf3d-7159e5246ea0
+  port: 33333
+  server: 155.248.209.237
+  skip-cert-verify: true
+  type: hysteria2
+- cipher: aes-128-gcm
+  name: shadowsocks-1827146224
+  password: shadowsocks
+  port: 443
+  server: 149.22.95.183
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: shadowsocks-1827146667
+  password: shadowsocks
+  port: 443
+  server: 173.244.56.9
   type: ss
   udp: true
 - cipher: aes-256-gcm
@@ -187,13 +262,22 @@ proxies:
   server: 193.151.160.18
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: shadowsocks-1875022941
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 193.151.160.9
-  type: ss
+- name: hysteria2-1853488313
+  password: 099830134df5ac3a04a4b21d39b8c395
+  port: 50160
+  server: 163.192.14.135
+  skip-cert-verify: true
+  sni: 163.192.14.135
+  type: hysteria2
+- alterId: 0
+  cipher: auto
+  name: vmess-1827161859
+  network: tcp
+  port: 18000
+  server: 38.91.107.49
+  type: vmess
   udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - name: 🇩🇪 Germany [TG]
   type: vless
   server: 169.40.42.104
@@ -207,128 +291,6 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   client-fingerprint: ios
-- cipher: rc4-md5
-  name: shadowsocks-1827963904
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 138.199.43.159
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: vmess-1837386172
-  network: tcp
-  port: 18000
-  server: 84.17.41.2
-  type: vmess
-  udp: true
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- cipher: rc4-md5
-  name: shadowsocks-1827963705
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 107.155.57.11
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: vmess-1827160914
-  network: tcp
-  port: 18000
-  server: 169.197.142.22
-  type: vmess
-  udp: true
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- cipher: rc4-md5
-  name: shadowsocks-1827963676
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 107.155.57.51
-  type: ss
-  udp: true
-- cipher: rc4-md5
-  name: shadowsocks-1827969041
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 23.251.121.242
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: shadowsocks-1827146224
-  password: shadowsocks
-  port: 443
-  server: 149.22.95.183
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: shadowsocks-1875129452
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 95.215.201.18
-  type: ss
-  udp: true
-- cipher: rc4-md5
-  name: shadowsocks-1870576345
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 79.110.54.250
-  type: ss
-  udp: true
-- name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080
-  type: ssr
-  server: 107.151.182.253
-  port: 8080
-  password: 14fFPrbezE3HDZzsMOr6
-  cipher: rc4-md5
-  protocol: origin
-  obfs: plain
-- cipher: rc4-md5
-  name: shadowsocks-1827962976
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 107.151.182.197
-  type: ss
-  udp: true
-- cipher: rc4-md5
-  name: shadowsocks-1828227588
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 79.110.53.169
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: shadowsocks-1827146667
-  password: shadowsocks
-  port: 443
-  server: 173.244.56.9
-  type: ss
-  udp: true
-- name: hysteria2-1828372350
-  password: bce6c821-200d-421f-bf3d-7159e5246ea0
-  port: 33333
-  server: 155.248.209.237
-  skip-cert-verify: true
-  sni: 155.248.209.2
-  type: hysteria2
-- name: '🇩🇪 Germany [TG] #2'
-  type: vless
-  server: 169.40.42.35
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: chrome
-- name: hysteria2-1853503223
-  password: 099830134df5ac3a04a4b21d39b8c395
-  port: 50160
-  server: 163.192.14.135
-  skip-cert-verify: true
-  type: hysteria2
 - name: us|e623|puddincat07@Telegram
   password: 4fUg3KH31LpMhko6o0Ka9Q
   port: 36720
@@ -337,20 +299,26 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1854341788
-  network: tcp
+- auth: gf1:gfhysteria2024
+  name: us|7a73|puddincat07@Telegram
+  password: gf1:gfhysteria2024
   port: 443
-  reality-opts:
-    public-key: nqwCf6oW49tEtmQ0EzxigZ0uu1pg0E30CS54G40Iti0
-    short-id: 4477382ff6d3d41c
-  server: 51.81.203.63
-  servername: www.icloud.com
+  server: 66.94.121.46
+  skip-cert-verify: true
+  sni: www.broadcom.com
+  type: hysteria2
+- client-fingerprint: chrome
+  encryption: none
+  name: '🇸🇬[www.v2nodes.com] vless-SG #2'
+  network: ws
+  port: 443
+  server: ccc.010304.xyz
+  servername: ccc.010304.xyz
   tls: true
   type: vless
-  udp: true
-  uuid: cb2dbb6a-a1ea-4023-9ace-6466cee57241
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    path: /
 - name: 🇺🇸 United States/Hillsboro [TG]
   type: vless
   server: 15.204.97.214
@@ -364,81 +332,51 @@ proxies:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
   client-fingerprint: chrome
-- auth: gf1:gfhysteria2024
-  name: us|7a73|puddincat07@Telegram
-  password: gf1:gfhysteria2024
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1827319132
+  network: tcp
   port: 443
-  server: 66.94.121.46
-  skip-cert-verify: true
-  sni: www.broadcom.com
-  type: hysteria2
-- name: '🇳🇱[www.v2nodes.com] vless-NL-1... #4'
+  reality-opts:
+    public-key: nqwCf6oW49tEtmQ0EzxigZ0uu1pg0E30CS54G40Iti0
+    short-id: 4477382ff6d3d41c
+  server: 51.81.203.63
+  servername: www.icloud.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: cb2dbb6a-a1ea-4023-9ace-6466cee57241
+- name: '🇳🇱[www.v2nodes.com] vless-NL-1... #5'
   port: 443
   server: 94.237.46.104
   tls: false
   type: vless
   uuid: dac47070-c136-49f3-8ed2-32b68e710ea3
-- name: '🇬🇧 United Kingdom [TG] #5'
-  type: ss
-  server: 82.38.31.35
-  port: 8080
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  cipher: chacha20-ietf-poly1305
-  udp: true
-- cipher: aes-256-gcm
-  name: shadowsocks-1827146722
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 185.226.172.8
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1827146533
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  name: shadowsocks-1827146335
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
-  server: 82.38.31.210
+  server: 82.38.31.155
   type: ss
   udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1827706338
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: p8VhFzvFOBAhWAEAeWmwDxT3xBSRsGYixqi0qnLFnBM
-    short-id: 21270a66
-  server: 44.248.233.99
-  servername: aws.amazon.com
-  tls: true
+- name: '🇩🇪 Germany [TG] #2'
   type: vless
-  udp: true
-  uuid: 37615d66-5467-44a3-bc23-f2c3bef7f761
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1827146391
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  server: 169.40.42.35
   port: 443
-  server: 82.38.31.162
-  type: ss
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1827146695
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: chrome
+- cipher: rc4-md5
+  name: shadowsocks-1827966278
+  password: 14fFPrbezE3HDZzsMOr6
   port: 8080
-  server: 82.38.31.18
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1827146769
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.66
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1827146475
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.62
+  server: 169.150.210.233
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -448,60 +386,18 @@ proxies:
   server: 82.38.31.42
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1827146766
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.9
+- name: 🇬🇧 United Kingdom [GH:Mahdi0024/Pro]
   type: ss
+  server: 82.38.31.26
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1830344687
+  name: shadowsocks-1827146695
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
-  server: 178.83.185.156
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1827146004
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.3
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1827145909
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.54
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1827146763
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 193.29.139.204
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1827146792
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 193.29.139.235
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1827146388
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.184
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1827146749
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 193.29.139.188
+  server: 82.38.31.18
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -511,9 +407,70 @@ proxies:
   server: 82.38.31.181
   type: ss
   udp: true
-- encryption: none
-  name: '🇮🇹[www.v2nodes.com] vless-IT-1... #2'
-  network: tcp
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1827146411
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.69
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1827146026
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.34
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1827146078
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.202
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1827145970
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.7
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1827146828
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 443
+  server: 82.38.31.174
+  type: ss
+  udp: true
+- name: '🇬🇧 United Kingdom [TG] #3'
+  type: ss
+  server: 82.38.31.215
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1827146749
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.188
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1827146385
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.47
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1827146892
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.206
+  type: ss
+  udp: true
+- name: '🇮🇹[www.v2nodes.com] vless-IT-1... #2'
   port: 10086
   server: 204.216.216.23
   servername: /?bia_telegram@marambashi_marambashi_marambashi_marambashi_marambashi
@@ -521,52 +478,10 @@ proxies:
   type: vless
   uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
 - cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1827146686
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.205
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: shadowsocks-1875022930
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 202.50.253.18
-  type: ss
-  udp: true
-- name: 🇮🇹_IT_意大利_4
-  type: ss
-  server: 202.50.253.99
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  skip-cert-verify: true
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇯🇵[www.v2nodes.com] ss-JP-1598...
-  password: JuD6MNgtX3nVpCzFzXYVYjDTZ7nsmaTv
-  port: 8388
-  server: 191.223.221.53
-  type: ss
-- cipher: aes-256-gcm
-  name: shadowsocks-1875023009
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 202.50.253.27
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1888459447
-  password: AwW1fV6oDDQKh8r2znmptv59tPgt4eHVTgFaTqgKS2jiSdikJ7GyGCBYehDaK38S8yMgHFdbJqcTmRJSfYS5CFw345bNhFZa
-  port: 43385
-  server: sql.popmintxo.cc
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: shadowsocks-1827146287
-  password: shadowsocks
+  name: shadowsocks-1827146277
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 443
-  server: 149.22.87.241
+  server: 193.29.139.235
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -576,18 +491,32 @@ proxies:
   server: 149.22.87.204
   type: ss
   udp: true
-- name: 🐙32@oneclickvpnkeys
-  password: d4ca9415f0eac7897472e1e5b86d2e96
-  port: 443
-  server: 50.7.38.243
-  sni: promo.betust.net
-  tls: false
-  type: hysteria2
-- cipher: aes-128-gcm
-  name: shadowsocks-1827146270
+- name: '🇬🇧 United Kingdom [TG] #5'
+  type: ss
+  server: 82.38.31.35
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+  udp: true
+- cipher: aes-256-gcm
+  name: shadowsocks-1827147826
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 82.110.60.9
+  type: ss
+  udp: true
+- cipher: aes-128-cfb
+  name: shadowsocks-1827146735
   password: shadowsocks
   port: 443
-  server: 149.22.87.240
+  server: 109.201.152.181
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: shadowsocks-1875023050
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 202.50.253.36
   type: ss
   udp: true
 - name: IR 4 → tg@nicevpn123
@@ -597,31 +526,6 @@ proxies:
   cipher: aes-256-cfb
   password: qYEN5HX4JKeVCdEC
   udp: true
-- type: vless
-  server: 72.56.88.181
-  port: 443
-  uuid: 7ce594b9-918b-441d-922c-230341838abd
-  udp: true
-  name: 美国+佛罗里达州迈阿密市
-  tls: true
-  servername: nl2.xshoponline.ru
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: EkBRN12aZMx4Q_FCOcxB9KuzMkgLSBswmkDycnaTZWM
-    short-id: 1a917cfae106f7dd
-  client-fingerprint: chrome
-- name: 美国 029
-  type: trojan
-  network: ws
-  server: 104.19.229.21
-  port: 443
-  password: humanity
-  skip-cert-verify: false
-  sni: www.calmlunch.com
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: /assignment
 - name: 瑞士 001
   type: vless
   network: ws
@@ -634,31 +538,46 @@ proxies:
     headers:
       Host: 138.124.70.41
     path: /vless
-- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #6'
-  port: 10002
-  server: connect.hondamotor.site
-  tls: false
-  type: vless
-  uuid: c6362720-0931-4b91-b187-d8ecf3149734
-- name: 美国 095
-  type: vmess
-  network: ws
-  server: guanwang.awsno.com
+- name: 🍄🟫44@oneclickvpnkeys
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  server: 13.36.234.11
   skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: guanwang.awsno.com
-    path: /hls/cctv5phd.m3u8
-- name: hysteria2-1853488278
+  sni: vpn-fr-001.fastervpn.world
+  tls: false
+  type: hysteria2
+- name: 'Telegram@vpnjey #8'
+  obfs: salamander
+  obfs-password: Telegram@vpnjey
+  password: vpnjey
+  port: 36264
+  server: 179.61.138.145
+  skip-cert-verify: true
+  sni: de2.jey.cc.cd
+  tls: false
+  type: hysteria2
+- name: 🇩🇪DE-🚀@VPNine1
+  password: wdXYbPlYLa5yLB7LF2Ambo
+  port: 443
+  server: 46.225.10.16
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: hysteria2-1827145430
   password: github.com/Alvin9999-newpac/fanqiang
-  port: 60111
-  server: 62.210.7.139
+  port: 43115
+  server: 62.210.147.2
   skip-cert-verify: true
+  sni: www.microsoft.com
+  type: hysteria2
+- name: ch|46cb|puddincat07@Telegram
+  password: 84a506ca5aca505696a454d828420b3f
+  port: 50160
+  server: 140.238.213.114
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
   type: hysteria2
 - name: 🇪🇸 Spain [TG]
   type: vless
@@ -673,79 +592,50 @@ proxies:
     public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
     short-id: 7f1e29593aa94ad1
   client-fingerprint: qq
-- name: 🇺🇸 United States [TG]
-  type: vless
-  server: 47.253.226.114
-  port: 443
-  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
-  client-fingerprint: chrome
-- type: trojan
-  server: 108.162.194.134
+- name: 美国 029
+  type: trojan
+  network: ws
+  server: 104.19.229.21
   port: 443
   password: humanity
-  udp: true
-  name: '美国+CloudFlare节点 #2'
-  sni: www.pleadcourt.org
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.pleadcourt.org
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - openai.com
-    method: GET
-    path:
-    - /QQqun-737805443
-  name: '🇭🇰 香港 | HKG #1'
-  network: http
-  port: 52080
-  server: 47.242.81.94
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e47b9f77-60e4-4738-8d53-772b6002e146
-- name: '🇫🇮[www.v2nodes.com] vless-FI-1... #6'
-  network: ws
-  port: 14430
-  server: 45.144.234.157
-  servername: 45.144.234.157
-  tls: false
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  ws-opts:
-    headers:
-      Host: 45.144.234.157
-    path: /vless
-- name: '@confiig_hub #1'
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  port: 443
-  server: 130.49.161.70
   skip-cert-verify: false
-  sni: hy2.aspidnet.xyz
+  sni: www.calmlunch.com
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
+- name: 🇩🇪199747 | ⚡️Telegram = t.me/S...
+  password: mhsl
+  port: 14444
+  server: 88.99.213.222
+  skip-cert-verify: true
+  sni: bing.com
   tls: false
   type: hysteria2
-- cipher: rc4-md5
-  name: shadowsocks-1827147315
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 68.183.227.4
-  type: ss
-  udp: true
+- name: ch|396b|puddincat07@Telegram
+  obfs: salamander
+  obfs-password: c13f29db6a638ad2b211b9ce2669ef27
+  password: 3a702d4d1de4949005d8431220e040fb
+  port: 443
+  server: 152.67.75.161
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: 美国 095
+  type: vmess
+  network: ws
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: guanwang.awsno.com
+    path: /hls/cctv5phd.m3u8
 - cipher: rc4-md5
   name: shadowsocks-1828226964
   password: 14fFPrbezE3HDZzsMOr6
@@ -753,33 +643,13 @@ proxies:
   server: 68.183.227.236
   type: ss
   udp: true
-- name: 🇧🇾[www.v2nodes.com] vless-BY-1...
-  network: ws
-  port: 14430
-  server: 178.172.227.124
-  tls: false
-  type: vless
-  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
-  ws-opts:
-    headers:
-      Host: 178.172.227.124
-    path: /vless
 - cipher: rc4-md5
-  name: shadowsocks-1870576255
+  name: shadowsocks-1828226862
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
-  server: 128.1.186.73
+  server: 68.183.235.122
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: vmess-1827159955
-  network: tcp
-  port: 18000
-  server: ww11.levikogjgfdd.ir
-  type: vmess
-  udp: true
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - cipher: rc4-md5
   name: shadowsocks-1870576189
   password: 14fFPrbezE3HDZzsMOr6
@@ -799,71 +669,127 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: shadowsocks-1828227303
+  name: shadowsocks-1870576255
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
-  server: 68.183.227.45
+  server: 128.1.186.73
   type: ss
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  network: ws
-  password: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  port: 443
-  server: us3-2.998998.best
-  skip-cert-verify: true
-  sni: nat3.xxai.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: nat3.xxai.dpdns.org
-    path: /anyway
-- client-fingerprint: firefox
-  name: vless-1827154835
-  network: raw
-  port: 2053
-  reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-    short-id: 9922313fffed1c63
-  server: 46.250.250.149
-  servername: www.apple.com
-  tls: true
+- name: '🇸🇬[www.v2nodes.com] vless-SG-1... #6'
+  port: 16263
+  server: 47.237.74.17
+  tls: false
   type: vless
-  udp: true
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+  uuid: c538c9dd-2e3f-488f-a8ca-ac5b7c0773f3
+- name: 🐙32@oneclickvpnkeys
+  password: d4ca9415f0eac7897472e1e5b86d2e96
+  port: 443
+  server: 50.7.38.243
+  sni: promo.betust.net
+  tls: false
+  type: hysteria2
 - alterId: 0
   cipher: auto
-  name: vmess-1863422780
+  name: vmess-1853354891
+  network: raw
+  port: 18000
+  server: 149.88.23.207
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- name: hysteria2-1827145136
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  port: 8443
+  server: 8.211.175.236
+  skip-cert-verify: true
+  type: hysteria2
+- alterId: 0
+  cipher: auto
+  name: vmess-1837386984
   network: tcp
   port: 18000
   server: 149.88.23.202
   type: vmess
   udp: true
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- name: hysteria2-1832881244
+- name: hysteria2-1853341745
+  password: 96ab5cd282733fd4c312a61f972f330a
+  port: 443
+  server: 45.32.10.7
+  skip-cert-verify: true
+  sni: vp3.yysyy.online
+  type: hysteria2
+- name: '@confiig_hub #1'
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  port: 443
+  server: 130.49.161.70
+  skip-cert-verify: false
+  sni: hy2.aspidnet.xyz
+  tls: false
+  type: hysteria2
+- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #5'
+  port: 10002
+  server: connect.hondamotor.site
+  tls: false
+  type: vless
+  uuid: c6362720-0931-4b91-b187-d8ecf3149734
+- name: hysteria2-1828374754
   password: 184cdec28da5a09450803c8debcd2cc9
   port: 50160
   server: 138.3.208.26
   skip-cert-verify: true
-  sni: www.bing.com
+  sni: 138.3.208.26
   type: hysteria2
-- name: jp|707c|puddincat07@Telegram
-  password: u63SxILNwtrQZ7Y1ZrFaZfsA
-  port: 8443
-  server: 8.211.175.236
+- name: 🍄🟫41@oneclickvpnkeys
+  password: miaoge110
+  port: 51511
+  server: 5.45.100.100
   skip-cert-verify: true
-  sni: bing.com
   tls: false
   type: hysteria2
-- name: hysteria2-1832764816
-  password: 96ab5cd282733fd4c312a61f972f330a
-  port: 443
-  server: 45.32.10.7
-  skip-cert-verify: false
-  sni: vp3.yysyy.online
-  type: hysteria2
-- encryption: none
-  name: '🏳[www.v2nodes.com] vless- #11'
+- name: '🇮🇹 Italy/Milan [TG] #2'
+  type: ss
+  server: 202.50.253.45
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1827146314
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.186
+  type: ss
+  udp: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1853488309
+  network: raw
+  port: 10583
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.114.220.22
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- name: '🇫🇮[www.v2nodes.com] vless-FI-1... #5'
+  network: ws
+  port: 14430
+  server: 45.144.234.157
+  servername: 45.144.234.157
+  tls: false
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  ws-opts:
+    headers:
+      Host: 45.144.234.157
+    path: /vless
+- name: '🇪🇸[www.v2nodes.com] vless-ES-2... #3'
   network: ws
   port: 443
   server: 31.57.190.89
@@ -874,7 +800,70 @@ proxies:
   ws-opts:
     headers:
       Host: ccc.010304.xyz
-    path: /
+    path: /fp=chromefp=chrome
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1827146396
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
+  port: 16233
+  server: 102.133.165.160
+  type: ss
+  udp: true
+- name: xx|11ec|puddincat07@Telegram
+  password: 529f1911-04d5-4427-94b9-c851fd459a27
+  port: 443
+  server: nl-hy-test.tcp-reset-club.net
+  sni: tcp-reset-club.net
+  tls: false
+  type: hysteria2
+- name: '🇷🇴[www.v2nodes.com] vless-RO-1... #1'
+  port: 2052
+  server: edge10.cyrionflare.com
+  tls: false
+  type: vless
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+- name: 🇧🇾[www.v2nodes.com] vless-BY-1...
+  network: ws
+  port: 14430
+  server: 178.172.227.124
+  tls: false
+  type: vless
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
+  ws-opts:
+    headers:
+      Host: 178.172.227.124
+    path: /vless
+- name: '🇬🇧 United Kingdom [TG] #4'
+  type: ss
+  server: 82.38.31.54
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+  udp: true
+- name: hysteria2-1828373437
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: vpn-tw-002.fastervpn.world
+  skip-cert-verify: true
+  sni: css.rbxcdn.com
+  type: hysteria2
+- name: '🇧🇾[www.v2nodes.com] vless-BY-1... #1'
+  network: ws
+  port: 14430
+  server: 95.128.71.79
+  tls: false
+  type: vless
+  uuid: 8cef7621-c6f0-486e-b51d-59c30c5b0b25
+  ws-opts:
+    headers:
+      Host: 95.128.71.79
+    path: /vless
+- name: hysteria2-1830466990
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 103.115.109.49
+  skip-cert-verify: true
+  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
+  type: hysteria2
 - client-fingerprint: chrome
   encryption: none
   name: 🇪🇸[www.v2nodes.com] vless-ES-2...
@@ -889,13 +878,8 @@ proxies:
     headers:
       Host: ccc.010304.xyz
     path: /fp=chrome
-- name: hysteria2-1855771838
-  password: 184cdec28da5a09450803c8debcd2cc9
-  port: 50160
-  server: 138.3.208.26
-  skip-cert-verify: true
-  type: hysteria2
-- name: '🇪🇸[www.v2nodes.com] vless-ES-2... #3'
+- encryption: none
+  name: '🏳[www.v2nodes.com] vless- #10'
   network: ws
   port: 443
   server: 31.57.190.89
@@ -906,108 +890,6 @@ proxies:
   ws-opts:
     headers:
       Host: ccc.010304.xyz
-    path: /fp=chromefp=chrome
-- encryption: none
-  name: '🇷🇴[www.v2nodes.com] vless-RO-1... #1'
-  network: tcp
-  port: 2052
-  server: edge10.cyrionflare.com
-  tls: false
-  type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: '🇧🇾[www.v2nodes.com] vless-BY-1... #1'
-  network: ws
-  port: 14430
-  server: 95.128.71.79
-  tls: false
-  type: vless
-  uuid: 8cef7621-c6f0-486e-b51d-59c30c5b0b25
-  ws-opts:
-    headers:
-      Host: 95.128.71.79
-    path: /vless
-- name: hysteria2-1854030145
-  password: 184cdec28da5a09450803c8debcd2cc9
-  port: 50160
-  server: 138.3.208.26
-  skip-cert-verify: true
-  sni: 'off'
-  type: hysteria2
-- name: 🐙97@oneclickvpnkeys
-  password: 41edb44c8e
-  port: 11592
-  server: 103.88.243.142
-  sni: srv-17e124.21freedom.net
-  tls: false
-  type: hysteria2
-- name: hysteria2-1828374754
-  password: 184cdec28da5a09450803c8debcd2cc9
-  port: 50160
-  server: 138.3.208.26
-  skip-cert-verify: true
-  sni: 138.3.208.26
-  type: hysteria2
-- name: '@FarazV2ray'
-  obfs: salamander
-  obfs-password: c1b4086fea89914496c7e10967a419216566
-  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
-  port: 443
-  server: 162.249.125.133
-  skip-cert-verify: false
-  sni: hy2-new.aspidnet.xyz
-  tls: false
-  type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1828374772
-  network: raw
-  port: 19645
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.114.220.22
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- name: tw|b130|puddincat07@Telegram
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 160.187.100.109
-  skip-cert-verify: true
-  sni: vpn-tw-002.fastervpn.world
-  tls: false
-  type: hysteria2
-- name: hysteria2-1828371338
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 103.115.109.49
-  skip-cert-verify: true
-  sni: https://t.me/wangcai2
-  type: hysteria2
-- name: 德国 003
-  type: trojan
-  network: ws
-  server: 185.220.100.168
-  port: 443
-  password: humanity
-  skip-cert-verify: false
-  sni: www.calmlunch.com
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: /assignment
-- name: 🏳[www.v2nodes.com] vless-
-  network: ws
-  port: 22573
-  server: 84.235.244.108
-  tls: false
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  ws-opts:
-    headers:
-      Host: uae.unixzone.us
     path: /
 - auth: b42d90fa667942aebc734d60
   name: au|8df7|puddincat07@Telegram
@@ -1027,18 +909,6 @@ proxies:
   skip-cert-verify: true
   sni: 'off'
   type: hysteria2
-- name: 🇦🇪[www.v2nodes.com] vless-AE-1...
-  network: ws
-  port: 14430
-  server: 95.174.68.188
-  servername: 95.174.68.188
-  tls: false
-  type: vless
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  ws-opts:
-    headers:
-      Host: 95.174.68.188
-    path: /vless
 - auth: maintell
   name: kr|1325|puddincat07@Telegram
   password: maintell
@@ -1047,173 +917,50 @@ proxies:
   skip-cert-verify: true
   sni: bing.com
   type: hysteria2
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: vless-1882542523
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: gUu1n11Ef_GEoatNQzJJucvIjGTt4qxOWdxMzjoHwDM
-    short-id: 9b6fa4047c24629f
-  server: 151.242.85.236
-  servername: addons.mozilla.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7aec627e-a258-4ded-9fd9-fbd7c024f950
-- client-fingerprint: chrome
-  name: '🏳[www.v2nodes.com] vless- #2'
-  network: ws
-  port: 443
-  server: 155.103.71.142
-  servername: ccc.010304.xyz
-  tls: true
-  type: vless
-  uuid: d342d11e-d224-4463-b982-532309285094
-  ws-opts:
-    headers:
-      Host: ccc.010304.xyz
-    path: /fp=chrome
-- name: 美国 022
-  type: vless
-  network: ws
-  server: uk1-2.998998.best
-  port: 443
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  servername: server13.9966338.xyz
-  tls: true
-  ws-opts:
-    headers:
-      Host: server13.9966338.xyz
-    path: /resiouhgggggggggg?ed=2560fp=chrome
-- type: vless
-  server: 5.129.222.115
-  port: 443
-  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
-  udp: true
-  name: 俄罗斯+V2CROSS.COM
-  tls: true
-  servername: ad7.vkusnews.com
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
-    short-id: ''
-  client-fingerprint: chrome
-- name: hysteria2-1853493431
-  password: wvA0PtDIuFbSqooIC2goKzFr
-  port: 443
-  server: 38.175.202.26
-  skip-cert-verify: true
-  sni: bing.com
+- name: 🐙97@oneclickvpnkeys
+  password: 41edb44c8e
+  port: 11592
+  server: 103.88.243.142
+  sni: srv-17e124.21freedom.net
+  tls: false
   type: hysteria2
-- name: '🇧🇬[www.v2nodes.com] vless-BG-3... #2'
-  network: ws
-  port: 443
-  server: 155.103.71.142
-  servername: ccc.010304.xyz
-  tls: true
-  type: vless
-  uuid: d342d11e-d224-4463-b982-532309285094
-  ws-opts:
-    headers:
-      Host: ccc.010304.xyz
-    path: /fp=chromefp=chrome
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: vless-1853651617
-  network: raw
-  port: 18967
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.39.4.109
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- name: trojan-1828295227
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  port: 8886
-  server: 139.180.146.200
-  skip-cert-verify: true
-  sni: 139.180.146.200
-  type: trojan
-  udp: true
-- client-fingerprint: random
-  name: '🇷🇺[www.v2nodes.com] vless-RU-1... #1'
-  network: ws
-  port: 8443
-  server: 194.87.143.165
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
-  ws-opts:
-    path: /
-- type: vless
-  server: 45.74.159.238
-  port: 443
-  uuid: 7072eeba-94fd-4fb3-92f2-a4506dd84cd8
-  udp: true
-  name: 加拿大+V2CROSS.COM
-  tls: true
-  servername: trend.eidoslab.link
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: p7X0vRL9R-23Ey-MZZZj7FY0g87nQq0Jzc01DwuryRk
-    short-id: 7597c5df264bcc10
-  client-fingerprint: firefox
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1890222328
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: EeLAX-BAjzSdRes-zpUFzVOYsBedmP8lUOHhXXJFXyI
-    short-id: 5a42dbd7e26a0415
-  server: 172.237.88.103
-  servername: zoom.us
-  tls: true
-  type: vless
-  udp: true
-  uuid: efd11a89-7506-44ce-95b6-6654859f155b
-- name: hysteria2-1853463906
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.174
-  skip-cert-verify: true
-  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
-  type: hysteria2
-- auth: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  name: hk|b589|puddincat07@Telegram
+- name: hysteria2-1832880261
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: 202.146.222.29
   skip-cert-verify: true
-  sni: 202.146.222.29
-  tls: false
+  sni: t.me
   type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1840613299
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: TqIFzUEEI1pIOR8BEpkNKEXcJ6cPfE5EzHb5joIivig
-    short-id: 9930177816ab09da
-  server: 206.206.76.75
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1e3d3634-36ac-43ac-a439-9665d885238f
-- name: hysteria2-1828371657
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.89
+- name: hysteria2-1828374520
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  port: 50160
+  server: 152.67.200.82
   skip-cert-verify: true
-  sni: 202.146.222.89
+  sni: css.rbxcdn.com
+  type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1827145990
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.204
+  type: ss
+  udp: true
+- name: trojan-1827149167
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  port: 8886
+  server: 139.180.146.200
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: sg|3afb|puddincat07@Telegram
+  obfs: salamander
+  obfs-password: 309502c4a8df10b46fb976d4a8c43f42
+  password: d042d150716709bb778cc73889cddb02
+  port: 443
+  server: 138.2.89.249
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
   type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
@@ -1229,45 +976,113 @@ proxies:
   type: vless
   udp: true
   uuid: 76b6a658-ce80-4500-b24d-404c94639ac6
-- name: 匈牙利 001
-  type: trojan
-  network: ws
-  server: 185.225.68.232
+- name: trojan-1900273765
+  password: WvH8ooM9hom4KOOJHFJz1x5umE0aV4R0
   port: 443
-  password: humanity
-  skip-cert-verify: false
-  sni: www.calmlunch.com
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: /assignment
-- name: sg|0ed4|puddincat07@Telegram
+  server: 43.156.36.253
+  skip-cert-verify: true
+  sni: 43.156.36.253
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1891647641
+  network: tcp
+  port: 61000
+  reality-opts:
+    public-key: FivAz9qw86uYacvLo5qIMnw9gQ9uKT9KIdGzhxROTSE
+    short-id: 63dac514fdfdd11c
+  server: 43.156.89.197
+  servername: www.amd.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: f5b93de5-b756-4f87-bb1c-7e5b622688fa
+- name: hysteria2-1828150748
   password: f87376e17da040ed04c9665ce8972930
   port: 50160
   server: 138.2.73.238
   skip-cert-verify: true
-  sni: 138.2.73.238
+  type: hysteria2
+- name: '@FarazV2ray'
+  obfs: salamander
+  obfs-password: c1b4086fea89914496c7e10967a419216566
+  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
+  port: 443
+  server: 162.249.125.133
+  skip-cert-verify: false
+  sni: hy2-new.aspidnet.xyz
   tls: false
   type: hysteria2
-- name: hysteria2-1828374270
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  port: 50160
-  server: 152.67.200.82
-  skip-cert-verify: true
-  sni: vk.com
-  type: hysteria2
-- name: '🇮🇱[www.v2nodes.com] vless-IL-1... #1'
-  network: ws
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: vless-1882542523
+  network: tcp
   port: 443
-  server: 185.253.75.119
-  servername: ccc.010304.xyz
+  reality-opts:
+    public-key: gUu1n11Ef_GEoatNQzJJucvIjGTt4qxOWdxMzjoHwDM
+    short-id: 9b6fa4047c24629f
+  server: 151.242.85.236
+  servername: addons.mozilla.org
   tls: true
   type: vless
-  uuid: d342d11e-d224-4463-b982-532309285094
-  ws-opts:
-    headers:
-      Host: ccc.010304.xyz
-    path: /fp=chrome
+  udp: true
+  uuid: 7aec627e-a258-4ded-9fd9-fbd7c024f950
+- client-fingerprint: firefox
+  name: vless-1827154835
+  network: raw
+  port: 2053
+  reality-opts:
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+    short-id: 9922313fffed1c63
+  server: 46.250.250.149
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1890222328
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: EeLAX-BAjzSdRes-zpUFzVOYsBedmP8lUOHhXXJFXyI
+    short-id: 5a42dbd7e26a0415
+  server: 172.237.88.103
+  servername: zoom.us
+  tls: true
+  type: vless
+  udp: true
+  uuid: efd11a89-7506-44ce-95b6-6654859f155b
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1887772999
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: TqIFzUEEI1pIOR8BEpkNKEXcJ6cPfE5EzHb5joIivig
+    short-id: 9930177816ab09da
+  server: 206.206.76.75
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1e3d3634-36ac-43ac-a439-9665d885238f
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: vless-1832754451
+  network: tcp
+  port: 13672
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.39.4.109
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
 - name: 🇫🇮_FI_芬兰
   type: vless
   server: hw3.divarkhaghazi.com.
@@ -1283,36 +1098,43 @@ proxies:
       Host: hw3.divarkhaghazi.com.
   skip-cert-verify: true
   udp: true
-- name: hysteria2-1868110673
-  password: 184cdec28da5a09450803c8debcd2cc9
-  port: 50160
-  server: 138.3.208.26
-  skip-cert-verify: true
-  sni: '1'
-  type: hysteria2
-- type: vless
-  server: 195.72.166.251
-  port: 443
-  uuid: 64c05afc-ce81-4ba0-b697-afa04da1427e
-  udp: true
-  name: 英国+V2CROSS.COM
-  tls: true
-  servername: www.lloydsbankinggroup.com
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: RKDT6fVgcZS8Qfzhv5rbeHRIflA3UTKD_HNLJyOoUwk
-    short-id: 25349b36802f
-  client-fingerprint: firefox
-- name: sg|3afb|puddincat07@Telegram
-  obfs: salamander
-  obfs-password: 309502c4a8df10b46fb976d4a8c43f42
-  password: d042d150716709bb778cc73889cddb02
-  port: 443
-  server: 138.2.89.249
-  skip-cert-verify: true
-  sni: www.bing.com
+- name: 🇦🇪[www.v2nodes.com] vless-AE-1...
+  network: ws
+  port: 14430
+  server: 95.174.68.188
+  servername: 95.174.68.188
   tls: false
-  type: hysteria2
+  type: vless
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  ws-opts:
+    headers:
+      Host: 95.174.68.188
+    path: /vless
+- client-fingerprint: chrome
+  name: '🏳[www.v2nodes.com] vless- #1'
+  network: ws
+  port: 443
+  server: 155.103.71.142
+  servername: ccc.010304.xyz
+  tls: true
+  type: vless
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /fp=chrome
+- name: '🇧🇬[www.v2nodes.com] vless-BG-3... #2'
+  network: ws
+  port: 443
+  server: 155.103.71.142
+  servername: ccc.010304.xyz
+  tls: true
+  type: vless
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /fp=chromefp=chrome
 - name: trojan-1827937733
   password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
   port: 56127
@@ -1321,32 +1143,185 @@ proxies:
   sni: 154.90.62.70
   type: trojan
   udp: true
-- name: 法国 001
-  type: vmess
+- encryption: none
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #12'
   network: ws
-  server: 145.239.55.210
-  port: 80
-  uuid: 067fcd63-b215-4abd-8529-ae929a9971a9
+  port: 443
+  server: 159.65.51.189
+  servername: ccc.010304.xyz
   skip-cert-verify: false
-  tls: false
-  alterId: 0
-  cipher: auto
+  tls: true
+  type: vless
+  uuid: d342d11e-d224-4463-b982-532309285094
   ws-opts:
     headers:
-      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-    path: /
-- name: 🇮🇳[www.v2nodes.com] vless-IN-1...
+      Host: ccc.010304.xyz
+    path: /fp
+- name: 匈牙利 001
+  type: trojan
   network: ws
-  port: 14430
-  server: 13.140.56.100
-  servername: 13.140.56.100
-  tls: false
+  server: 185.225.68.232
+  port: 443
+  password: humanity
+  skip-cert-verify: false
+  sni: www.calmlunch.com
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
+- name: 🇯🇵_JP_日本
+  type: ss
+  server: 154.36.158.197
+  port: 8388
+  cipher: aes-256-gcm
+  password: BeaUf9c0AEWH40Pu
+  skip-cert-verify: true
+  udp: true
+- name: trojan-1908518019
+  password: 29086912-33e4-4e06-ba2b-60f1a195864f
+  port: 24999
+  server: tjtw.m2k699.com
+  skip-cert-verify: true
+  sni: www.itunes.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1831129819
+  network: tcp
+  port: 41688
+  reality-opts:
+    public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
+    short-id: 7f342137c20387
+  server: 54.169.200.246
+  servername: www.intel.com
+  tls: true
   type: vless
+  udp: true
+  uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
+- name: 🐙99@oneclickvpnkeys
+  password: 41edb44c8e
+  port: 11592
+  server: srv-17e124.21freedom.net
+  tls: false
+  type: hysteria2
+- name: trojan-1908518034
+  password: 29086912-33e4-4e06-ba2b-60f1a195864f
+  port: 24999
+  server: tjxjp.m2k699.com
+  skip-cert-verify: true
+  sni: www.itunes.com
+  type: trojan
+  udp: true
+- name: hysteria2-1853493431
+  password: wvA0PtDIuFbSqooIC2goKzFr
+  port: 443
+  server: 38.175.202.26
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
+- name: 德国 002
+  type: vless
+  network: ws
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  servername: uae.unixzone.us
+  tls: false
+  ws-opts:
+    headers:
+      Host: uae.unixzone.us
+    path: /
+- client-fingerprint: random
+  name: '🇷🇺[www.v2nodes.com] vless-RU-1... #1'
+  network: ws
+  port: 8443
+  server: 194.87.143.165
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
+  ws-opts:
+    path: /
+- name: 美国 017
+  type: vless
+  network: ws
+  server: 13.140.56.100
+  port: 14430
   uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  tls: false
+  encryption: none
   ws-opts:
     headers:
       Host: 13.140.56.100
     path: /vless
+- name: 美国 022
+  type: vless
+  network: ws
+  server: uk1-2.998998.best
+  port: 443
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  servername: server13.9966338.xyz
+  tls: true
+  ws-opts:
+    headers:
+      Host: server13.9966338.xyz
+    path: /resiouhgggggggggg?ed=2560fp=chrome
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: vless-1854295084
+  network: tcp
+  port: 24146
+  reality-opts:
+    public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
+    short-id: 7205d9079521832c
+  server: 54.251.9.130
+  servername: www.intel.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9d9a048b-3aea-4b3e-b106-1106bf301feb
+- name: 🇭🇰_HK_中国香港
+  type: vmess
+  server: hkgb707.ifastcdncache.com
+  port: 60852
+  uuid: f8eca8df-a1a5-4918-a194-d34112a3673f
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  udp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: '🇸🇬[www.v2nodes.com] vless-SG-1... #7'
+  network: ws
+  port: 2096
+  server: 139.162.27.96
+  servername: free-server.techsonic.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  ws-opts:
+    headers:
+      Host: free-server.techsonic.dev
+    path: /free-server.techsonic.dev
+- name: 🇷🇺_RU_俄罗斯
+  type: vless
+  server: santehdv.site
+  port: 443
+  uuid: 9ba53795-4356-40ab-8067-76ec2ae2a3d8
+  network: ws
+  servername: santehdv.site
+  tls: true
+  client-fingerprint: firefox
+  ws-opts:
+    path: /media/stream/qUWu2oaFgxAw
+    headers:
+      Host: santehdv.site
+  skip-cert-verify: true
+  udp: true
 - name: 美国 002
   type: vmess
   network: ws
@@ -1361,28 +1336,20 @@ proxies:
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
     path: /
-- name: 🇦🇲[www.v2nodes.com] vless-AM-1...
-  network: ws
-  port: 10004
-  server: 194.36.37.59
-  tls: false
-  type: vless
-  uuid: f7376394-cd54-11f1-bb6a-bff6d0326f6a
-  ws-opts:
-    path: /vpnjantit
-- type: vless
-  server: funagfrdfs.alixxplay.com
-  port: 56415
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+- cipher: aes-256-gcm
+  name: shadowsocks-1827146150
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 213.202.208.199
+  type: ss
   udp: true
-  name: 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-  tls: true
-  servername: www.kaidee.com
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
-    short-id: cbd39bea0805e2
-  client-fingerprint: chrome
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1827146118
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 193.29.139.132
+  type: ss
+  udp: true
 - client-fingerprint: random
   grpc-opts:
     grpc-service-name: grpc-ru
@@ -1394,38 +1361,7 @@ proxies:
   tls: true
   type: vless
   uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1855702996
-  network: tcp
-  port: 24146
-  reality-opts:
-    public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
-    short-id: 7205d9079521832c
-  server: 54.251.9.130
-  servername: www.intel.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9d9a048b-3aea-4b3e-b106-1106bf301feb
-- name: trojan-1909232090
-  password: 29086912-33e4-4e06-ba2b-60f1a195864f
-  port: 24999
-  server: tjhg.m2k699.com
-  skip-cert-verify: true
-  sni: www.itunes.com
-  type: trojan
-  udp: true
-- name: '🇬🇧 United Kingdom [TG] #3'
-  type: ss
-  server: 82.38.31.215
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
-  udp: true
-- client-fingerprint: chrome
-  encryption: none
-  name: '🏳[www.v2nodes.com] vless- #29'
+- name: 🇸🇬[www.v2nodes.com] vless-SG-9...
   network: ws
   port: 443
   server: 216.173.67.59
@@ -1437,75 +1373,143 @@ proxies:
   ws-opts:
     headers:
       Host: ccc.010304.xyz
-    path: /
-- name: hysteria2-1832766149
-  password: b0917015b656b3dd2286b5633af0c5c1
-  port: 50160
-  server: 31.57.248.176
-  skip-cert-verify: true
-  sni: www.bing.com%23%e9%a6%83%e5%9a%9f%e9%a6%83%e5%9a%a2%7chk%7c%40wxgqlfx%7c147
-  type: hysteria2
-- name: trojan-1908518034
-  password: 29086912-33e4-4e06-ba2b-60f1a195864f
-  port: 24999
-  server: tjxjp.m2k699.com
-  skip-cert-verify: true
-  sni: www.itunes.com
-  type: trojan
-  udp: true
-- name: trojan-1910169545
-  password: 29086912-33e4-4e06-ba2b-60f1a195864f
-  port: 24999
-  server: tjyg.m2k699.com
-  skip-cert-verify: true
-  sni: www.itunes.com
-  type: trojan
-  udp: true
-- name: 泰国 001
-  type: vless
-  network: ws
-  server: support.zoom.us.v2ray.simspeedup.com
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+    path: /fp=chrome
+- name: '@vmess_ir'
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  port: 5010
+  server: nas.aizhzo.com
+  skip-cert-verify: false
+  sni: nas.aizhzo.com
   tls: false
+  type: hysteria2
+- name: 🇮🇹_IT_意大利_5
+  type: ss
+  server: 202.50.253.63
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  skip-cert-verify: true
+  udp: true
+- name: '🇯🇵[www.v2nodes.com] vless-JP-1... #7'
+  port: 443
+  server: 137.220.221.179
+  tls: false
+  type: vless
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+- name: trojan-1910169557
+  password: 29086912-33e4-4e06-ba2b-60f1a195864f
+  port: 24999
+  server: tjxg.m2k699.com
+  skip-cert-verify: true
+  sni: www.itunes.com
+  type: trojan
+  udp: true
+- type: vless
+  server: funagfrdfs.alixxplay.com
+  port: 56415
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  udp: true
+  name: 日本+东京Amazon数据中心
+  tls: true
+  servername: www.kaidee.com
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
+    short-id: cbd39bea0805e2
+  client-fingerprint: chrome
+- cipher: aes-256-gcm
+  name: shadowsocks-1875022930
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 202.50.253.18
+  type: ss
+  udp: true
+- encryption: none
+  name: '🇯🇵[www.v2nodes.com] vless-JP-1... #6'
+  network: ws
+  port: 443
+  server: 104.17.50.53
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   ws-opts:
     headers:
-      Host: support.zoom.us.v2ray.simspeedup.com
-    path: /ws
-- name: trojan-1908518019
-  password: 29086912-33e4-4e06-ba2b-60f1a195864f
-  port: 24999
-  server: tjtw.m2k699.com
-  skip-cert-verify: true
-  sni: www.itunes.com
-  type: trojan
-  udp: true
-- client-fingerprint: safari
+      Host: jp3.yohototo.top
+    path: /tyxyws
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: vless-1853989218
+  name: vless-1853989178
   network: tcp
-  port: 41688
+  port: 28573
   reality-opts:
-    public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
-    short-id: 7f342137c20387
-  server: 54.169.200.246
-  servername: www.intel.com
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  server: 18.183.215.124
+  servername: www.sony.com
   tls: true
   type: vless
   udp: true
-  uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
-- name: '🇸🇪[www.v2nodes.com] vless-SE-1... #4'
-  network: ws
-  port: 14430
-  server: 5.178.109.174
-  servername: 5.178.109.174
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+- name: 🇮🇳[www.v2nodes.com] vless-IN-1...
+  port: 10443
+  server: 5.253.29.254
+  servername: 5.253.29.254
   tls: false
   type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
+- name: hysteria2-1853488298
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.174
+  skip-cert-verify: true
+  sni: https%3a%2f%2ft.me%2fwangcai2
+  type: hysteria2
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: vless-1871668812
+  network: tcp
+  port: 17623
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.0.111.82
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- name: 德国 003
+  type: trojan
+  network: ws
+  server: 185.220.100.168
+  port: 443
+  password: humanity
+  skip-cert-verify: false
+  sni: www.calmlunch.com
   ws-opts:
     headers:
-      Host: 5.178.109.174
-    path: /vless
+      Host: www.calmlunch.com
+    path: /assignment
+- name: hysteria2-1846612834
+  password: 9cfc9458e48c028ec03ff86ebc71c744
+  port: 50160
+  server: 150-230-252-217.liao.kdns.fr
+  skip-cert-verify: true
+  sni: 150-230-252-217.liao.kdns.fr
+  type: hysteria2
+- name: 🇦🇲[www.v2nodes.com] vless-AM-1...
+  network: ws
+  port: 10004
+  server: 194.36.37.59
+  tls: false
+  type: vless
+  uuid: f7376394-cd54-11f1-bb6a-bff6d0326f6a
+  ws-opts:
+    path: /vpnjantit
 - alpn:
   - h3
   auth-str: dongtaiwang.com
@@ -1518,28 +1522,36 @@ proxies:
   sni: bing.com
   type: hysteria
   up: 11 Mbps
-- name: trojan-1900273765
-  password: WvH8ooM9hom4KOOJHFJz1x5umE0aV4R0
+- alpn:
+  - http/1.1
+  client-fingerprint: edge
+  name: 🇺🇸[www.v2nodes.com] vless-US-1...
+  network: ws
   port: 443
-  server: 43.156.36.253
-  skip-cert-verify: true
-  sni: 43.156.36.253
-  type: trojan
-  udp: true
-- name: trojan-1909232105
-  password: 29086912-33e4-4e06-ba2b-60f1a195864f
-  port: 24999
-  server: tjmg2.m2k699.com
-  skip-cert-verify: true
-  sni: www.itunes.com
-  type: trojan
-  udp: true
-- name: '🇯🇵[www.v2nodes.com] vless-JP-1... #7'
-  port: 443
-  server: 137.220.221.179
-  tls: false
+  server: santehdv.site
+  servername: santehdv.site
+  tls: true
   type: vless
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  uuid: 9ba53795-4356-40ab-8067-76ec2ae2a3d8
+  ws-opts:
+    headers:
+      Host: santehdv.site
+    path: /media/stream/E2QlYgrvniT_
+- client-fingerprint: chrome
+  encryption: none
+  name: '🏳[www.v2nodes.com] vless- #28'
+  network: ws
+  port: 443
+  server: 216.173.67.59
+  servername: ccc.010304.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /
 - client-fingerprint: chrome
   name: '🇯🇵[www.v2nodes.com] vless-JP-1... #1'
   network: ws
@@ -1553,116 +1565,57 @@ proxies:
     headers:
       Host: ccc.010304.xyz
     path: /fp=chrome
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: vless-1832754626
-  network: tcp
-  port: 28573
-  reality-opts:
-    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
-    short-id: 03653bc03be10c97
-  server: 18.183.215.124
-  servername: www.sony.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
-- name: '@vmess_ir'
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  port: 5010
-  server: nas.aizhzo.com
-  skip-cert-verify: false
-  sni: nas.aizhzo.com
-  tls: false
-  type: hysteria2
-- type: vless
-  server: 46.243.142.104
-  port: 443
-  uuid: 9ba53795-4356-40ab-8067-76ec2ae2a3d8
-  udp: true
-  name: 乌克兰+V2CROSS.COM
-  tls: true
-  servername: santehdv.site
-  client-fingerprint: firefox
+- name: 法国 001
+  type: vmess
   network: ws
+  server: 145.239.55.210
+  port: 80
+  uuid: 067fcd63-b215-4abd-8529-ae929a9971a9
+  skip-cert-verify: false
+  tls: false
+  alterId: 0
+  cipher: auto
   ws-opts:
-    path: /media/stream/qUWu2oaFgxAw
     headers:
-      Host: santehdv.site
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1827613951
-  network: tcp
-  port: 12972
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.0.111.82
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+    path: /
 - alpn:
   - h2
   - http/1.1
   client-fingerprint: chrome
   name: '🇬🇧[www.v2nodes.com] vless-GB-1... #9'
-  network: tcp
   port: 8443
   server: node-uk.connectsuite.org
   servername: node-uk.connectsuite.org
   tls: true
   type: vless
   uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
-- name: 中国 012
-  type: vmess
-  network: ws
-  server: 47.243.153.153
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: i2psm3knof5qjjix.v.3dns.vip
-    path: /ws-vmess
-- name: '🇬🇧 United Kingdom [GH:Mahdi0024/Pro] #4'
+- name: 🇮🇹_IT_意大利_1
   type: ss
-  server: 82.38.31.186
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
+  server: 202.50.253.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  skip-cert-verify: true
   udp: true
-- name: 美国 020
-  type: vless
-  network: ws
-  server: 104.16.10.72
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  servername: jp3.yohototo.top
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: jp3.yohototo.top
-    path: /tyxyws
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: '🇭🇰[www.v2nodes.com] vless-HK-1... #1'
-  port: 11907
-  server: 195.58.144.56
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
+- alterId: 0
+  cipher: aes-128-gcm
+  name: vmess-1837386056
+  network: raw
+  port: 18000
+  server: 67.220.85.46
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: 0
+  cipher: auto
+  name: vmess-1837386247
+  network: tcp
+  port: 18000
+  server: 134.195.196.211
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -1671,357 +1624,357 @@ proxy-groups:
   tolerance: 50
   lazy: true
   proxies:
-  - '🇺🇸 United States/San Francisco [TG] #2'
-  - '🇸🇬[www.v2nodes.com] vless-SG #5'
-  - '🇮🇹[www.v2nodes.com] vless-IT-1... #3'
-  - '🇺🇸 United States [TG] #2'
-  - shadowsocks-1827147479
-  - '🇸🇬[www.v2nodes.com] vless-SG #1'
-  - shadowsocks-1827146122
-  - shadowsocks-1827146556
-  - shadowsocks-1827146815
-  - shadowsocks-1875023024
-  - us|81c2|puddincat07@Telegram
-  - shadowsocks-1827146131
+  - shadowsocks-1827147700
   - shadowsocks-1827146549
-  - 🇯🇵[www.v2nodes.com] vless-JP
-  - shadowsocks-1875023016
+  - shadowsocks-1827146815
+  - 美国 027
+  - shadowsocks-1827147479
+  - shadowsocks-1827146122
+  - shadowsocks-1827146742
+  - '🇮🇹[www.v2nodes.com] vless-IT-1... #3'
+  - shadowsocks-1875023024
+  - 美国 010
   - shadowsocks-1827146718
-  - vmess-1827161859
-  - shadowsocks-1875022945
-  - shadowsocks-1875129451
-  - shadowsocks-1875022941
-  - 🇩🇪 Germany [TG]
-  - shadowsocks-1827963904
-  - vmess-1837386172
-  - shadowsocks-1827963705
-  - vmess-1827160914
-  - shadowsocks-1827963676
-  - shadowsocks-1827969041
-  - shadowsocks-1827146224
+  - us|81c2|puddincat07@Telegram
+  - '🇸🇬[www.v2nodes.com] vless-SG #5'
+  - 🇺🇸 United States/Staten Island [GH:barry-far/V2r]
   - shadowsocks-1875129452
-  - shadowsocks-1870576345
-  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080
   - shadowsocks-1827962976
+  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080
+  - vmess-1853332267
+  - shadowsocks-1870576345
+  - shadowsocks-1827969041
+  - shadowsocks-1827963676
+  - shadowsocks-1827963705
   - shadowsocks-1828227588
+  - shadowsocks-1870576149
+  - shadowsocks-1875022945
+  - vmess-1828338224
+  - shadowsocks-1827146375
+  - hysteria2-1832863516
+  - shadowsocks-1827146224
   - shadowsocks-1827146667
-  - hysteria2-1828372350
-  - '🇩🇪 Germany [TG] #2'
-  - hysteria2-1853503223
+  - shadowsocks-1875129451
+  - hysteria2-1853488313
+  - vmess-1827161859
+  - 🇩🇪 Germany [TG]
   - us|e623|puddincat07@Telegram
-  - vless-1854341788
-  - 🇺🇸 United States/Hillsboro [TG]
   - us|7a73|puddincat07@Telegram
-  - '🇳🇱[www.v2nodes.com] vless-NL-1... #4'
-  - '🇬🇧 United Kingdom [TG] #5'
-  - shadowsocks-1827146722
-  - shadowsocks-1827146533
-  - vless-1827706338
-  - shadowsocks-1827146391
-  - shadowsocks-1827146695
-  - shadowsocks-1827146769
-  - shadowsocks-1827146475
+  - '🇸🇬[www.v2nodes.com] vless-SG #2'
+  - 🇺🇸 United States/Hillsboro [TG]
+  - vless-1827319132
+  - '🇳🇱[www.v2nodes.com] vless-NL-1... #5'
+  - shadowsocks-1827146335
+  - '🇩🇪 Germany [TG] #2'
+  - shadowsocks-1827966278
   - shadowsocks-1827146783
-  - shadowsocks-1827146766
-  - shadowsocks-1830344687
-  - shadowsocks-1827146004
-  - shadowsocks-1827145909
-  - shadowsocks-1827146763
-  - shadowsocks-1827146792
-  - shadowsocks-1827146388
-  - shadowsocks-1827146749
+  - 🇬🇧 United Kingdom [GH:Mahdi0024/Pro]
+  - shadowsocks-1827146695
   - shadowsocks-1827146542
+  - shadowsocks-1827146411
+  - shadowsocks-1827146026
+  - shadowsocks-1827146078
+  - shadowsocks-1827145970
+  - shadowsocks-1827146828
+  - '🇬🇧 United Kingdom [TG] #3'
+  - shadowsocks-1827146749
+  - shadowsocks-1827146385
+  - shadowsocks-1827146892
   - '🇮🇹[www.v2nodes.com] vless-IT-1... #2'
-  - shadowsocks-1827146686
-  - shadowsocks-1875022930
-  - 🇮🇹_IT_意大利_4
-  - 🇯🇵[www.v2nodes.com] ss-JP-1598...
-  - shadowsocks-1875023009
-  - shadowsocks-1888459447
-  - shadowsocks-1827146287
+  - shadowsocks-1827146277
   - shadowsocks-1827146197
-  - 🐙32@oneclickvpnkeys
-  - shadowsocks-1827146270
+  - '🇬🇧 United Kingdom [TG] #5'
+  - shadowsocks-1827147826
+  - shadowsocks-1827146735
+  - shadowsocks-1875023050
   - IR 4 → tg@nicevpn123
-  - 美国+佛罗里达州迈阿密市
-  - 美国 029
   - 瑞士 001
-  - '🇬🇧[www.v2nodes.com] vless-GB-1... #6'
-  - 美国 095
-  - hysteria2-1853488278
+  - 🍄🟫44@oneclickvpnkeys
+  - 'Telegram@vpnjey #8'
+  - 🇩🇪DE-🚀@VPNine1
+  - hysteria2-1827145430
+  - ch|46cb|puddincat07@Telegram
   - 🇪🇸 Spain [TG]
-  - 🇺🇸 United States [TG]
-  - '美国+CloudFlare节点 #2'
-  - '🇭🇰 香港 | HKG #1'
-  - '🇫🇮[www.v2nodes.com] vless-FI-1... #6'
-  - '@confiig_hub #1'
-  - shadowsocks-1827147315
+  - 美国 029
+  - 🇩🇪199747 | ⚡️Telegram = t.me/S...
+  - ch|396b|puddincat07@Telegram
+  - 美国 095
   - shadowsocks-1828226964
-  - 🇧🇾[www.v2nodes.com] vless-BY-1...
-  - shadowsocks-1870576255
-  - vmess-1827159955
+  - shadowsocks-1828226862
   - shadowsocks-1870576189
   - sg|4602|puddincat07@Telegram
-  - shadowsocks-1828227303
-  - 🇺🇸 美国 | USA 3
-  - vless-1827154835
-  - vmess-1863422780
-  - hysteria2-1832881244
-  - jp|707c|puddincat07@Telegram
-  - hysteria2-1832764816
-  - '🏳[www.v2nodes.com] vless- #11'
-  - 🇪🇸[www.v2nodes.com] vless-ES-2...
-  - hysteria2-1855771838
-  - '🇪🇸[www.v2nodes.com] vless-ES-2... #3'
-  - '🇷🇴[www.v2nodes.com] vless-RO-1... #1'
-  - '🇧🇾[www.v2nodes.com] vless-BY-1... #1'
-  - hysteria2-1854030145
-  - 🐙97@oneclickvpnkeys
+  - shadowsocks-1870576255
+  - '🇸🇬[www.v2nodes.com] vless-SG-1... #6'
+  - 🐙32@oneclickvpnkeys
+  - vmess-1853354891
+  - hysteria2-1827145136
+  - vmess-1837386984
+  - hysteria2-1853341745
+  - '@confiig_hub #1'
+  - '🇬🇧[www.v2nodes.com] vless-GB-1... #5'
   - hysteria2-1828374754
-  - '@FarazV2ray'
-  - vless-1828374772
-  - tw|b130|puddincat07@Telegram
-  - hysteria2-1828371338
-  - 德国 003
-  - 🏳[www.v2nodes.com] vless-
+  - 🍄🟫41@oneclickvpnkeys
+  - '🇮🇹 Italy/Milan [TG] #2'
+  - shadowsocks-1827146314
+  - vless-1853488309
+  - '🇫🇮[www.v2nodes.com] vless-FI-1... #5'
+  - '🇪🇸[www.v2nodes.com] vless-ES-2... #3'
+  - shadowsocks-1827146396
+  - xx|11ec|puddincat07@Telegram
+  - '🇷🇴[www.v2nodes.com] vless-RO-1... #1'
+  - 🇧🇾[www.v2nodes.com] vless-BY-1...
+  - '🇬🇧 United Kingdom [TG] #4'
+  - hysteria2-1828373437
+  - '🇧🇾[www.v2nodes.com] vless-BY-1... #1'
+  - hysteria2-1830466990
+  - 🇪🇸[www.v2nodes.com] vless-ES-2...
+  - '🏳[www.v2nodes.com] vless- #10'
   - au|8df7|puddincat07@Telegram
   - hysteria2-1828529012
-  - 🇦🇪[www.v2nodes.com] vless-AE-1...
   - kr|1325|puddincat07@Telegram
-  - vless-1882542523
-  - '🏳[www.v2nodes.com] vless- #2'
-  - 美国 022
-  - 俄罗斯+V2CROSS.COM
-  - hysteria2-1853493431
-  - '🇧🇬[www.v2nodes.com] vless-BG-3... #2'
-  - vless-1853651617
-  - trojan-1828295227
-  - '🇷🇺[www.v2nodes.com] vless-RU-1... #1'
-  - 加拿大+V2CROSS.COM
-  - vless-1890222328
-  - hysteria2-1853463906
-  - hk|b589|puddincat07@Telegram
-  - vless-1840613299
-  - hysteria2-1828371657
-  - vless-1886904172
-  - 匈牙利 001
-  - sg|0ed4|puddincat07@Telegram
-  - hysteria2-1828374270
-  - '🇮🇱[www.v2nodes.com] vless-IL-1... #1'
-  - 🇫🇮_FI_芬兰
-  - hysteria2-1868110673
-  - 英国+V2CROSS.COM
+  - 🐙97@oneclickvpnkeys
+  - hysteria2-1832880261
+  - hysteria2-1828374520
+  - shadowsocks-1827145990
+  - trojan-1827149167
   - sg|3afb|puddincat07@Telegram
-  - trojan-1827937733
-  - 法国 001
-  - 🇮🇳[www.v2nodes.com] vless-IN-1...
-  - 美国 002
-  - 🇦🇲[www.v2nodes.com] vless-AM-1...
-  - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-  - 🇷🇺[www.v2nodes.com] vless-RU-1...
-  - vless-1855702996
-  - trojan-1909232090
-  - '🇬🇧 United Kingdom [TG] #3'
-  - '🏳[www.v2nodes.com] vless- #29'
-  - hysteria2-1832766149
-  - trojan-1908518034
-  - trojan-1910169545
-  - 泰国 001
-  - trojan-1908518019
-  - vless-1853989218
-  - '🇸🇪[www.v2nodes.com] vless-SE-1... #4'
-  - https://github.com/*********-*...
+  - vless-1886904172
   - trojan-1900273765
-  - trojan-1909232105
-  - '🇯🇵[www.v2nodes.com] vless-JP-1... #7'
-  - '🇯🇵[www.v2nodes.com] vless-JP-1... #1'
-  - vless-1832754626
+  - vless-1891647641
+  - hysteria2-1828150748
+  - '@FarazV2ray'
+  - vless-1882542523
+  - vless-1827154835
+  - vless-1890222328
+  - vless-1887772999
+  - vless-1832754451
+  - 🇫🇮_FI_芬兰
+  - 🇦🇪[www.v2nodes.com] vless-AE-1...
+  - '🏳[www.v2nodes.com] vless- #1'
+  - '🇧🇬[www.v2nodes.com] vless-BG-3... #2'
+  - trojan-1827937733
+  - '🇬🇧[www.v2nodes.com] vless-GB-1... #12'
+  - 匈牙利 001
+  - 🇯🇵_JP_日本
+  - trojan-1908518019
+  - vless-1831129819
+  - 🐙99@oneclickvpnkeys
+  - trojan-1908518034
+  - hysteria2-1853493431
+  - 德国 002
+  - '🇷🇺[www.v2nodes.com] vless-RU-1... #1'
+  - 美国 017
+  - 美国 022
+  - vless-1854295084
+  - 🇭🇰_HK_中国香港
+  - '🇸🇬[www.v2nodes.com] vless-SG-1... #7'
+  - 🇷🇺_RU_俄罗斯
+  - 美国 002
+  - shadowsocks-1827146150
+  - shadowsocks-1827146118
+  - 🇷🇺[www.v2nodes.com] vless-RU-1...
+  - 🇸🇬[www.v2nodes.com] vless-SG-9...
   - '@vmess_ir'
-  - 乌克兰+V2CROSS.COM
-  - vless-1827613951
+  - 🇮🇹_IT_意大利_5
+  - '🇯🇵[www.v2nodes.com] vless-JP-1... #7'
+  - trojan-1910169557
+  - 日本+东京Amazon数据中心
+  - shadowsocks-1875022930
+  - '🇯🇵[www.v2nodes.com] vless-JP-1... #6'
+  - vless-1853989178
+  - 🇮🇳[www.v2nodes.com] vless-IN-1...
+  - hysteria2-1853488298
+  - vless-1871668812
+  - 德国 003
+  - hysteria2-1846612834
+  - 🇦🇲[www.v2nodes.com] vless-AM-1...
+  - https://github.com/*********-*...
+  - 🇺🇸[www.v2nodes.com] vless-US-1...
+  - '🏳[www.v2nodes.com] vless- #28'
+  - '🇯🇵[www.v2nodes.com] vless-JP-1... #1'
+  - 法国 001
   - '🇬🇧[www.v2nodes.com] vless-GB-1... #9'
-  - 中国 012
-  - '🇬🇧 United Kingdom [GH:Mahdi0024/Pro] #4'
-  - 美国 020
-  - '🇭🇰[www.v2nodes.com] vless-HK-1... #1'
+  - 🇮🇹_IT_意大利_1
+  - vmess-1837386056
+  - vmess-1837386247
 - name: PROXY
   type: select
   proxies:
   - AUTO
   - DIRECT
-  - '🇺🇸 United States/San Francisco [TG] #2'
-  - '🇸🇬[www.v2nodes.com] vless-SG #5'
-  - '🇮🇹[www.v2nodes.com] vless-IT-1... #3'
-  - '🇺🇸 United States [TG] #2'
-  - shadowsocks-1827147479
-  - '🇸🇬[www.v2nodes.com] vless-SG #1'
-  - shadowsocks-1827146122
-  - shadowsocks-1827146556
-  - shadowsocks-1827146815
-  - shadowsocks-1875023024
-  - us|81c2|puddincat07@Telegram
-  - shadowsocks-1827146131
+  - shadowsocks-1827147700
   - shadowsocks-1827146549
-  - 🇯🇵[www.v2nodes.com] vless-JP
-  - shadowsocks-1875023016
+  - shadowsocks-1827146815
+  - 美国 027
+  - shadowsocks-1827147479
+  - shadowsocks-1827146122
+  - shadowsocks-1827146742
+  - '🇮🇹[www.v2nodes.com] vless-IT-1... #3'
+  - shadowsocks-1875023024
+  - 美国 010
   - shadowsocks-1827146718
-  - vmess-1827161859
-  - shadowsocks-1875022945
-  - shadowsocks-1875129451
-  - shadowsocks-1875022941
-  - 🇩🇪 Germany [TG]
-  - shadowsocks-1827963904
-  - vmess-1837386172
-  - shadowsocks-1827963705
-  - vmess-1827160914
-  - shadowsocks-1827963676
-  - shadowsocks-1827969041
-  - shadowsocks-1827146224
+  - us|81c2|puddincat07@Telegram
+  - '🇸🇬[www.v2nodes.com] vless-SG #5'
+  - 🇺🇸 United States/Staten Island [GH:barry-far/V2r]
   - shadowsocks-1875129452
-  - shadowsocks-1870576345
-  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080
   - shadowsocks-1827962976
+  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080
+  - vmess-1853332267
+  - shadowsocks-1870576345
+  - shadowsocks-1827969041
+  - shadowsocks-1827963676
+  - shadowsocks-1827963705
   - shadowsocks-1828227588
+  - shadowsocks-1870576149
+  - shadowsocks-1875022945
+  - vmess-1828338224
+  - shadowsocks-1827146375
+  - hysteria2-1832863516
+  - shadowsocks-1827146224
   - shadowsocks-1827146667
-  - hysteria2-1828372350
-  - '🇩🇪 Germany [TG] #2'
-  - hysteria2-1853503223
+  - shadowsocks-1875129451
+  - hysteria2-1853488313
+  - vmess-1827161859
+  - 🇩🇪 Germany [TG]
   - us|e623|puddincat07@Telegram
-  - vless-1854341788
-  - 🇺🇸 United States/Hillsboro [TG]
   - us|7a73|puddincat07@Telegram
-  - '🇳🇱[www.v2nodes.com] vless-NL-1... #4'
-  - '🇬🇧 United Kingdom [TG] #5'
-  - shadowsocks-1827146722
-  - shadowsocks-1827146533
-  - vless-1827706338
-  - shadowsocks-1827146391
-  - shadowsocks-1827146695
-  - shadowsocks-1827146769
-  - shadowsocks-1827146475
+  - '🇸🇬[www.v2nodes.com] vless-SG #2'
+  - 🇺🇸 United States/Hillsboro [TG]
+  - vless-1827319132
+  - '🇳🇱[www.v2nodes.com] vless-NL-1... #5'
+  - shadowsocks-1827146335
+  - '🇩🇪 Germany [TG] #2'
+  - shadowsocks-1827966278
   - shadowsocks-1827146783
-  - shadowsocks-1827146766
-  - shadowsocks-1830344687
-  - shadowsocks-1827146004
-  - shadowsocks-1827145909
-  - shadowsocks-1827146763
-  - shadowsocks-1827146792
-  - shadowsocks-1827146388
-  - shadowsocks-1827146749
+  - 🇬🇧 United Kingdom [GH:Mahdi0024/Pro]
+  - shadowsocks-1827146695
   - shadowsocks-1827146542
+  - shadowsocks-1827146411
+  - shadowsocks-1827146026
+  - shadowsocks-1827146078
+  - shadowsocks-1827145970
+  - shadowsocks-1827146828
+  - '🇬🇧 United Kingdom [TG] #3'
+  - shadowsocks-1827146749
+  - shadowsocks-1827146385
+  - shadowsocks-1827146892
   - '🇮🇹[www.v2nodes.com] vless-IT-1... #2'
-  - shadowsocks-1827146686
-  - shadowsocks-1875022930
-  - 🇮🇹_IT_意大利_4
-  - 🇯🇵[www.v2nodes.com] ss-JP-1598...
-  - shadowsocks-1875023009
-  - shadowsocks-1888459447
-  - shadowsocks-1827146287
+  - shadowsocks-1827146277
   - shadowsocks-1827146197
-  - 🐙32@oneclickvpnkeys
-  - shadowsocks-1827146270
+  - '🇬🇧 United Kingdom [TG] #5'
+  - shadowsocks-1827147826
+  - shadowsocks-1827146735
+  - shadowsocks-1875023050
   - IR 4 → tg@nicevpn123
-  - 美国+佛罗里达州迈阿密市
-  - 美国 029
   - 瑞士 001
-  - '🇬🇧[www.v2nodes.com] vless-GB-1... #6'
-  - 美国 095
-  - hysteria2-1853488278
+  - 🍄🟫44@oneclickvpnkeys
+  - 'Telegram@vpnjey #8'
+  - 🇩🇪DE-🚀@VPNine1
+  - hysteria2-1827145430
+  - ch|46cb|puddincat07@Telegram
   - 🇪🇸 Spain [TG]
-  - 🇺🇸 United States [TG]
-  - '美国+CloudFlare节点 #2'
-  - '🇭🇰 香港 | HKG #1'
-  - '🇫🇮[www.v2nodes.com] vless-FI-1... #6'
-  - '@confiig_hub #1'
-  - shadowsocks-1827147315
+  - 美国 029
+  - 🇩🇪199747 | ⚡️Telegram = t.me/S...
+  - ch|396b|puddincat07@Telegram
+  - 美国 095
   - shadowsocks-1828226964
-  - 🇧🇾[www.v2nodes.com] vless-BY-1...
-  - shadowsocks-1870576255
-  - vmess-1827159955
+  - shadowsocks-1828226862
   - shadowsocks-1870576189
   - sg|4602|puddincat07@Telegram
-  - shadowsocks-1828227303
-  - 🇺🇸 美国 | USA 3
-  - vless-1827154835
-  - vmess-1863422780
-  - hysteria2-1832881244
-  - jp|707c|puddincat07@Telegram
-  - hysteria2-1832764816
-  - '🏳[www.v2nodes.com] vless- #11'
-  - 🇪🇸[www.v2nodes.com] vless-ES-2...
-  - hysteria2-1855771838
-  - '🇪🇸[www.v2nodes.com] vless-ES-2... #3'
-  - '🇷🇴[www.v2nodes.com] vless-RO-1... #1'
-  - '🇧🇾[www.v2nodes.com] vless-BY-1... #1'
-  - hysteria2-1854030145
-  - 🐙97@oneclickvpnkeys
+  - shadowsocks-1870576255
+  - '🇸🇬[www.v2nodes.com] vless-SG-1... #6'
+  - 🐙32@oneclickvpnkeys
+  - vmess-1853354891
+  - hysteria2-1827145136
+  - vmess-1837386984
+  - hysteria2-1853341745
+  - '@confiig_hub #1'
+  - '🇬🇧[www.v2nodes.com] vless-GB-1... #5'
   - hysteria2-1828374754
-  - '@FarazV2ray'
-  - vless-1828374772
-  - tw|b130|puddincat07@Telegram
-  - hysteria2-1828371338
-  - 德国 003
-  - 🏳[www.v2nodes.com] vless-
+  - 🍄🟫41@oneclickvpnkeys
+  - '🇮🇹 Italy/Milan [TG] #2'
+  - shadowsocks-1827146314
+  - vless-1853488309
+  - '🇫🇮[www.v2nodes.com] vless-FI-1... #5'
+  - '🇪🇸[www.v2nodes.com] vless-ES-2... #3'
+  - shadowsocks-1827146396
+  - xx|11ec|puddincat07@Telegram
+  - '🇷🇴[www.v2nodes.com] vless-RO-1... #1'
+  - 🇧🇾[www.v2nodes.com] vless-BY-1...
+  - '🇬🇧 United Kingdom [TG] #4'
+  - hysteria2-1828373437
+  - '🇧🇾[www.v2nodes.com] vless-BY-1... #1'
+  - hysteria2-1830466990
+  - 🇪🇸[www.v2nodes.com] vless-ES-2...
+  - '🏳[www.v2nodes.com] vless- #10'
   - au|8df7|puddincat07@Telegram
   - hysteria2-1828529012
-  - 🇦🇪[www.v2nodes.com] vless-AE-1...
   - kr|1325|puddincat07@Telegram
-  - vless-1882542523
-  - '🏳[www.v2nodes.com] vless- #2'
-  - 美国 022
-  - 俄罗斯+V2CROSS.COM
-  - hysteria2-1853493431
-  - '🇧🇬[www.v2nodes.com] vless-BG-3... #2'
-  - vless-1853651617
-  - trojan-1828295227
-  - '🇷🇺[www.v2nodes.com] vless-RU-1... #1'
-  - 加拿大+V2CROSS.COM
-  - vless-1890222328
-  - hysteria2-1853463906
-  - hk|b589|puddincat07@Telegram
-  - vless-1840613299
-  - hysteria2-1828371657
-  - vless-1886904172
-  - 匈牙利 001
-  - sg|0ed4|puddincat07@Telegram
-  - hysteria2-1828374270
-  - '🇮🇱[www.v2nodes.com] vless-IL-1... #1'
-  - 🇫🇮_FI_芬兰
-  - hysteria2-1868110673
-  - 英国+V2CROSS.COM
+  - 🐙97@oneclickvpnkeys
+  - hysteria2-1832880261
+  - hysteria2-1828374520
+  - shadowsocks-1827145990
+  - trojan-1827149167
   - sg|3afb|puddincat07@Telegram
-  - trojan-1827937733
-  - 法国 001
-  - 🇮🇳[www.v2nodes.com] vless-IN-1...
-  - 美国 002
-  - 🇦🇲[www.v2nodes.com] vless-AM-1...
-  - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-  - 🇷🇺[www.v2nodes.com] vless-RU-1...
-  - vless-1855702996
-  - trojan-1909232090
-  - '🇬🇧 United Kingdom [TG] #3'
-  - '🏳[www.v2nodes.com] vless- #29'
-  - hysteria2-1832766149
-  - trojan-1908518034
-  - trojan-1910169545
-  - 泰国 001
-  - trojan-1908518019
-  - vless-1853989218
-  - '🇸🇪[www.v2nodes.com] vless-SE-1... #4'
-  - https://github.com/*********-*...
+  - vless-1886904172
   - trojan-1900273765
-  - trojan-1909232105
-  - '🇯🇵[www.v2nodes.com] vless-JP-1... #7'
-  - '🇯🇵[www.v2nodes.com] vless-JP-1... #1'
-  - vless-1832754626
+  - vless-1891647641
+  - hysteria2-1828150748
+  - '@FarazV2ray'
+  - vless-1882542523
+  - vless-1827154835
+  - vless-1890222328
+  - vless-1887772999
+  - vless-1832754451
+  - 🇫🇮_FI_芬兰
+  - 🇦🇪[www.v2nodes.com] vless-AE-1...
+  - '🏳[www.v2nodes.com] vless- #1'
+  - '🇧🇬[www.v2nodes.com] vless-BG-3... #2'
+  - trojan-1827937733
+  - '🇬🇧[www.v2nodes.com] vless-GB-1... #12'
+  - 匈牙利 001
+  - 🇯🇵_JP_日本
+  - trojan-1908518019
+  - vless-1831129819
+  - 🐙99@oneclickvpnkeys
+  - trojan-1908518034
+  - hysteria2-1853493431
+  - 德国 002
+  - '🇷🇺[www.v2nodes.com] vless-RU-1... #1'
+  - 美国 017
+  - 美国 022
+  - vless-1854295084
+  - 🇭🇰_HK_中国香港
+  - '🇸🇬[www.v2nodes.com] vless-SG-1... #7'
+  - 🇷🇺_RU_俄罗斯
+  - 美国 002
+  - shadowsocks-1827146150
+  - shadowsocks-1827146118
+  - 🇷🇺[www.v2nodes.com] vless-RU-1...
+  - 🇸🇬[www.v2nodes.com] vless-SG-9...
   - '@vmess_ir'
-  - 乌克兰+V2CROSS.COM
-  - vless-1827613951
+  - 🇮🇹_IT_意大利_5
+  - '🇯🇵[www.v2nodes.com] vless-JP-1... #7'
+  - trojan-1910169557
+  - 日本+东京Amazon数据中心
+  - shadowsocks-1875022930
+  - '🇯🇵[www.v2nodes.com] vless-JP-1... #6'
+  - vless-1853989178
+  - 🇮🇳[www.v2nodes.com] vless-IN-1...
+  - hysteria2-1853488298
+  - vless-1871668812
+  - 德国 003
+  - hysteria2-1846612834
+  - 🇦🇲[www.v2nodes.com] vless-AM-1...
+  - https://github.com/*********-*...
+  - 🇺🇸[www.v2nodes.com] vless-US-1...
+  - '🏳[www.v2nodes.com] vless- #28'
+  - '🇯🇵[www.v2nodes.com] vless-JP-1... #1'
+  - 法国 001
   - '🇬🇧[www.v2nodes.com] vless-GB-1... #9'
-  - 中国 012
-  - '🇬🇧 United Kingdom [GH:Mahdi0024/Pro] #4'
-  - 美国 020
-  - '🇭🇰[www.v2nodes.com] vless-HK-1... #1'
+  - 🇮🇹_IT_意大利_1
+  - vmess-1837386056
+  - vmess-1837386247
 rules:
 - DOMAIN-SUFFIX,local,DIRECT
 - DOMAIN-SUFFIX,github.com,DIRECT
